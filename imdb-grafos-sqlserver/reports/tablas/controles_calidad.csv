@@ -1,0 +1,30 @@
+orden,bloque,control,valor,esperado,estado
+1,A,Archivos de IMDb con carga terminada (de 6),6.0,6,OK
+2,A,Archivos con filas leídas por el motor ≠ filas del TSV,0.0,0,OK
+3,A,Filas rechazadas por errores de formato (todos los archivos),0.0,0,OK
+4,A,Películas filtradas sin su fila de title.crew,0.0,0,OK
+5,A,stg.title_basics − filas del TSV,0.0,0,OK
+6,A,stg.title_ratings − filas del TSV,0.0,0,OK
+7,A,Archivos filtrados cuya auditoría no coincide con su tabla de staging,0.0,0,OK
+8,B,dw.pelicula − películas que cumplen el filtro en los TSV,0.0,0,OK
+9,B,Películas sin calificación,0.0,0,OK
+10,B,Películas con menos votos que el mínimo o que no son movie,0.0,0,OK
+11,B,Géneros en la lista del TSV − filas de dw.pelicula_genero,0.0,0,OK
+12,B,Participaciones de principals (con persona conocida) − cargadas,0.0,0,OK
+13,B,Participaciones con persona o película inexistente,0.0,0,OK
+14,B,Películas sin director (ni en principals ni en crew),16.0,<= 1 %,OK
+15,C,Nodos Pelicula − dw.pelicula,0.0,0,OK
+16,C,Nodos Persona − personas con actuación o dirección,0.0,0,OK
+17,C,Aristas ActuoEn huérfanas,0.0,0,OK
+18,C,Aristas Dirigio huérfanas,0.0,0,OK
+19,C,Aristas TrabajoCon huérfanas,0.0,0,OK
+20,C,Aristas TrabajoCon sin su inversa con el mismo peso,0.0,0,OK
+21,C,Autociclos en TrabajoCon,0.0,0,OK
+22,C,Σ pesos de TrabajoCon − Σ k(k−1) por película,0.0,0,OK
+23,C,Aristas ActuoEn − pares persona-película de actuación,0.0,0,OK
+24,D,Bacon = 1 − colaboradores directos de Kevin Bacon (MATCH),0.0,0,OK
+25,D,Personas cuyo número de Bacon no es coherente con el de sus vecinos,0.0,0,OK
+26,D,Películas sin texto en el índice de búsqueda,0.0,0,OK
+27,D,Palabras cuya frecuencia documental no coincide con el índice,0.0,0,OK
+28,D,"Calificaciones ponderadas fuera del rango [1, 10]",0.0,0,OK
+29,D,Celdas década-género con más de un puesto 1,0.0,0,OK

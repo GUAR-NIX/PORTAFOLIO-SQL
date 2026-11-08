@@ -1,0 +1,6 @@
+columna,correlacion,n_distinct
+fecha_vuelo,1.0000,366.0
+salida_prog_utc,1.0000,115425.0
+id_vuelo,0.9932,-1.0
+aerolinea,0.1168,15.0
+distancia_millas,-0.0150,1511.0

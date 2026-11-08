@@ -1,0 +1,65 @@
+{
+  "fuente": "Citi Bike System Data (Lyft), sistema principal de Nueva York",
+  "url_indice": "https://s3.amazonaws.com/tripdata/index.html",
+  "periodo": "2024-01 a 2024-03",
+  "archivos_mensuales": 3,
+  "archivo_tsv": "citibike_2024T1.tsv",
+  "bytes_tsv": 1347868387,
+  "filas_totales_brutas": 6672881,
+  "filas_validas": 6653987,
+  "filas_excluidas": 18894,
+  "tasa_retencion_pct": 99.7169,
+  "suma_duracion_seg_bruta": 4862266430,
+  "suma_duracion_seg_valida": 4580887206,
+  "estaciones_origen_unicas_validas": 2269,
+  "estaciones_destino_unicas_validas": 2273,
+  "desglose_tipo_bici_validos": {
+    "electric_bike": 4290114,
+    "classic_bike": 2363873
+  },
+  "desglose_membresia_validos": {
+    "member": 5775354,
+    "casual": 878633
+  },
+  "desglose_motivos": {
+    "VALIDO": 6653987,
+    "SIN_ESTACION_O_COORD_DESTINO": 13009,
+    "DATOS_ORIGEN_INCOMPLETOS": 5822,
+    "DURACION_EXCESIVA_MAYOR_24H": 63
+  },
+  "meses": {
+    "202401": {
+      "archivo_zip": "202401-citibike-tripdata.zip",
+      "bytes_zip": 369035302,
+      "sha256_zip": "0a2e81eacd7bf3890712de8f2a1b56bda985c17d9e61b08acf5e7c7ec9f20eb0",
+      "filas": 1888085,
+      "filas_validas": 1881951,
+      "electric_bike": 1214526,
+      "classic_bike": 673559,
+      "member": 1679836,
+      "casual": 208249
+    },
+    "202402": {
+      "archivo_zip": "202402-citibike-tripdata.zip",
+      "bytes_zip": 414712349,
+      "sha256_zip": "f0209d02b862ec7422ea251f55626c007c8289adb62230e870ed7da24ef77f05",
+      "filas": 2121501,
+      "filas_validas": 2115973,
+      "electric_bike": 1367981,
+      "classic_bike": 753520,
+      "member": 1868462,
+      "casual": 253039
+    },
+    "202403": {
+      "archivo_zip": "202403-citibike-tripdata.zip",
+      "bytes_zip": 520746126,
+      "sha256_zip": "d1a58caa37a66bbe6477680f3fba283f6f638475855591a4a2e8b73dc4cf8470",
+      "filas": 2663295,
+      "filas_validas": 2656063,
+      "electric_bike": 1724698,
+      "classic_bike": 938597,
+      "member": 2239953,
+      "casual": 423342
+    }
+  }
+}

@@ -1,0 +1,4 @@
+estrategia,descripcion,corridas,filas,mediana_ms_insercion,mediana_ms_indices,mediana_ms_total,min_ms_total,max_ms_total
+HEAP,Heap sin índices,3,6653987,4478.0,0.0,4478.0,4358,5065
+INDICES_DESPUES,"Agrupado + INSERT, luego CREATE de 2 índices secundarios",3,6653987,16547.0,23837.0,40322.0,39496,40689
+INDICES_ANTES,Agrupado + 2 índices secundarios ya creados antes del INSERT,3,6653987,63957.0,0.0,63957.0,62760,65672

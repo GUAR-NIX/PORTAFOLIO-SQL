@@ -1,0 +1,28 @@
+Finalize GroupAggregate  (cost=72245.04..72248.84 rows=15 width=11) (actual time=83.080..109.510 rows=8 loops=1)
+  Group Key: aerolinea
+  Buffers: shared hit=58106
+  ->  Gather Merge  (cost=72245.04..72248.54 rows=30 width=11) (actual time=83.075..109.502 rows=24 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=58106
+        ->  Sort  (cost=71245.01..71245.05 rows=15 width=11) (actual time=79.946..79.947 rows=8 loops=3)
+              Sort Key: aerolinea
+              Sort Method: quicksort  Memory: 25kB
+              Buffers: shared hit=58106
+              Worker 0:  Sort Method: quicksort  Memory: 25kB
+              Worker 1:  Sort Method: quicksort  Memory: 25kB
+              ->  Partial HashAggregate  (cost=71244.57..71244.72 rows=15 width=11) (actual time=79.922..79.923 rows=8 loops=3)
+                    Group Key: aerolinea
+                    Batches: 1  Memory Usage: 24kB
+                    Buffers: shared hit=58090
+                    Worker 0:  Batches: 1  Memory Usage: 24kB
+                    Worker 1:  Batches: 1  Memory Usage: 24kB
+                    ->  Parallel Bitmap Heap Scan on vuelo_plano  (cost=1095.17..71040.85 rows=40745 width=3) (actual time=25.548..73.926 rows=32640 loops=3)
+                          Recheck Cond: ((distancia_millas >= 2400) AND (distancia_millas <= 2500))
+                          Heap Blocks: exact=30616
+                          Buffers: shared hit=58090
+                          ->  Bitmap Index Scan on lab_btree_distancia  (cost=0.00..1070.72 rows=97789 width=0) (actual time=17.473..17.473 rows=97921 loops=1)
+                                Index Cond: ((distancia_millas >= 2400) AND (distancia_millas <= 2500))
+                                Buffers: shared hit=87
+Planning Time: 0.091 ms
+Execution Time: 109.547 ms

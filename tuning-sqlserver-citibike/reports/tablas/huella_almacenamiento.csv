@@ -1,0 +1,5 @@
+orden,objeto_sql,arquitectura,filas,datos_mb,indices_secund_mb,total_reservado_mb,paginas_datos_8kb,bytes_por_fila,ratio_compresion_vs_heap
+1,lab.viaje_heap,Heap sin índices (línea base),6653987,611.6,0.0,611.64,78285,96.38,1.0
+2,lab.viaje_rowstore_nocov,Rowstore B-Tree + índices no cubrientes,6653987,613.05,303.46,916.66,78471,96.61,1.0
+3,lab.viaje_rowstore,Rowstore B-Tree + índice cubriente INCLUDE + filtrado,6653987,613.05,296.22,909.46,78470,96.61,1.0
+4,lab.viaje_columnstore,Clustered Columnstore Index (CCI),6653987,188.88,0.0,189.01,24176,29.76,3.24

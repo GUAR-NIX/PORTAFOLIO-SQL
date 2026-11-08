@@ -1,0 +1,66 @@
+Gather Merge  (cost=148743.33..149063.72 rows=2746 width=20) (actual time=376.144..389.713 rows=3290 loops=1)
+  Workers Planned: 2
+  Workers Launched: 2
+  Buffers: shared hit=110915
+  ->  Sort  (cost=147743.31..147746.74 rows=1373 width=20) (actual time=372.479..372.537 rows=1097 loops=3)
+        Sort Key: fact_vuelo.salida_prog_utc
+        Sort Method: quicksort  Memory: 98kB
+        Buffers: shared hit=110915
+        Worker 0:  Sort Method: quicksort  Memory: 90kB
+        Worker 1:  Sort Method: quicksort  Memory: 62kB
+        ->  Parallel Append  (cost=0.00..147671.75 rows=1373 width=20) (actual time=1.004..371.930 rows=1097 loops=3)
+              Buffers: shared hit=110799
+              ->  Parallel Seq Scan on fact_vuelo_2024_07 fact_vuelo_7  (cost=0.00..13301.59 rows=111 width=20) (actual time=0.989..97.436 rows=293 loops=1)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 633997
+                    Buffers: shared hit=9998
+              ->  Parallel Seq Scan on fact_vuelo_2024_08 fact_vuelo_8  (cost=0.00..12927.75 rows=114 width=20) (actual time=1.219..95.052 rows=290 loops=1)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 618670
+                    Buffers: shared hit=9704
+              ->  Parallel Seq Scan on fact_vuelo_2024_06 fact_vuelo_6  (cost=0.00..12796.26 rows=92 width=20) (actual time=1.255..93.092 rows=233 loops=1)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 610761
+                    Buffers: shared hit=9614
+              ->  Parallel Seq Scan on fact_vuelo_2024_05 fact_vuelo_5  (cost=0.00..12785.72 rows=113 width=20) (actual time=1.696..93.533 rows=248 loops=1)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 609490
+                    Buffers: shared hit=9610
+              ->  Parallel Seq Scan on fact_vuelo_2024_10 fact_vuelo_10  (cost=0.00..12756.64 rows=89 width=20) (actual time=1.939..117.351 rows=258 loops=1)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 615225
+                    Buffers: shared hit=9551
+              ->  Parallel Seq Scan on fact_vuelo_2024_03 fact_vuelo_3  (cost=0.00..12354.33 rows=130 width=20) (actual time=1.786..110.642 rows=307 loops=1)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 591309
+                    Buffers: shared hit=9273
+              ->  Parallel Seq Scan on fact_vuelo_2024_12 fact_vuelo_12  (cost=0.00..12338.86 rows=114 width=20) (actual time=0.350..30.045 rows=92 loops=3)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 196764
+                    Buffers: shared hit=9263
+              ->  Parallel Seq Scan on fact_vuelo_2024_04 fact_vuelo_4  (cost=0.00..12139.15 rows=128 width=20) (actual time=0.624..45.323 rows=136 loops=2)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 290950
+                    Buffers: shared hit=9107
+              ->  Parallel Seq Scan on fact_vuelo_2024_09 fact_vuelo_9  (cost=0.00..12111.47 rows=149 width=20) (actual time=1.278..86.382 rows=294 loops=1)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 582324
+                    Buffers: shared hit=9077
+              ->  Parallel Seq Scan on fact_vuelo_2024_11 fact_vuelo_11  (cost=0.00..11954.77 rows=119 width=20) (actual time=1.468..83.717 rows=240 loops=1)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 575139
+                    Buffers: shared hit=8958
+              ->  Parallel Seq Scan on fact_vuelo_2024_01 fact_vuelo_1  (cost=0.00..11401.13 rows=113 width=20) (actual time=1.004..78.624 rows=307 loops=1)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 546918
+                    Buffers: shared hit=8551
+              ->  Parallel Seq Scan on fact_vuelo_2024_02 fact_vuelo_2  (cost=0.00..10797.21 rows=100 width=20) (actual time=0.799..78.639 rows=272 loops=1)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+                    Rows Removed by Filter: 518937
+                    Buffers: shared hit=8093
+              ->  Parallel Seq Scan on fact_vuelo_fuera_de_rango fact_vuelo_13  (cost=0.00..0.00 rows=1 width=20) (actual time=0.002..0.002 rows=0 loops=1)
+                    Filter: ((NOT cancelado) AND (matricula = 'N485HA'::text))
+Planning:
+  Buffers: shared hit=3
+Planning Time: 0.376 ms
+Execution Time: 389.880 ms

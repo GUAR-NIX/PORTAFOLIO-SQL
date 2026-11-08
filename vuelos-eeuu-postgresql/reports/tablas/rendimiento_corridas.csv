@@ -1,0 +1,145 @@
+experimento,variante,corrida,ms_ejecucion,ms_planificacion,bloques_cache,bloques_leidos
+P1,"Particionada, filtro con función",0,948.518,0.374,110913,0
+P1,"Particionada, filtro con función",1,951.457,0.338,110913,0
+P1,"Particionada, filtro con función",2,915.733,0.389,110913,0
+P1,"Particionada, filtro con función",3,976.893,0.348,110913,0
+P1,"Particionada, filtro con función",4,978.323,0.354,110913,0
+P1,"Particionada, filtro con función",5,933.622,0.351,110913,0
+P1,"Particionada, filtro con función",6,996.831,0.346,110913,0
+P1,"Particionada, filtro con función",7,950.995,0.400,110913,0
+P1,"Particionada, filtro por rango",0,77.606,0.094,10014,0
+P1,"Particionada, filtro por rango",1,98.436,0.121,10014,0
+P1,"Particionada, filtro por rango",2,91.383,0.123,10014,0
+P1,"Particionada, filtro por rango",3,103.595,0.127,10014,0
+P1,"Particionada, filtro por rango",4,102.427,0.135,10014,0
+P1,"Particionada, filtro por rango",5,86.124,0.143,10014,0
+P1,"Particionada, filtro por rango",6,77.168,0.127,10014,0
+P1,"Particionada, filtro por rango",7,76.340,0.121,10014,0
+P1,Tabla sin particionar,0,211.797,0.055,112,110752
+P1,Tabla sin particionar,1,240.278,0.066,208,110656
+P1,Tabla sin particionar,2,215.825,0.074,304,110560
+P1,Tabla sin particionar,3,206.108,0.066,400,110464
+P1,Tabla sin particionar,4,244.982,0.067,496,110368
+P1,Tabla sin particionar,5,205.908,0.071,592,110272
+P1,Tabla sin particionar,6,211.390,0.074,688,110176
+P1,Tabla sin particionar,7,193.788,0.075,784,110080
+P2,BRIN 128 páginas,0,23.702,0.048,2580,0
+P2,BRIN 128 páginas,1,22.837,0.091,2580,0
+P2,BRIN 128 páginas,2,24.537,0.082,2580,0
+P2,BRIN 128 páginas,3,22.790,0.088,2580,0
+P2,BRIN 128 páginas,4,23.479,0.083,2580,0
+P2,BRIN 128 páginas,5,22.636,0.085,2580,0
+P2,BRIN 128 páginas,6,23.055,0.095,2580,0
+P2,BRIN 128 páginas,7,23.172,0.088,2580,0
+P2,BRIN 32 páginas,0,22.547,0.085,2464,0
+P2,BRIN 32 páginas,1,22.362,0.088,2464,0
+P2,BRIN 32 páginas,2,22.668,0.148,2464,0
+P2,BRIN 32 páginas,3,25.467,0.077,2464,0
+P2,BRIN 32 páginas,4,27.675,0.081,2464,0
+P2,BRIN 32 páginas,5,22.637,0.081,2464,0
+P2,BRIN 32 páginas,6,22.357,0.112,2464,0
+P2,BRIN 32 páginas,7,22.567,0.084,2464,0
+P2,B-tree (fecha),0,34.010,0.041,2517,0
+P2,B-tree (fecha),1,33.491,0.081,2517,0
+P2,B-tree (fecha),2,33.405,0.078,2517,0
+P2,B-tree (fecha),3,34.693,0.077,2517,0
+P2,B-tree (fecha),4,33.462,0.077,2517,0
+P2,B-tree (fecha),5,33.567,0.073,2517,0
+P2,B-tree (fecha),6,33.398,0.069,2517,0
+P2,B-tree (fecha),7,35.824,0.075,2517,0
+P2,Sin índice,0,165.530,0.039,1072,109792
+P2,Sin índice,1,198.137,0.075,1168,109696
+P2,Sin índice,2,160.403,0.142,1264,109600
+P2,Sin índice,3,153.813,0.073,1360,109504
+P2,Sin índice,4,179.192,0.079,1456,109408
+P2,Sin índice,5,155.033,0.076,1552,109312
+P2,Sin índice,6,193.994,0.074,1648,109216
+P2,Sin índice,7,191.674,0.125,1744,109120
+P3,BRIN (distancia),0,474.426,0.080,79418,31462
+P3,BRIN (distancia),1,443.990,0.080,110880,0
+P3,BRIN (distancia),2,439.354,0.085,110880,0
+P3,BRIN (distancia),3,434.177,0.081,110880,0
+P3,BRIN (distancia),4,429.986,0.086,110880,0
+P3,BRIN (distancia),5,416.698,0.090,110880,0
+P3,BRIN (distancia),6,440.679,0.101,110880,0
+P3,BRIN (distancia),7,422.667,0.079,110880,0
+P3,BRIN forzado (enable_seqscan = off),0,453.523,0.092,110880,0
+P3,BRIN forzado (enable_seqscan = off),1,436.294,0.084,110880,0
+P3,BRIN forzado (enable_seqscan = off),2,436.118,0.093,110880,0
+P3,BRIN forzado (enable_seqscan = off),3,443.664,0.103,110880,0
+P3,BRIN forzado (enable_seqscan = off),4,428.635,0.081,110880,0
+P3,BRIN forzado (enable_seqscan = off),5,467.533,0.116,110880,0
+P3,BRIN forzado (enable_seqscan = off),6,433.397,0.083,110880,0
+P3,BRIN forzado (enable_seqscan = off),7,450.151,0.080,110880,0
+P3,B-tree (distancia),0,115.181,0.082,58106,0
+P3,B-tree (distancia),1,111.632,0.084,58106,0
+P3,B-tree (distancia),2,114.990,0.084,58106,0
+P3,B-tree (distancia),3,121.757,0.083,58106,0
+P3,B-tree (distancia),4,110.743,0.084,58106,0
+P3,B-tree (distancia),5,105.977,0.082,58106,0
+P3,B-tree (distancia),6,111.992,0.089,58106,0
+P3,B-tree (distancia),7,110.581,0.089,58106,0
+P3,Sin índice,0,339.758,0.076,4880,105984
+P3,Sin índice,1,313.053,0.077,4976,105888
+P3,Sin índice,2,301.477,0.081,5072,105792
+P3,Sin índice,3,286.680,0.081,5168,105696
+P3,Sin índice,4,325.031,0.071,5264,105600
+P3,Sin índice,5,291.099,0.070,5360,105504
+P3,Sin índice,6,300.220,0.075,5456,105408
+P3,Sin índice,7,299.457,0.067,5552,105312
+P4,B-tree completo,0,0.822,0.097,23,0
+P4,B-tree completo,1,0.870,0.124,23,0
+P4,B-tree completo,2,0.783,0.094,23,0
+P4,B-tree completo,3,0.802,0.064,23,0
+P4,B-tree completo,4,0.854,0.064,23,0
+P4,B-tree completo,5,0.805,0.072,23,0
+P4,B-tree completo,6,0.792,0.072,23,0
+P4,B-tree completo,7,0.790,0.058,23,0
+P4,Índice parcial,0,0.769,0.066,9,0
+P4,Índice parcial,1,0.792,0.066,9,0
+P4,Índice parcial,2,0.774,0.075,9,0
+P4,Índice parcial,3,0.748,0.068,9,0
+P4,Índice parcial,4,0.750,0.058,9,0
+P4,Índice parcial,5,1.018,0.065,9,0
+P4,Índice parcial,6,0.806,0.146,9,0
+P4,Índice parcial,7,0.769,0.069,9,0
+P4,Sin índice,0,36.739,0.121,10112,0
+P4,Sin índice,1,38.930,0.120,10112,0
+P4,Sin índice,2,36.155,0.127,10112,0
+P4,Sin índice,3,36.230,0.127,10112,0
+P4,Sin índice,4,36.163,0.127,10112,0
+P4,Sin índice,5,36.542,0.113,10112,0
+P4,Sin índice,6,36.142,0.115,10112,0
+P4,Sin índice,7,35.893,0.114,10112,0
+P5,"Índice parcial (matrícula, salida)",0,3.976,0.480,3340,0
+P5,"Índice parcial (matrícula, salida)",1,3.859,0.416,3340,0
+P5,"Índice parcial (matrícula, salida)",2,3.823,0.417,3340,0
+P5,"Índice parcial (matrícula, salida)",3,3.884,0.443,3340,0
+P5,"Índice parcial (matrícula, salida)",4,3.826,0.444,3340,0
+P5,"Índice parcial (matrícula, salida)",5,3.872,0.413,3340,0
+P5,"Índice parcial (matrícula, salida)",6,3.893,0.414,3340,0
+P5,"Índice parcial (matrícula, salida)",7,3.867,0.452,3340,0
+P5,Sin índice,0,424.496,0.364,110915,0
+P5,Sin índice,1,451.022,0.346,110915,0
+P5,Sin índice,2,441.594,0.347,110915,0
+P5,Sin índice,3,389.294,0.345,110915,0
+P5,Sin índice,4,414.974,0.346,110915,0
+P5,Sin índice,5,422.559,0.402,110915,0
+P5,Sin índice,6,414.630,0.625,110915,0
+P5,Sin índice,7,382.522,0.390,110915,0
+P6,Desde el hecho,0,886.088,0.245,110815,0
+P6,Desde el hecho,1,918.415,0.240,110815,0
+P6,Desde el hecho,2,958.483,0.287,110815,0
+P6,Desde el hecho,3,944.981,0.237,110815,0
+P6,Desde el hecho,4,901.516,0.256,110815,0
+P6,Desde el hecho,5,883.838,0.249,110815,0
+P6,Desde el hecho,6,864.385,0.465,110815,0
+P6,Desde el hecho,7,854.779,0.246,110815,0
+P6,Desde la vista materializada,0,55.188,0.075,10192,0
+P6,Desde la vista materializada,1,53.622,0.066,10192,0
+P6,Desde la vista materializada,2,53.607,0.073,10192,0
+P6,Desde la vista materializada,3,53.615,0.071,10192,0
+P6,Desde la vista materializada,4,53.581,0.066,10192,0
+P6,Desde la vista materializada,5,53.524,0.073,10192,0
+P6,Desde la vista materializada,6,53.696,0.066,10192,0
+P6,Desde la vista materializada,7,53.445,0.067,10192,0

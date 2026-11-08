@@ -1,0 +1,19 @@
+experimento,variante,rol,orden,filas,ms_mediana,ms_min,ms_max,bloques,archivo_plan,operador,tablas_leidas,filas_descartadas_recheck,filas_descartadas_filtro,bloques_lossy,x_vs_antes,pct_bloques_vs_antes
+P1,Tabla sin particionar,Antes,1,15,211.39,193.788,244.982,110864.0,reports/planes/P1_1_tabla_sin_particionar.txt,Seq Scan,1,0,2147987,0,1.0,100.0
+P1,"Particionada, filtro con función",Intermedio,2,15,951.457,915.733,996.831,110913.0,reports/planes/P1_2_particionada_filtro_con_funcion.txt,Seq Scan,13,0,6055845,0,0.22,100.04
+P1,"Particionada, filtro por rango",Después,3,15,91.383,76.34,103.595,10014.0,reports/planes/P1_3_particionada_filtro_por_rango.txt,Seq Scan,1,0,0,0,2.31,9.03
+P2,Sin índice,Antes,1,7,179.192,153.813,198.137,110864.0,reports/planes/P2_1_sin_indice.txt,Seq Scan,1,0,2311015,0,1.0,100.0
+P2,B-tree (fecha),Alternativa,2,7,33.491,33.398,35.824,2517.0,reports/planes/P2_2_b_tree_fecha.txt,Index Scan (lab_btree_fecha),1,0,0,0,5.35,2.27
+P2,BRIN 128 páginas,Después,3,7,23.055,22.636,24.537,2580.0,reports/planes/P2_3_brin_128_paginas.txt,Bitmap Heap Scan ← Bitmap Index Scan (lab_brin_fecha_128),1,5642,0,1150,7.77,2.33
+P2,BRIN 32 páginas,Después,4,7,22.637,22.357,27.675,2464.0,reports/planes/P2_4_brin_32_paginas.txt,Bitmap Heap Scan ← Bitmap Index Scan (lab_brin_fecha_32),1,2948,0,1043,7.92,2.22
+P3,Sin índice,Antes,1,8,300.22,286.68,325.031,110864.0,reports/planes/P3_1_sin_indice.txt,Seq Scan,1,0,2326776,0,1.0,100.0
+P3,BRIN (distancia),Intermedio,2,8,434.177,416.698,443.99,110880.0,reports/planes/P3_2_brin_distancia.txt,Bitmap Heap Scan ← Bitmap Index Scan (lab_brin_distancia_32),1,2326776,0,37898,0.69,100.01
+P3,BRIN forzado (enable_seqscan = off),Intermedio,3,8,436.294,428.635,467.533,110880.0,reports/planes/P3_3_brin_forzado_enable_seqscan_off.txt,Bitmap Heap Scan ← Bitmap Index Scan (lab_brin_distancia_32),1,2326776,0,38312,0.69,100.01
+P3,B-tree (distancia),Después,4,8,111.632,105.977,121.757,58106.0,reports/planes/P3_4_b_tree_distancia.txt,Bitmap Heap Scan ← Bitmap Index Scan (lab_btree_distancia),1,0,0,0,2.69,52.41
+P4,Sin índice,Antes,1,8,36.163,35.893,38.93,10112.0,reports/planes/P4_1_sin_indice.txt,Seq Scan,1,0,209457,0,1.0,100.0
+P4,B-tree completo,Alternativa,2,8,0.802,0.783,0.87,23.0,reports/planes/P4_2_b_tree_completo.txt,Index Only Scan (aerolinea_fecha_vuelo_cancelado_idx),1,0,0,0,45.09,0.23
+P4,Índice parcial,Después,3,8,0.774,0.748,1.018,9.0,reports/planes/P4_3_indice_parcial.txt,Index Only Scan (fact_vuelo_cancelados),1,0,0,0,46.72,0.09
+P5,Sin índice,Antes,1,3290,414.974,382.522,451.022,110915.0,reports/planes/P5_1_sin_indice.txt,Seq Scan,13,0,6395865,0,1.0,100.0
+P5,"Índice parcial (matrícula, salida)",Después,2,3290,3.867,3.823,3.893,3340.0,reports/planes/P5_2_indice_parcial_matricula_salida.txt,Index Scan (fact_vuelo_avion),13,0,0,0,107.31,3.01
+P6,Desde el hecho,Antes,1,15,901.516,854.779,958.483,110815.0,reports/planes/P6_1_desde_el_hecho.txt,Seq Scan,13,0,0,0,1.0,100.0
+P6,Desde la vista materializada,Después,2,15,53.607,53.445,53.696,10192.0,reports/planes/P6_2_desde_la_vista_materializada.txt,Seq Scan,1,0,0,0,16.82,9.2

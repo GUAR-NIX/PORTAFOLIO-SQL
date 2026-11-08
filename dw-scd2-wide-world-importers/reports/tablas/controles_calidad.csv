@@ -1,0 +1,19 @@
+﻿control,valor_observado,valor_esperado,estado,detalle
+Filas de venta DW = OLTP,228280.0,228280.0,OK,Grano: línea de factura
+Importe de venta DW = OLTP,198044266.7,198044266.7,OK,"Tolerancia 0,01"
+Filas de venta 2013,60968.0,60968.0,OK,Reconciliación anual
+Filas de venta 2026,15.0,15.0,OK,Reconciliación anual
+Filas de venta 2016,29458.0,29458.0,OK,Reconciliación anual
+Filas de venta 2014,65941.0,65941.0,OK,Reconciliación anual
+Filas de venta 2015,71898.0,71898.0,OK,Reconciliación anual
+Importe de venta 2013,52563272.64,52563272.64,OK,"Reconciliación anual; tolerancia 0,01"
+Importe de venta 2026,827.25,827.25,OK,"Reconciliación anual; tolerancia 0,01"
+Importe de venta 2016,25971029.11,25971029.11,OK,"Reconciliación anual; tolerancia 0,01"
+Importe de venta 2014,57418916.89,57418916.89,OK,"Reconciliación anual; tolerancia 0,01"
+Importe de venta 2015,62090220.81,62090220.81,OK,"Reconciliación anual; tolerancia 0,01"
+Filas de compra DW = OLTP,8367.0,8367.0,OK,Grano: línea de orden de compra
+Hechos de venta huérfanos,0.0,0.0,OK,
+Una versión actual por cliente,0.0,0.0,OK,
+Sin intervalos SCD2 de cliente solapados,0.0,0.0,OK,
+Una versión actual por producto,0.0,0.0,OK,
+Sin intervalos SCD2 de producto solapados,0.0,0.0,OK,

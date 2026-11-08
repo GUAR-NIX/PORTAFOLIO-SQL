@@ -1,0 +1,14 @@
+metrica,valor
+vuelos_programados,7078250
+vuelos_cancelados,96285
+vuelos_desviados,17009
+pct_cancelados,1.36
+pct_desviados,0.24
+pct_puntuales,77.92
+pct_puntuales_entre_llegados,79.18
+retraso_medio_llegada_min,7.09
+minutos_retraso_totales,110666236
+minutos_con_causa,103739511
+aerolineas,15
+aeropuertos_origen,348
+dias,366

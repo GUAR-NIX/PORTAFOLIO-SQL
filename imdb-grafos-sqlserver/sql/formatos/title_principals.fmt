@@ -1,0 +1,8 @@
+14.0
+6
+1 SQLCHAR 0 12 "\t" 1 tconst Latin1_General_100_CI_AI_SC_UTF8
+2 SQLCHAR 0 5 "\t" 2 ordering Latin1_General_100_CI_AI_SC_UTF8
+3 SQLCHAR 0 12 "\t" 3 nconst Latin1_General_100_CI_AI_SC_UTF8
+4 SQLCHAR 0 40 "\t" 4 category Latin1_General_100_CI_AI_SC_UTF8
+5 SQLCHAR 0 1000 "\t" 5 job Latin1_General_100_CI_AI_SC_UTF8
+6 SQLCHAR 0 2000 "\n" 6 characters Latin1_General_100_CI_AI_SC_UTF8

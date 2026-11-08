@@ -1,0 +1,23 @@
+Finalize GroupAggregate  (cost=14972.07..14976.28 rows=15 width=67) (actual time=48.360..53.338 rows=15 loops=1)
+  Group Key: aerolinea
+  Buffers: shared hit=10192
+  ->  Gather Merge  (cost=14972.07..14975.57 rows=30 width=67) (actual time=48.350..53.310 rows=45 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=10192
+        ->  Sort  (cost=13972.04..13972.08 rows=15 width=67) (actual time=45.237..45.239 rows=15 loops=3)
+              Sort Key: aerolinea
+              Sort Method: quicksort  Memory: 26kB
+              Buffers: shared hit=10192
+              Worker 0:  Sort Method: quicksort  Memory: 26kB
+              Worker 1:  Sort Method: quicksort  Memory: 26kB
+              ->  Partial HashAggregate  (cost=13971.52..13971.75 rows=15 width=67) (actual time=45.202..45.207 rows=15 loops=3)
+                    Group Key: aerolinea
+                    Batches: 1  Memory Usage: 24kB
+                    Buffers: shared hit=10176
+                    Worker 0:  Batches: 1  Memory Usage: 24kB
+                    Worker 1:  Batches: 1  Memory Usage: 24kB
+                    ->  Parallel Seq Scan on mv_puntualidad_diaria  (cost=0.00..12344.87 rows=216887 width=19) (actual time=0.004..11.708 rows=173510 loops=3)
+                          Buffers: shared hit=10176
+Planning Time: 0.066 ms
+Execution Time: 53.368 ms

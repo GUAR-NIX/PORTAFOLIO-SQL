@@ -1,0 +1,15 @@
+metrica,valor
+raices,824295
+raices_que_propagan,402019
+pct_propagan,48.77
+largo_medio_si_propaga,1.672
+largo_maximo,10
+vuelos_afectados_aguas_abajo,672363
+minutos_raiz,54995802
+minutos_aguas_abajo,48071438
+multiplicador,0.874
+minutos_avion_previo_bts_en_cadenas,28263656
+tramos_analizados,6964956
+aviones,6099
+tramos_por_avion_dia,4.044
+pct_avion_previo_bts_sobre_total,67.36

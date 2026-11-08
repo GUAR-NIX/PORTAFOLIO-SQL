@@ -1,0 +1,109 @@
+decada,puesto,persona_id,nombre,peliculas,calificacion_media
+1910,1,1273,Lillian Gish,6,6.73
+1910,1,366008,Robert Harron,6,6.6
+1910,2,107631,Edmund Breon,5,6.84
+1910,2,577476,Georges Melchior,5,6.84
+1910,2,681933,Mary Pickford,5,6.58
+1910,2,622772,René Navarre,5,6.84
+1910,2,137288,Renée Carl,5,6.96
+1910,3,264491,Jane Faber,4,6.88
+1910,3,550615,Mae Marsh,4,6.55
+1910,3,507635,Ralph Lewis,4,6.48
+1910,3,29301,Yvette Andréyor,4,6.95
+1910,4,910400,Henry B. Walthall,3,6.2
+1910,4,189684,Josephine Crowell,3,6.6
+1910,4,115524,Kate Bruce,3,6.53
+1910,4,605849,Laurent Morléas,3,6.8
+1910,4,1207319,Naudier,3,6.87
+1910,4,652661,Ossi Oswalda,3,7.13
+1910,4,369058,Raymond Hatton,3,6.6
+1910,4,418131,Victor Janson,3,7.13
+1920,1,36,Buster Keaton,13,7.38
+1920,2,151606,Lon Chaney,12,7.17
+1920,3,516001,Harold Lloyd,11,7.38
+1920,4,175067,Edward Connelly,10,6.78
+1920,4,318105,John Gilbert,10,7.08
+1920,5,841797,Gloria Swanson,8,6.78
+1920,5,1256,Greta Garbo,8,7.05
+1920,5,707814,Jobyna Ralston,8,7.36
+1920,5,354313,William Haines,8,6.74
+1930,1,12,Bette Davis,38,6.71
+1930,2,807580,C. Aubrey Smith,30,6.81
+1930,3,22,Clark Gable,29,6.75
+1930,4,472,Boris Karloff,27,6.71
+1930,5,1485,Myrna Loy,24,6.85
+1940,1,78,John Wayne,29,6.64
+1940,2,7941,Bud Abbott,25,6.67
+1940,2,516876,Gene Lockhart,25,6.95
+1940,2,7,Humphrey Bogart,25,7.18
+1940,2,182579,Lou Costello,25,6.67
+1940,2,48,Peter Lorre,25,6.84
+1940,3,958345,George Zucco,24,6.05
+1940,3,115558,Nigel Bruce,24,6.83
+1940,4,1695,George Sanders,23,6.89
+1940,4,593775,Thomas Mitchell,23,6.77
+1940,5,509,Bela Lugosi,22,5.67
+1940,5,3193,Harry Davenport,22,6.84
+1940,5,184578,Jerome Cowan,22,6.92
+1940,5,955,Ward Bond,22,7.0
+1950,1,30194,Morris Ankrum,26,5.82
+1950,2,282435,Jay C. Flippen,24,6.7
+1950,3,1229,Glenn Ford,23,6.78
+1950,3,68,Randolph Scott,23,6.44
+1950,4,71,James Stewart,22,7.17
+1950,4,570615,John McIntire,22,6.68
+1950,4,53,Robert Mitchum,22,6.6
+1950,5,13,Doris Day,21,6.71
+1950,5,1847,Richard Widmark,21,6.74
+1960,1,489,Christopher Lee,32,5.89
+1960,2,62,Elvis Presley,27,5.77
+1960,3,1128,Alain Delon,22,6.9
+1960,3,1509,Dean Martin,22,6.29
+1960,4,1088,Peter Cushing,20,6.23
+1960,4,634,Peter Sellers,20,6.49
+1960,4,441526,Shintarō Katsu,20,7.25
+1960,4,1637,Vincent Price,20,6.2
+1960,5,901,Jean-Paul Belmondo,19,7.06
+1960,5,78,John Wayne,19,6.92
+1970,1,839017,Kemal Sunal,35,7.7
+1970,2,489,Christopher Lee,34,5.8
+1970,3,1088,Peter Cushing,27,6.01
+1970,4,621870,Adile Naşit,25,7.93
+1970,5,314,Charles Bronson,23,6.31
+1970,5,587,Donald Pleasence,23,6.23
+1980,1,839017,Kemal Sunal,40,6.87
+1980,2,587,Donald Pleasence,22,5.22
+1980,3,1826,M. Emmet Walsh,21,6.33
+1980,3,323,Michael Caine,21,6.13
+1980,4,608,Burt Reynolds,20,5.54
+1980,5,367,Gérard Depardieu,19,6.95
+1980,5,329,Jackie Chan,19,6.46
+1980,5,5162,Robert Loggia,19,6.31
+1990,1,451600,Anupam Kher,34,6.12
+1990,1,159507,Stephen Chow,34,6.71
+1990,2,700869,Amrish Puri,29,6.83
+1990,2,6795,Salman Khan,29,5.91
+1990,3,172,Harvey Keitel,28,6.48
+1990,3,168,Samuel L. Jackson,28,6.64
+1990,3,451321,Shah Rukh Khan,28,6.13
+1990,4,712546,Paresh Rawal,27,6.2
+1990,5,1520,Christopher McDonald,26,5.97
+2000,1,695177,Prakash Raj,47,6.88
+2000,2,821,Amitabh Bachchan,43,5.84
+2000,3,712546,Paresh Rawal,42,6.39
+2000,4,474774,Akshay Kumar,38,5.7
+2000,5,103977,Brahmanandam,37,6.91
+2000,5,700875,Om Puri,37,6.15
+2010,1,621937,Nassar,69,6.56
+2010,2,695177,Prakash Raj,65,6.38
+2010,3,103977,Brahmanandam,50,6.03
+2010,4,451600,Anupam Kher,42,5.93
+2010,5,290556,James Franco,40,5.5
+2020,1,3808948,Vennela Kishore,58,5.89
+2020,1,6489058,Yogi Babu,58,6.03
+2020,2,80238,Tanikella Bharani,49,6.3
+2020,3,1388202,Siddique,42,6.18
+2020,4,1198628,Sunil,41,6.16
+2020,5,2496992,Ajay,39,6.18
+2020,5,103976,Brahmaji,39,6.47
+2020,5,621937,Nassar,39,6.19

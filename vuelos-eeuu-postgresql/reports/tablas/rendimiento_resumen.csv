@@ -1,0 +1,19 @@
+experimento,variante,rol,orden,descripcion,filas,corridas,ms_mediana,ms_min,ms_max,ms_planificacion,bloques_mediana
+P1,Tabla sin particionar,Antes,1,"lab.vuelo_plano (7 M filas, sin índices): recorre toda la tabla",15,7,211.390,193.788,244.982,0.071,110864.0
+P1,"Particionada, filtro con función",Intermedio,2,dw.fact_vuelo con extract(month FROM fecha_vuelo) = 7: el planificador no puede podar,15,7,951.457,915.733,996.831,0.351,110913.0
+P1,"Particionada, filtro por rango",Después,3,dw.fact_vuelo con rango sobre la clave de partición: solo lee la partición de julio,15,7,91.383,76.340,103.595,0.127,10014.0
+P2,Sin índice,Antes,1,Seq Scan de 7 M filas para quedarse con una semana,7,7,179.192,153.813,198.137,0.076,110864.0
+P2,B-tree (fecha),Alternativa,2,Índice B-tree: una entrada por fila,7,7,33.491,33.398,35.824,0.077,2517.0
+P2,BRIN 128 páginas,Después,3,BRIN: mínimo y máximo de cada bloque de 128 páginas,7,7,23.055,22.636,24.537,0.088,2580.0
+P2,BRIN 32 páginas,Después,4,"BRIN con rangos más finos: índice algo mayor, menos páginas descartadas al revisar",7,7,22.637,22.357,27.675,0.084,2464.0
+P3,Sin índice,Antes,1,Seq Scan: rutas de 2.400 a 2.500 millas,8,7,300.220,286.680,325.031,0.075,110864.0
+P3,BRIN (distancia),Intermedio,2,El planificador decide si usar el BRIN según la correlación física que estima en pg_stats,8,7,434.177,416.698,443.990,0.085,110880.0
+P3,BRIN forzado (enable_seqscan = off),Intermedio,3,Cada bloque contiene distancias cortas y largas: el BRIN no descarta casi ninguno,8,7,436.294,428.635,467.533,0.084,110880.0
+P3,B-tree (distancia),Después,4,B-tree: no depende del orden físico,8,7,111.632,105.977,121.757,0.084,58106.0
+P4,Sin índice,Antes,1,Seq Scan de la partición de julio (ya podada),8,7,36.163,35.893,38.930,0.120,10112.0
+P4,B-tree completo,Alternativa,2,"B-tree (aerolinea, fecha_vuelo, cancelado) sobre todas las filas",8,7,0.802,0.783,0.870,0.072,23.0
+P4,Índice parcial,Después,3,"B-tree (aerolinea, fecha_vuelo) WHERE cancelado: solo indexa los vuelos cancelados",8,7,0.774,0.748,1.018,0.068,9.0
+P5,Sin índice,Antes,1,Seq Scan de las 13 particiones: la matrícula no es la clave de partición,3290,7,414.974,382.522,451.022,0.347,110915.0
+P5,"Índice parcial (matrícula, salida)",Después,2,Index Scan en cada partición; el orden del índice evita el Sort,3290,7,3.867,3.823,3.893,0.417,3340.0
+P6,Desde el hecho,Antes,1,Agrega los ~7 M de vuelos de dw.fact_vuelo,15,7,901.516,854.779,958.483,0.249,110815.0
+P6,Desde la vista materializada,Después,2,Agrega dw.mv_puntualidad_diaria (día × aerolínea × origen),15,7,53.607,53.445,53.696,0.067,10192.0

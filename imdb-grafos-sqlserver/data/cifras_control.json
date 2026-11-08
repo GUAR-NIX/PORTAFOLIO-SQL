@@ -1,0 +1,90 @@
+{
+  "fuente": "https://datasets.imdbws.com/",
+  "licencia": "IMDb Non-Commercial Datasets: uso personal y no comercial (https://developer.imdb.com/non-commercial-datasets/)",
+  "fecha_descarga": "2026-10-21",
+  "archivos": {
+    "title.basics": {
+      "bytes_gz": 228935391,
+      "last_modified": "Tue, 20 Oct 2026 12:44:44 GMT",
+      "columnas": [
+        "tconst",
+        "titleType",
+        "primaryTitle",
+        "originalTitle",
+        "isAdult",
+        "startYear",
+        "endYear",
+        "runtimeMinutes",
+        "genres"
+      ],
+      "filas_datos": 12881680,
+      "bytes_tsv": 1118745398
+    },
+    "title.ratings": {
+      "bytes_gz": 8706741,
+      "last_modified": "Wed, 21 Oct 2026 00:47:37 GMT",
+      "columnas": [
+        "tconst",
+        "averageRating",
+        "numVotes"
+      ],
+      "filas_datos": 1723302,
+      "bytes_tsv": 30108065
+    },
+    "title.principals": {
+      "bytes_gz": 787691113,
+      "last_modified": "Wed, 21 Oct 2026 12:59:31 GMT",
+      "columnas": [
+        "tconst",
+        "ordering",
+        "nconst",
+        "category",
+        "job",
+        "characters"
+      ],
+      "filas_datos": 102413745,
+      "bytes_tsv": 4578739967
+    },
+    "title.crew": {
+      "bytes_gz": 83691546,
+      "last_modified": "Wed, 21 Oct 2026 12:58:49 GMT",
+      "columnas": [
+        "tconst",
+        "directors",
+        "writers"
+      ],
+      "filas_datos": 12882527,
+      "bytes_tsv": 424029741
+    },
+    "name.basics": {
+      "bytes_gz": 311684394,
+      "last_modified": "Wed, 21 Oct 2026 12:59:10 GMT",
+      "columnas": [
+        "nconst",
+        "primaryName",
+        "birthYear",
+        "deathYear",
+        "primaryProfession",
+        "knownForTitles"
+      ],
+      "filas_datos": 15751276,
+      "bytes_tsv": 973416934
+    },
+    "title.akas": {
+      "bytes_gz": 518560019,
+      "last_modified": "Wed, 21 Oct 2026 12:59:03 GMT",
+      "columnas": [
+        "titleId",
+        "ordering",
+        "title",
+        "region",
+        "language",
+        "types",
+        "attributes",
+        "isOriginalTitle"
+      ],
+      "filas_datos": 59862879,
+      "bytes_tsv": 3033682632
+    }
+  }
+}

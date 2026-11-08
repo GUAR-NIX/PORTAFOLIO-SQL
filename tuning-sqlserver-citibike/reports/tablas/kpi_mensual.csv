@@ -1,0 +1,5 @@
+anio,mes,nombre_mes,estacion_climatica,total_viajes,viajes_electrica,viajes_clasica,pct_electrica,viajes_miembro,viajes_ocasional,pct_miembro,duracion_media_min,distancia_media_m,velocidad_media_kmh,viajes_cruzan_hudson
+2023,12,Diciembre,Invierno,364,265,99,72.8,174,190,47.8,92.84,2695,5.88,0
+2024,1,Enero,Invierno,1881782,1208783,672999,64.24,1675204,206578,89.02,10.82,1775,11.07,181
+2024,2,Febrero,Invierno,2115986,1363027,752959,64.42,1864635,251351,88.12,11.01,1828,11.11,161
+2024,3,Marzo,Primavera,2655855,1718039,937816,64.69,2235341,420514,84.17,12.3,1927,10.94,179

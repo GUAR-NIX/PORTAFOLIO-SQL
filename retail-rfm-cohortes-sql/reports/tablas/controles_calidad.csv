@@ -1,0 +1,28 @@
+orden,bloque,control,valor,esperado,estado
+1,A,Hojas cuyo número de filas en staging difiere de la fuente,0.0,0,OK
+2,A,Hojas cuya cantidad total (unidades) en staging difiere de la fuente,0.0,0,OK
+3,A,"Hojas cuyo importe en staging difiere de la fuente en más de 0,01 GBP",0.0,0,OK
+4,A,Filas perdidas al tipar (fuente − limpio),0.0,0,OK
+5,A,"Diferencia de importe fuente − (modelo + excluidas), GBP",0.0,0,OK
+6,A,Diferencia de unidades fuente − limpio,0.0,0,OK
+7,A,Líneas válidas que no llegaron al hecho (o sobran),0.0,0,OK
+8,A,"Diferencia de importe limpio válido − hecho, GBP",0.0,0,OK
+9,B,Líneas del solapamiento entre hojas (1–9 dic 2010) sin marcar como duplicado,0.0,0,OK
+10,B,Grupos duplicados que conservan más de una línea válida,0.0,0,OK
+11,B,Hechos con signo incoherente (venta ≤ 0 o devolución ≥ 0),0.0,0,OK
+12,B,"Hechos con códigos que no son producto (envío, comisiones, ajustes)",0.0,0,OK
+13,B,Hechos fuera del rango de fechas de la fuente,0.0,0,OK
+14,B,Líneas sin cliente en limpio = líneas con cliente -1 en el hecho (diferencia),0.0,0,OK
+15,C,Claves foráneas deshabilitadas o no confiables en dw,0.0,0,OK
+16,C,Clientes en dim_cliente sin ninguna línea de hecho,0.0,0,OK
+17,C,Huecos en el calendario dim_fecha (días faltantes),0.0,0,OK
+18,D,Clientes con compra que no están en RFM (o sobran),0.0,0,OK
+19,D,"Puntajes R, F o M con quintiles desbalanceados (> 1 cliente de diferencia)",0.0,0,OK
+20,D,Combinaciones R×F sin segmento o con más de uno,0.0,0,OK
+21,D,Cohortes cuya retención en el mes 0 no es 100 %,0.0,0,OK
+22,D,Suma de tamaños de cohorte − clientes con compra,0.0,0,OK
+23,D,"Diferencia ingreso de cohortes − hecho (clientes identificados), GBP",0.0,0,OK
+24,D,"Retención fuera de [0, 1] o activos > tamaño de cohorte",0.0,0,OK
+25,D,Devoluciones en mart ≠ devoluciones en el hecho (diferencia de líneas),0.0,0,OK
+26,D,Devoluciones con compra previa POSTERIOR a la devolución,0.0,0,OK
+27,D,"Pares de canasta con métricas imposibles (confianza > 1, soporte_ab > soporte individual)",0.0,0,OK

@@ -1,0 +1,16 @@
+{
+  "fuente": "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip",
+  "hojas": {
+    "Year 2009-2010": {
+      "filas": 525461,
+      "cantidad_total": 5432041,
+      "importe_total": "9539484.634"
+    },
+    "Year 2010-2011": {
+      "filas": 541910,
+      "cantidad_total": 5176451,
+      "importe_total": "9747765.934"
+    }
+  },
+  "sha256_excel": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980"
+}

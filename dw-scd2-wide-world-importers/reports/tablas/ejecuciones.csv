@@ -1,0 +1,3 @@
+﻿ejecucion_id,tipo,duracion_ms,filas_venta,filas_compra,filas_stock,cliente_cierres,cliente_aperturas,producto_cierres,producto_aperturas,estado
+1,COMPLETA,2183,228265,8367,227,0,663,0,227,OK
+2,INCREMENTAL,119,15,0,100,50,50,100,100,OK

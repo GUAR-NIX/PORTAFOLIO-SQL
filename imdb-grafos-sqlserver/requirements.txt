@@ -1,0 +1,8 @@
+# Python solo se usa para descargar los datos, exportar resultados, graficar y las pruebas.
+# El pipeline de datos es 100 % T-SQL (SQL Server 2025 Express).
+pandas==3.0.6
+numpy==2.5.4
+matplotlib==3.11.2
+networkx==3.7
+pyodbc==5.3.0
+pytest==9.1.1

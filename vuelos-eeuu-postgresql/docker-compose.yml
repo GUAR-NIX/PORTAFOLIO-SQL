@@ -1,0 +1,53 @@
+name: vuelos_pg
+
+services:
+  db:
+    build: ./docker
+    image: vuelos-postgres:17.11
+    container_name: vuelos_pg
+    environment:
+      POSTGRES_DB: vuelos
+      POSTGRES_USER: analista
+      # Contraseña solo para este contenedor local (puerto ligado a 127.0.0.1).
+      POSTGRES_PASSWORD: analista_local
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./data/raw:/datos:ro          # ZIP de BTS y tablas de referencia
+      - ./sql:/sql:ro                 # scripts que ejecuta psql
+    # Memoria limitada: la PC se comparte con otras cargas.
+    mem_limit: 4g
+    shm_size: 1g                      # memoria compartida para los workers paralelos
+    command:
+      - postgres
+      - -c
+      - shared_buffers=1GB            # ~25 % del límite del contenedor
+      - -c
+      - effective_cache_size=3GB
+      - -c
+      - work_mem=64MB                 # por operación de ordenamiento/hash
+      - -c
+      - maintenance_work_mem=512MB    # CREATE INDEX y VACUUM
+      - -c
+      - max_wal_size=4GB              # menos checkpoints durante la carga
+      - -c
+      - checkpoint_completion_target=0.9
+      - -c
+      - max_parallel_workers_per_gather=2
+      - -c
+      - random_page_cost=1.1          # disco SSD
+      - -c
+      - track_io_timing=on            # tiempos de E/S en EXPLAIN (BUFFERS)
+      - -c
+      - jit=off                       # tiempos estables en las mediciones
+      - -c
+      - default_statistics_target=200
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U analista -d vuelos"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+volumes:
+  pgdata:

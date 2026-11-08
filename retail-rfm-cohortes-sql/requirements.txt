@@ -1,0 +1,8 @@
+# Python solo se usa para descargar/convertir los datos, graficar y las pruebas.
+# El pipeline de datos es 100 % T-SQL.
+pandas==3.0.6
+numpy==2.5.4
+openpyxl==3.1.5
+matplotlib==3.11.2
+pyodbc==5.3.0
+pytest==9.1.1

@@ -1,0 +1,17 @@
+ejemplo,salto,grados,desde_id,desde,hacia_id,hacia,pelicula,anio
+1,1,1,102,Kevin Bacon,158,Tom Hanks,Apollo 13,1995
+2,1,3,102,Kevin Bacon,5380,Ray Romano,The Best You Can,2025
+2,2,3,5380,Ray Romano,451600,Anupam Kher,The Big Sick,2017
+2,3,3,451600,Anupam Kher,451321,Shah Rukh Khan,Dilwale Dulhania Le Jayenge,1995
+3,1,3,201857,Ricardo Darín,225,Christian Slater,The Summit,2017
+3,2,3,225,Christian Slater,336,James Coburn,Young Guns II,1990
+3,3,3,336,James Coburn,1536,Toshirō Mifune,Midway,1976
+4,1,3,4851,Penélope Cruz,136,Johnny Depp,Pirates of the Caribbean: On Stranger Tides,2011
+4,2,3,136,Johnny Depp,768334,John Saxon,A Nightmare on Elm Street,1984
+4,3,3,768334,John Saxon,45,Bruce Lee,Enter the Dragon,1973
+5,1,3,122,Charles Chaplin,1335,Tippi Hedren,A Countess from Hong Kong,1967
+5,2,3,1335,Tippi Hedren,474,Michael Keaton,Pacific Heights,1990
+5,3,3,474,Michael Keaton,3918035,Zendaya,Spider-Man: Homecoming,2017
+6,1,3,134594,Cantinflas,605923,Robert Morley,Around the World in 80 Days,1956
+6,2,3,605923,Robert Morley,365281,Rosemary Harris,Beau Brummell,1954
+6,3,3,365281,Rosemary Harris,206,Keanu Reeves,The Gift,2000

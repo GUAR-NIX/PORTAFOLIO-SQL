@@ -1,0 +1,458 @@
+{
+  "filtro": {
+    "excluir_adultos": "1",
+    "min_votos": "1000",
+    "tipo_titulo": "movie"
+  },
+  "carga": [
+    {
+      "archivo": "title.basics",
+      "metodo": "BULK INSERT",
+      "filas_fuente": 12881680,
+      "filas_leidas": 12881680,
+      "filas_cargadas": 12881680,
+      "filas_rechazadas": 0,
+      "filas_filtradas": 0,
+      "segundos": 24
+    },
+    {
+      "archivo": "title.ratings",
+      "metodo": "BULK INSERT",
+      "filas_fuente": 1723302,
+      "filas_leidas": 1723302,
+      "filas_cargadas": 1723302,
+      "filas_rechazadas": 0,
+      "filas_filtradas": 0,
+      "segundos": 2
+    },
+    {
+      "archivo": "title.principals",
+      "metodo": "OPENROWSET(BULK) + filtro",
+      "filas_fuente": 102413745,
+      "filas_leidas": 102413745,
+      "filas_cargadas": 981137,
+      "filas_rechazadas": 0,
+      "filas_filtradas": 101432608,
+      "segundos": 312
+    },
+    {
+      "archivo": "title.akas",
+      "metodo": "OPENROWSET(BULK) + filtro",
+      "filas_fuente": 59862879,
+      "filas_leidas": 59862879,
+      "filas_cargadas": 1301680,
+      "filas_rechazadas": 0,
+      "filas_filtradas": 58561199,
+      "segundos": 198
+    },
+    {
+      "archivo": "name.basics",
+      "metodo": "OPENROWSET(BULK) + filtro",
+      "filas_fuente": 15751276,
+      "filas_leidas": 15751276,
+      "filas_cargadas": 332341,
+      "filas_rechazadas": 0,
+      "filas_filtradas": 15418935,
+      "segundos": 68
+    },
+    {
+      "archivo": "title.crew",
+      "metodo": "BULK INSERT + filtro",
+      "filas_fuente": 12882527,
+      "filas_leidas": 12882527,
+      "filas_cargadas": 49320,
+      "filas_rechazadas": 0,
+      "filas_filtradas": 12833207,
+      "segundos": 39
+    }
+  ],
+  "filas_por_tabla": {
+    "busqueda.indice": 2002680,
+    "busqueda.palabra": 360706,
+    "busqueda.titulo": 680894,
+    "dw.calificacion": 49320,
+    "dw.colaboracion": 4796004,
+    "dw.genero": 24,
+    "dw.participacion": 980656,
+    "dw.pelicula": 49320,
+    "dw.pelicula_genero": 114616,
+    "dw.persona": 332341,
+    "dw.rol": 13,
+    "dw.titulo_alternativo": 1301680,
+    "grafo.ActuoEn": 460758,
+    "grafo.Dirigio": 55073,
+    "grafo.Pelicula": 49320,
+    "grafo.Persona": 203547,
+    "grafo.TrabajoCon": 4796004,
+    "mart.actor_prolifico_decada": 108,
+    "mart.decil_votos": 10,
+    "mart.ejemplo_separacion": 16,
+    "mart.elenco_fiel": 6575,
+    "mart.genero_decada": 209,
+    "mart.mejor_decada_genero": 627,
+    "mart.nucleo_talento": 10982,
+    "mart.numero_bacon": 197102,
+    "mart.pelicula_puntaje": 49320,
+    "mart.percentil_votos": 14,
+    "mart.top_colaboradores": 100,
+    "stg.name_basics": 332341,
+    "stg.pelicula_filtro": 49320,
+    "stg.persona_filtro": 332357,
+    "stg.title_akas": 1301680,
+    "stg.title_basics": 12881680,
+    "stg.title_crew": 49320,
+    "stg.title_crew_completo": 0,
+    "stg.title_principals": 981137,
+    "stg.title_ratings": 1723302
+  },
+  "mb_por_tabla": {
+    "busqueda.indice": 33.0,
+    "busqueda.palabra": 20.4,
+    "busqueda.titulo": 46.3,
+    "dw.calificacion": 1.2,
+    "dw.colaboracion": 88.3,
+    "dw.genero": 0.1,
+    "dw.participacion": 89.5,
+    "dw.pelicula": 4.0,
+    "dw.pelicula_genero": 1.7,
+    "dw.persona": 29.9,
+    "dw.rol": 0.1,
+    "dw.titulo_alternativo": 70.1,
+    "grafo.ActuoEn": 69.5,
+    "grafo.Dirigio": 8.0,
+    "grafo.Pelicula": 3.6,
+    "grafo.Persona": 18.4,
+    "grafo.TrabajoCon": 402.1,
+    "mart.actor_prolifico_decada": 0.1,
+    "mart.decil_votos": 0.1,
+    "mart.ejemplo_separacion": 0.1,
+    "mart.elenco_fiel": 1.1,
+    "mart.genero_decada": 0.1,
+    "mart.mejor_decada_genero": 0.2,
+    "mart.nucleo_talento": 0.3,
+    "mart.numero_bacon": 26.0,
+    "mart.pelicula_puntaje": 1.0,
+    "mart.percentil_votos": 0.1,
+    "mart.top_colaboradores": 0.1,
+    "stg.name_basics": 34.3,
+    "stg.pelicula_filtro": 1.2,
+    "stg.persona_filtro": 7.3,
+    "stg.title_akas": 92.9,
+    "stg.title_basics": 1350.1,
+    "stg.title_crew": 2.8,
+    "stg.title_crew_completo": 0.0,
+    "stg.title_principals": 59.8,
+    "stg.title_ratings": 52.4
+  },
+  "grafo": {
+    "nodos_persona": 203547,
+    "nodos_pelicula": 49320,
+    "aristas_actuo_en": 460758,
+    "aristas_dirigio": 55073,
+    "aristas_trabajo_con": 4796004,
+    "pares_colaboradores": 2398002
+  },
+  "bacon": {
+    "distribucion": [
+      {
+        "grados": 0,
+        "personas": 1,
+        "pct_red": 0.0
+      },
+      {
+        "grados": 1,
+        "personas": 497,
+        "pct_red": 0.24
+      },
+      {
+        "grados": 2,
+        "personas": 27449,
+        "pct_red": 13.49
+      },
+      {
+        "grados": 3,
+        "personas": 105444,
+        "pct_red": 51.8
+      },
+      {
+        "grados": 4,
+        "personas": 56179,
+        "pct_red": 27.6
+      },
+      {
+        "grados": 5,
+        "personas": 6936,
+        "pct_red": 3.41
+      },
+      {
+        "grados": 6,
+        "personas": 536,
+        "pct_red": 0.26
+      },
+      {
+        "grados": 7,
+        "personas": 42,
+        "pct_red": 0.02
+      },
+      {
+        "grados": 8,
+        "personas": 18,
+        "pct_red": 0.01
+      }
+    ],
+    "alcanzados": 197101,
+    "pct_red_alcanzada": 96.83,
+    "pct_hasta_3_grados": 65.53,
+    "promedio_grados": 3.221
+  },
+  "busqueda": {
+    "full_text_instalado": 0,
+    "ejemplos": [
+      {
+        "consulta": "padrino",
+        "modo": "todas",
+        "peliculas_indice": 13,
+        "peliculas_like": 17,
+        "top_indice": [
+          "The Godfather (1972) ← «El Padrino»",
+          "The Godfather Part II (1974) ← «El padrino (2.ª parte)»",
+          "The Godfather Part III (1990) ← «El padrino (parte III)»",
+          "Gotti (2018) ← «Gotti - Il primo padrino»",
+          "Mafia! (1998) ← «¿Y dónde está el padrino?»"
+        ],
+        "top_like": [
+          "The Godfather (1972) ← «El Padrino»",
+          "The Godfather Part II (1974) ← «El padrino (2.ª parte)»",
+          "The Godfather Part III (1990) ← «El padrino (parte III)»",
+          "The Wedding Ringer (2015) ← «Alquiler de padrinos»",
+          "Gotti (2018) ← «Gotti - Il primo padrino»"
+        ]
+      },
+      {
+        "consulta": "amelie",
+        "modo": "todas",
+        "peliculas_indice": 3,
+        "peliculas_like": 7,
+        "top_indice": [
+          "Amélie (2001) ← «Amélie»",
+          "Little Amélie or the Character of Rain (2025) ← «A kis Amélie és az eső természete»",
+          "Happenstance (2000) ← «Amelie 2»"
+        ],
+        "top_like": [
+          "Amélie (2001) ← «Amélie»",
+          "Now, Voyager (1942) ← «Trzy kamelie»",
+          "Camille (1936) ← «Die Kameliendame»",
+          "Little Amélie or the Character of Rain (2025) ← «A kis Amélie és az eső természete»",
+          "Happenstance (2000) ← «Amelie 2»"
+        ]
+      },
+      {
+        "consulta": "señor anill*",
+        "modo": "todas",
+        "peliculas_indice": 5,
+        "peliculas_like": 5,
+        "top_indice": [
+          "The Lord of the Rings: The Fellowship of the Ring (2001) ← «El señor de los anillos: La comunidad del anillo»",
+          "The Lord of the Rings: The Return of the King (2003) ← «El señor de los anillos: El retorno del rey»",
+          "The Lord of the Rings: The Two Towers (2002) ← «El señor de los anillos: Las dos torres»",
+          "The Lord of the Rings: The War of the Rohirrim (2024) ← «El Señor de los Anillos: la Guerra de los Rohirrim»",
+          "The Lord of the Rings (1978) ← «El señor de los anillos»"
+        ],
+        "top_like": [
+          "The Lord of the Rings: The Fellowship of the Ring (2001) ← «El señor de los anillos: La comunidad del anillo»",
+          "The Lord of the Rings: The Return of the King (2003) ← «El señor de los anillos: El retorno del rey»",
+          "The Lord of the Rings: The Two Towers (2002) ← «El señor de los anillos: Las dos torres»",
+          "The Lord of the Rings: The War of the Rohirrim (2024) ← «El Señor de los Anillos: la Guerra de los Rohirrim»",
+          "The Lord of the Rings (1978) ← «El señor de los anillos»"
+        ]
+      },
+      {
+        "consulta": "war",
+        "modo": "todas",
+        "peliculas_indice": 420,
+        "peliculas_like": 1573,
+        "top_indice": [
+          "Star Wars: Episode IV - A New Hope (1977) ← «The War of the World»",
+          "Avengers: Endgame (2019) ← «Avengers: Infinity War - Part II»",
+          "Avengers: Infinity War (2018) ← «Avengers 3: Infinity War»",
+          "Captain America: The Winter Soldier (2014) ← «The first avenger 2: Second war»",
+          "Once Upon a Time in... Hollywood (2019) ← «Es war einmal in Hollywood»"
+        ],
+        "top_like": [
+          "Star Wars: Episode IV - A New Hope (1977) ← «Adventures of the Starkiller: Episode 1 - The Star Wars»",
+          "Star Wars: Episode V - The Empire Strikes Back (1980) ← «Star Wars : Episodio V - El imperio contraataca»",
+          "Avengers: Endgame (2019) ← «Avengers: Infinity War - Part II»",
+          "Avengers: Infinity War (2018) ← «Avengers 3: Infinity War»",
+          "Star Wars: Episode VI - Return of the Jedi (1983) ← «Star Wars 3: Jedi'nin Dönüşü»"
+        ]
+      },
+      {
+        "consulta": "ciudad de dios",
+        "modo": "libre",
+        "peliculas_indice": 16488,
+        "peliculas_like": 2,
+        "top_indice": [
+          "City of God (2002) ← «Cidade de Deus»",
+          "City of God: 10 Years Later (2013) ← «Cidade de Deus: 10 Anos Depois»",
+          "Priest (2011) ← «El sicario de Dios»",
+          "Machine Gun Preacher (2011) ← «El soldado de Dios»",
+          "Aguirre, the Wrath of God (1972) ← «Aguirre, a cólera de Deus»"
+        ],
+        "top_like": [
+          "City of God (2002) ← «Ciudad de Dios»",
+          "City of God: 10 Years Later (2013) ← «Ciudad de Dios: 10 años después»"
+        ]
+      }
+    ]
+  },
+  "rendimiento": [
+    {
+      "prueba": "1. Colaboradores directos",
+      "variante": "JOIN sobre dw.colaboracion (misma arista)",
+      "ms_mediana": 0.0,
+      "ms_min": 0,
+      "ms_max": 0,
+      "filas": 497,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "1. Colaboradores directos",
+      "variante": "MATCH sobre TrabajoCon (arista precalculada)",
+      "ms_mediana": 0.0,
+      "ms_min": 0,
+      "ms_max": 1,
+      "filas": 497,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "1. Colaboradores directos",
+      "variante": "MATCH bipartito Persona->Pelicula<-Persona",
+      "ms_mediana": 1.0,
+      "ms_min": 1,
+      "ms_max": 1,
+      "filas": 451,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "1. Colaboradores directos",
+      "variante": "JOIN relacional sobre dw.participacion",
+      "ms_mediana": 2.0,
+      "ms_min": 2,
+      "ms_max": 2,
+      "filas": 451,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "2. Red a 2 saltos",
+      "variante": "JOIN doble sobre dw.colaboracion",
+      "ms_mediana": 22.0,
+      "ms_min": 22,
+      "ms_max": 23,
+      "filas": 27946,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "2. Red a 2 saltos",
+      "variante": "MATCH p1->p2->p3",
+      "ms_mediana": 107.0,
+      "ms_min": 106,
+      "ms_max": 111,
+      "filas": 27946,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "2. Red a 2 saltos",
+      "variante": "CTE recursivo (profundidad 2)",
+      "ms_mediana": 437.0,
+      "ms_min": 432,
+      "ms_max": 443,
+      "filas": 27946,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "3. Grados de separación (Bacon -> Shah Rukh Khan)",
+      "variante": "BFS iterativo (WHILE + tabla de visitados)",
+      "ms_mediana": 1179.0,
+      "ms_min": 1148,
+      "ms_max": 1194,
+      "filas": 3,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "3. Grados de separación (Bacon -> Shah Rukh Khan)",
+      "variante": "SHORTEST_PATH (hasta 6 saltos)",
+      "ms_mediana": 2143.0,
+      "ms_min": 2125,
+      "ms_max": 2243,
+      "filas": 3,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "3. Grados de separación (Bacon -> Shah Rukh Khan)",
+      "variante": "CTE recursivo (sin memoria de visitados, tope 3)",
+      "ms_mediana": 62424.0,
+      "ms_min": 62220,
+      "ms_max": 62934,
+      "filas": 3,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "4. Búsqueda \"padrino\"",
+      "variante": "Índice invertido (palabra exacta)",
+      "ms_mediana": 3.0,
+      "ms_min": 2,
+      "ms_max": 3,
+      "filas": 13,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "4. Búsqueda \"padrino\"",
+      "variante": "LIKE '%padrino%'",
+      "ms_mediana": 880.0,
+      "ms_min": 875,
+      "ms_max": 893,
+      "filas": 17,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "5. Búsqueda \"war\"",
+      "variante": "Índice invertido (palabra exacta)",
+      "ms_mediana": 10.0,
+      "ms_min": 8,
+      "ms_max": 11,
+      "filas": 420,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "5. Búsqueda \"war\"",
+      "variante": "LIKE '%war%'",
+      "ms_mediana": 863.0,
+      "ms_min": 860,
+      "ms_max": 869,
+      "filas": 1573,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "6. Búsqueda \"señor anill*\"",
+      "variante": "Índice invertido (AND + prefijo)",
+      "ms_mediana": 2.0,
+      "ms_min": 2,
+      "ms_max": 3,
+      "filas": 5,
+      "repeticiones": 5
+    },
+    {
+      "prueba": "6. Búsqueda \"señor anill*\"",
+      "variante": "LIKE '%señor%anill%'",
+      "ms_mediana": 890.0,
+      "ms_min": 882,
+      "ms_max": 893,
+      "filas": 5,
+      "repeticiones": 5
+    }
+  ],
+  "controles": {
+    "total": 29,
+    "ok": 29
+  }
+}

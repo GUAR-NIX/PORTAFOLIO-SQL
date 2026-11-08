@@ -1,0 +1,4 @@
+﻿escenario,repeticiones,mediana_ms,min_ms,max_ms,filas_venta,filas_compra,filas_stock,cliente_cierres,cliente_aperturas,producto_cierres,producto_aperturas
+completa,5,2979.3,2245.8,3431.7,228265.0,8367.0,227.0,0.0,663.0,0.0,227.0
+incremental_sin_cambios,5,26.8,25.8,283.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+incremental_dia_tipico,5,106.5,103.9,129.2,210.0,0.0,5.0,5.0,5.0,5.0,5.0

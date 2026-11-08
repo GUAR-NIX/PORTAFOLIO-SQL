@@ -1,0 +1,31 @@
+Finalize GroupAggregate  (cost=91825.16..91919.71 rows=366 width=20) (actual time=17.896..22.087 rows=7 loops=1)
+  Group Key: fecha_vuelo
+  Buffers: shared hit=2464
+  ->  Gather Merge  (cost=91825.16..91910.56 rows=732 width=20) (actual time=17.891..22.079 rows=21 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=2464
+        ->  Sort  (cost=90825.13..90826.05 rows=366 width=20) (actual time=14.807..14.809 rows=7 loops=3)
+              Sort Key: fecha_vuelo
+              Sort Method: quicksort  Memory: 25kB
+              Buffers: shared hit=2464
+              Worker 0:  Sort Method: quicksort  Memory: 25kB
+              Worker 1:  Sort Method: quicksort  Memory: 25kB
+              ->  Partial HashAggregate  (cost=90805.89..90809.55 rows=366 width=20) (actual time=14.782..14.791 rows=7 loops=3)
+                    Group Key: fecha_vuelo
+                    Batches: 1  Memory Usage: 37kB
+                    Buffers: shared hit=2448
+                    Worker 0:  Batches: 1  Memory Usage: 37kB
+                    Worker 1:  Batches: 1  Memory Usage: 37kB
+                    ->  Parallel Bitmap Heap Scan on vuelo_plano  (cost=51.06..90351.04 rows=60646 width=6) (actual time=0.352..7.194 rows=48401 loops=3)
+                          Recheck Cond: ((fecha_vuelo >= '2024-07-15'::date) AND (fecha_vuelo <= '2024-07-21'::date))
+                          Rows Removed by Index Recheck: 2948
+                          Heap Blocks: lossy=1061
+                          Buffers: shared hit=2448
+                          ->  Bitmap Index Scan on lab_brin_fecha_32  (cost=0.00..14.68 rows=147123 width=0) (actual time=0.883..0.883 rows=24320 loops=1)
+                                Index Cond: ((fecha_vuelo >= '2024-07-15'::date) AND (fecha_vuelo <= '2024-07-21'::date))
+                                Buffers: shared hit=16
+Planning:
+  Buffers: shared hit=1
+Planning Time: 0.081 ms
+Execution Time: 22.125 ms

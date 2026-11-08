@@ -1,0 +1,16 @@
+control,esperado,obtenido,ok
+Cada partición mensual solo tiene fechas de su mes,0 filas fuera de su mes,0 filas fuera de su mes,True
+Cada vuelo en cuarentena tiene al menos un motivo,0 sin motivo,0 sin motivo,True
+Cadenas: cada paso > 0 sale del aeropuerto donde llegó el tramo anterior,0 pasos discontinuos,0 pasos discontinuos,True
+Cancelados sin horas reales,0 vuelos con hora real,0 vuelos con hora real,True
+Cifras de control = filas copiadas (por mes),0 diferencias,0 diferencias,True
+Copiadas = hecho + cuarentena (por mes),0 filas de diferencia,0 filas de diferencia,True
+COPY = staging tipado (por mes),0 diferencias,0 diferencias,True
+Índice parcial más pequeño que el B-tree completo,parcial < completo,991232 < 51683328,True
+Llegada programada UTC = salida UTC + duración programada,0 vuelos con diferencia,0 vuelos con diferencia,True
+Minutos por causa = retraso de llegada (llegadas con 15+ min),0 vuelos con diferencia,0 vuelos con diferencia,True
+Partición DEFAULT vacía,0 filas,0 filas,True
+Rendimiento: P1 con rango lee 1 partición,1 partición,1 particiones,True
+Rendimiento: todas las variantes de un experimento devuelven lo mismo,0 experimentos con checksums distintos,0 experimentos con checksums distintos,True
+Todos los meses cargados en estado OK,0 meses distintos de OK,0 meses distintos de OK,True
+Vista materializada = hecho (vuelos programados),7078250,7078250,True

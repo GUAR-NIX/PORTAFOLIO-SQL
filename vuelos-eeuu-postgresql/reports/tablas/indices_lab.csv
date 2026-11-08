@@ -1,0 +1,6 @@
+indice,tipo,columna,pages_per_range,segundos_creacion_mediana,bytes,mb,bytes_tabla
+lab_btree_distancia,B-tree,distancia_millas,,3.046,49643520,47.344,908066816
+lab_brin_distancia_32,BRIN,distancia_millas,32.0,0.537,106496,0.102,908066816
+lab_btree_fecha,B-tree,fecha_vuelo,,1.461,49233920,46.953,908066816
+lab_brin_fecha_32,BRIN,fecha_vuelo,32.0,0.369,106496,0.102,908066816
+lab_brin_fecha_128,BRIN,fecha_vuelo,128.0,0.334,40960,0.039,908066816

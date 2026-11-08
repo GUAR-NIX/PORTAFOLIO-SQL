@@ -1,0 +1,16 @@
+aerolinea,nombre,programados,pct_del_mercado,pct_puntuales,pct_cancelados,retraso_medio_llegada,min_retraso_por_vuelo,pct_minutos_causa_aerolinea,rango_puntualidad,percentil_puntualidad,rango_menos_cancelaciones
+YX,Republic Airline,301392,4.26,84.19,1.85,-1.81,10.00,24.7,1,1.000,11
+HA,Hawaiian Airlines Inc.,78529,1.11,83.58,1.05,4.25,8.68,47.7,2,0.929,3
+9E,Endeavor Air Inc.,200093,2.83,82.06,2.30,1.68,12.98,29.3,3,0.857,14
+DL,Delta Air Lines Inc.,1009072,14.26,81.81,0.91,3.65,13.18,44.2,4,0.786,2
+OO,SkyWest Airlines Inc.,744645,10.52,79.83,1.14,7.35,15.96,47.9,5,0.714,4
+UA,United Air Lines Inc.,760451,10.74,78.60,1.64,5.74,15.07,27.6,6,0.643,8
+WN,Southwest Airlines Co.,1418955,20.05,78.59,0.83,5.13,12.14,25.2,7,0.571,1
+MQ,Envoy Air,279947,3.96,77.83,1.42,6.45,14.27,21.3,8,0.500,5
+G4,Allegiant Air,117198,1.66,76.78,1.72,9.67,19.65,33.4,9,0.429,10
+OH,PSA Airlines Inc.,227968,3.22,76.76,1.65,10.02,18.81,27.1,10,0.357,9
+AS,Alaska Airlines Inc.,245819,3.47,76.19,1.96,4.47,12.16,25.9,11,0.286,13
+NK,Spirit Air Lines,261048,3.69,74.49,1.91,8.38,17.32,25.2,12,0.214,12
+B6,JetBlue Airways,240282,3.39,73.06,1.55,10.74,20.57,37.7,13,0.143,7
+AA,American Airlines Inc.,984234,13.91,72.51,1.55,15.28,22.98,31.4,14,0.071,6
+F9,Frontier Airlines Inc.,208617,2.95,69.50,2.32,15.25,23.24,25.2,15,0.000,15

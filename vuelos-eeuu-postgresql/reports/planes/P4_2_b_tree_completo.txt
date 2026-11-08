@@ -1,0 +1,9 @@
+GroupAggregate  (cost=0.42..403.90 rows=366 width=12) (actual time=0.030..0.805 rows=8 loops=1)
+  Group Key: fact_vuelo.fecha_vuelo
+  Buffers: shared hit=23
+  ->  Index Only Scan using fact_vuelo_2024_07_aerolinea_fecha_vuelo_cancelado_idx on fact_vuelo_2024_07 fact_vuelo  (cost=0.42..396.70 rows=708 width=4) (actual time=0.007..0.489 rows=5920 loops=1)
+        Index Cond: ((aerolinea = 'DL'::text) AND (fecha_vuelo >= '2024-07-18'::date) AND (fecha_vuelo <= '2024-07-25'::date) AND (cancelado = true))
+        Heap Fetches: 0
+        Buffers: shared hit=23
+Planning Time: 0.070 ms
+Execution Time: 0.814 ms

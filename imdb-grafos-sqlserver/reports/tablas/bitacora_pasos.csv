@@ -1,0 +1,22 @@
+paso,filas,ms
+dw.pelicula,49320.0,5381
+dw.calificacion,49320.0,735
+dw.pelicula_genero,114616.0,7105
+dw.persona,332341.0,1228
+dw.participacion (principals),968043.0,9667
+dw.participacion (crew),12613.0,3013
+dw.titulo_alternativo,1301680.0,3196
+grafo.Pelicula (NODE),49320.0,110
+grafo.Persona (NODE),203547.0,2072
+grafo.ActuoEn (EDGE),460758.0,4906
+grafo.Dirigio (EDGE),55073.0,829
+pares distintos de colaboradores,2398002.0,4401
+"grafo.TrabajoCon (EDGE, 2 sentidos)",4796004.0,43620
+busqueda.titulo,680894.0,3270
+busqueda.indice (índice invertido),2002680.0,46955
+mart analítica con ventanas,,5073
+mart.numero_bacon (SHORTEST_PATH),197101.0,34640
+mart.top_colaboradores (MATCH),100.0,991
+mart.elenco_fiel (MATCH),6575.0,1679
+mart.nucleo_talento (22 vueltas),10982.0,992
+mart.ejemplo_separacion,,8376

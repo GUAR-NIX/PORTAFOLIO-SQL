@@ -1,0 +1,11 @@
+orden,segmento,clientes,pct_clientes,monto,pct_monto,recencia_promedio,frecuencia_promedio,monto_promedio,accion_sugerida
+1,Campeones,838,0.1432,8599790.53,0.5257,8.9463,19.040572,10262.279868,"Recompensar, pedir reseñas, acceso anticipado a novedades"
+2,Leales,1150,0.1965,4641611.86,0.2837,66.365217,9.805217,4036.184226,Venta cruzada y programa de fidelidad
+3,Leales potenciales,707,0.1208,565681.56,0.0346,26.437057,2.557284,800.11536,Ofrecer membresía y recomendaciones personalizadas
+4,Nuevos,52,0.0089,10251.96,0.0006,12.096153,1.0,197.153076,Onboarding y segunda compra con incentivo
+5,Prometedores,111,0.019,20033.29,0.0012,37.576576,1.0,180.48009,Crear marca: contenido y ofertas de bajo costo
+6,Requieren atención,277,0.0473,323124.93,0.0198,110.483754,3.108303,1166.515992,Ofertas por tiempo limitado según historial
+7,Por dormirse,375,0.0641,156362.81,0.0096,108.285333,1.338666,416.967493,Reactivar con productos populares y descuentos
+8,En riesgo,741,0.1266,1009760.74,0.0617,368.887989,3.932523,1362.700053,Campaña de recuperación personalizada
+9,No se pueden perder,74,0.0126,508237.08,0.0311,331.351351,16.135135,6868.068648,Contacto directo: eran de los mejores clientes
+10,Hibernando,1527,0.2609,525180.66,0.0321,457.302554,1.257367,343.929705,Reactivación barata o dejar ir

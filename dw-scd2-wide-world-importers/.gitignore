@@ -1,0 +1,19 @@
+# Entorno y cachés
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.pytest_tmp*/
+.ipynb_checkpoints/
+.vscode/
+Thumbs.db
+desktop.ini
+
+# Respaldo oficial (127 MB): se baja con scripts/descargar_datos.py
+data/raw/*
+!data/raw/.gitkeep
+
+# Bitácoras de ejecución locales
+reports/*.log
+.env

@@ -1,0 +1,38 @@
+{
+  "dim_fecha": 6574,
+  "dim_cliente": 713,
+  "dim_producto": 327,
+  "dim_proveedor": 13,
+  "dim_empleado": 19,
+  "dim_ciudad": 37940,
+  "fact_venta": 228280,
+  "fact_venta_simuladas": 15,
+  "fact_compra": 8367,
+  "fact_stock_diario": 227,
+  "clientes_con_historia": 50,
+  "productos_con_historia": 100,
+  "controles_ok": 18,
+  "controles_falla": 0,
+  "scd2_demo": {
+    "clientes_cambiados_por_simulacion": 50,
+    "lineas_con_version_original": 18029,
+    "importe_con_version_original": 15563997.65,
+    "lineas_con_version_nueva": 15,
+    "importe_con_version_nueva": 827.25,
+    "ventas_reasignadas_entre_categorias": 15563997.65
+  },
+  "stock": {
+    "fecha_referencia": "2016-05-31",
+    "productos": 227,
+    "productos_con_ventas_365d": 227,
+    "mediana_dias_cobertura": 5452.7,
+    "mediana_rotacion_aproximada": 0.07,
+    "productos_cobertura_hasta_90_dias": 12,
+    "productos_sobre_stock_objetivo": 221
+  },
+  "tiempos_mediana_ms": {
+    "completa": 2979.3,
+    "incremental_sin_cambios": 26.8,
+    "incremental_dia_tipico": 106.5
+  }
+}

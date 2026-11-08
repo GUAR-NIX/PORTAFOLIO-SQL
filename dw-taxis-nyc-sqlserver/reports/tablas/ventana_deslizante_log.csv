@@ -1,0 +1,7 @@
+id,momento,operacion,limite,filas,ms,detalle
+1,2026-10-20 21:24:44.144,SPLIT,20250201,0,2,Partición vacía: solo metadatos
+2,2026-10-20 21:24:44.157,SWITCH OUT,20240101,2923191,3,dw.fact_viaje_archivo_202401
+3,2026-10-20 21:24:44.160,MERGE,20240101,0,1,Particiones vacías: solo metadatos
+4,2026-10-20 21:24:44.280,SPLIT,20240101,0,3,Partición vacía: solo metadatos
+5,2026-10-20 21:24:44.432,SWITCH IN,20240101,2923191,7,Restaurado desde dw.fact_viaje_archivo_202401
+6,2026-10-20 21:24:44.461,MERGE,20250201,0,1,Particiones vacías: solo metadatos

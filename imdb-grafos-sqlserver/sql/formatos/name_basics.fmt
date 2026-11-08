@@ -1,0 +1,8 @@
+14.0
+6
+1 SQLCHAR 0 12 "\t" 1 nconst Latin1_General_100_CI_AI_SC_UTF8
+2 SQLCHAR 0 400 "\t" 2 primaryName Latin1_General_100_CI_AI_SC_UTF8
+3 SQLCHAR 0 4 "\t" 3 birthYear Latin1_General_100_CI_AI_SC_UTF8
+4 SQLCHAR 0 4 "\t" 4 deathYear Latin1_General_100_CI_AI_SC_UTF8
+5 SQLCHAR 0 200 "\t" 5 primaryProfession Latin1_General_100_CI_AI_SC_UTF8
+6 SQLCHAR 0 200 "\n" 6 knownForTitles Latin1_General_100_CI_AI_SC_UTF8

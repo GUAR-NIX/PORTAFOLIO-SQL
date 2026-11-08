@@ -1,0 +1,8 @@
+GroupAggregate  (cost=0.43..6423.22 rows=366 width=20) (actual time=5.031..33.889 rows=7 loops=1)
+  Group Key: fecha_vuelo
+  Buffers: shared hit=2517
+  ->  Index Scan using lab_btree_fecha on vuelo_plano  (cost=0.43..5327.93 rows=145550 width=6) (actual time=0.013..15.825 rows=145204 loops=1)
+        Index Cond: ((fecha_vuelo >= '2024-07-15'::date) AND (fecha_vuelo <= '2024-07-21'::date))
+        Buffers: shared hit=2517
+Planning Time: 0.081 ms
+Execution Time: 33.912 ms

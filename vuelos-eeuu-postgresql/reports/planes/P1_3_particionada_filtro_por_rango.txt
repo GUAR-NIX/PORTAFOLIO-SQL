@@ -1,0 +1,24 @@
+Finalize GroupAggregate  (cost=16944.94..16948.89 rows=15 width=43) (actual time=72.112..77.725 rows=15 loops=1)
+  Group Key: fact_vuelo.aerolinea
+  Buffers: shared hit=10014
+  ->  Gather Merge  (cost=16944.94..16948.44 rows=30 width=43) (actual time=72.103..77.702 rows=45 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=10014
+        ->  Sort  (cost=15944.92..15944.95 rows=15 width=43) (actual time=69.325..69.327 rows=15 loops=3)
+              Sort Key: fact_vuelo.aerolinea
+              Sort Method: quicksort  Memory: 26kB
+              Buffers: shared hit=10014
+              Worker 0:  Sort Method: quicksort  Memory: 26kB
+              Worker 1:  Sort Method: quicksort  Memory: 26kB
+              ->  Partial HashAggregate  (cost=15944.47..15944.62 rows=15 width=43) (actual time=69.295..69.298 rows=15 loops=3)
+                    Group Key: fact_vuelo.aerolinea
+                    Batches: 1  Memory Usage: 24kB
+                    Buffers: shared hit=9998
+                    Worker 0:  Batches: 1  Memory Usage: 24kB
+                    Worker 1:  Batches: 1  Memory Usage: 24kB
+                    ->  Parallel Seq Scan on fact_vuelo_2024_07 fact_vuelo  (cost=0.00..13962.31 rows=264288 width=5) (actual time=0.010..38.131 rows=211430 loops=3)
+                          Filter: ((fecha_vuelo >= '2024-07-01'::date) AND (fecha_vuelo < '2024-08-01'::date))
+                          Buffers: shared hit=9998
+Planning Time: 0.129 ms
+Execution Time: 77.760 ms

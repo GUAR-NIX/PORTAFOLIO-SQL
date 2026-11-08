@@ -1,0 +1,22 @@
+# Datos crudos: Parquet (~680 MB) y CSV (~5 GB). Se bajan con scripts/descargar_datos.py
+data/raw/
+
+# Entorno y cachés
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.pytest_tmp*/
+.ipynb_checkpoints/
+.vscode/
+Thumbs.db
+desktop.ini
+
+# Errores de BULK INSERT y archivos de SSMS
+*.err
+*.ssmssqlproj
+*.bak
+
+# Power BI local
+*.pbix.bak

@@ -1,0 +1,30 @@
+Finalize GroupAggregate  (cost=156291.25..156295.05 rows=15 width=11) (actual time=304.086..308.862 rows=8 loops=1)
+  Group Key: aerolinea
+  Buffers: shared hit=5648 read=105216
+  I/O Timings: shared read=88.600
+  ->  Gather Merge  (cost=156291.25..156294.75 rows=30 width=11) (actual time=304.082..308.855 rows=24 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=5648 read=105216
+        I/O Timings: shared read=88.600
+        ->  Sort  (cost=155291.23..155291.27 rows=15 width=11) (actual time=301.165..301.166 rows=8 loops=3)
+              Sort Key: aerolinea
+              Sort Method: quicksort  Memory: 25kB
+              Buffers: shared hit=5648 read=105216
+              I/O Timings: shared read=88.600
+              Worker 0:  Sort Method: quicksort  Memory: 25kB
+              Worker 1:  Sort Method: quicksort  Memory: 25kB
+              ->  Partial HashAggregate  (cost=155290.79..155290.94 rows=15 width=11) (actual time=301.137..301.138 rows=8 loops=3)
+                    Group Key: aerolinea
+                    Batches: 1  Memory Usage: 24kB
+                    Buffers: shared hit=5632 read=105216
+                    I/O Timings: shared read=88.600
+                    Worker 0:  Batches: 1  Memory Usage: 24kB
+                    Worker 1:  Batches: 1  Memory Usage: 24kB
+                    ->  Parallel Seq Scan on vuelo_plano  (cost=0.00..155087.06 rows=40745 width=3) (actual time=0.090..295.295 rows=32640 loops=3)
+                          Filter: ((distancia_millas >= 2400) AND (distancia_millas <= 2500))
+                          Rows Removed by Filter: 2326776
+                          Buffers: shared hit=5632 read=105216
+                          I/O Timings: shared read=88.600
+Planning Time: 0.071 ms
+Execution Time: 308.893 ms

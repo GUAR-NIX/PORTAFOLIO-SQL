@@ -1,0 +1,7 @@
+id_punto,dias_ventana,etiqueta_ventana,filas_calificadas,pct_tabla,lecturas_heap_scan,lecturas_nocov_natural,operador_nocov_natural,lecturas_forzado_lookup,lecturas_covering_seek,lecturas_columnstore
+1,1,1 día,950,0.014,78325,558,Clustered Index Seek (rango de fechas),3678,558,2470
+2,7,7 días,10490,0.158,78325,4948,Clustered Index Seek (rango de fechas),34086,1013,2056
+3,14,14 días,22985,0.345,78325,10721,Clustered Index Seek (rango de fechas),73914,1013,2056
+4,30,30 días,48100,0.723,78325,21219,Clustered Index Seek (rango de fechas),153969,1013,3849
+5,60,60 días,108179,1.626,78325,47146,Clustered Index Seek (rango de fechas),345471,1013,7150
+6,91,91 días (trimestre),175748,2.641,78325,17144,Intersección de 2 índices,560847,1013,10166

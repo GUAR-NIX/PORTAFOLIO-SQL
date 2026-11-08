@@ -1,0 +1,50 @@
+Finalize GroupAggregate  (cost=185531.27..185535.33 rows=15 width=43) (actual time=878.326..892.362 rows=15 loops=1)
+  Group Key: fact_vuelo.aerolinea
+  Buffers: shared hit=110815
+  ->  Gather Merge  (cost=185531.27..185534.77 rows=30 width=19) (actual time=878.311..892.337 rows=45 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=110815
+        ->  Sort  (cost=184531.25..184531.28 rows=15 width=19) (actual time=874.803..874.807 rows=15 loops=3)
+              Sort Key: fact_vuelo.aerolinea
+              Sort Method: quicksort  Memory: 25kB
+              Buffers: shared hit=110815
+              Worker 0:  Sort Method: quicksort  Memory: 25kB
+              Worker 1:  Sort Method: quicksort  Memory: 25kB
+              ->  Partial HashAggregate  (cost=184530.80..184530.95 rows=15 width=19) (actual time=874.768..874.773 rows=15 loops=3)
+                    Group Key: fact_vuelo.aerolinea
+                    Batches: 1  Memory Usage: 24kB
+                    Buffers: shared hit=110799
+                    Worker 0:  Batches: 1  Memory Usage: 24kB
+                    Worker 1:  Batches: 1  Memory Usage: 24kB
+                    ->  Parallel Append  (cost=0.00..155038.07 rows=2949273 width=5) (actual time=0.007..502.454 rows=2359417 loops=3)
+                          Buffers: shared hit=110799
+                          ->  Parallel Seq Scan on fact_vuelo_2024_07 fact_vuelo_7  (cost=0.00..12640.88 rows=264288 width=5) (actual time=0.005..100.954 rows=634290 loops=1)
+                                Buffers: shared hit=9998
+                          ->  Parallel Seq Scan on fact_vuelo_2024_08 fact_vuelo_8  (cost=0.00..12283.00 rows=257900 width=5) (actual time=0.008..89.705 rows=618960 loops=1)
+                                Buffers: shared hit=9704
+                          ->  Parallel Seq Scan on fact_vuelo_2024_06 fact_vuelo_6  (cost=0.00..12159.81 rows=254581 width=5) (actual time=0.016..99.182 rows=610994 loops=1)
+                                Buffers: shared hit=9614
+                          ->  Parallel Seq Scan on fact_vuelo_2024_05 fact_vuelo_5  (cost=0.00..12150.58 rows=254058 width=5) (actual time=0.008..89.618 rows=609738 loops=1)
+                                Buffers: shared hit=9610
+                          ->  Parallel Seq Scan on fact_vuelo_2024_10 fact_vuelo_10  (cost=0.00..12115.51 rows=256451 width=5) (actual time=0.004..89.202 rows=615483 loops=1)
+                                Buffers: shared hit=9551
+                          ->  Parallel Seq Scan on fact_vuelo_2024_03 fact_vuelo_3  (cost=0.00..11738.07 rows=246507 width=5) (actual time=0.015..82.794 rows=591616 loops=1)
+                                Buffers: shared hit=9273
+                          ->  Parallel Seq Scan on fact_vuelo_2024_12 fact_vuelo_12  (cost=0.00..11723.69 rows=246069 width=5) (actual time=0.007..35.726 rows=196855 loops=3)
+                                Buffers: shared hit=9263
+                          ->  Parallel Seq Scan on fact_vuelo_2024_04 fact_vuelo_4  (cost=0.00..11532.72 rows=242572 width=5) (actual time=0.019..51.022 rows=291086 loops=2)
+                                Buffers: shared hit=9107
+                          ->  Parallel Seq Scan on fact_vuelo_2024_09 fact_vuelo_9  (cost=0.00..11504.58 rows=242758 width=5) (actual time=0.004..86.383 rows=582618 loops=1)
+                                Buffers: shared hit=9077
+                          ->  Parallel Seq Scan on fact_vuelo_2024_11 fact_vuelo_11  (cost=0.00..11355.41 rows=239741 width=5) (actual time=0.005..82.592 rows=575379 loops=1)
+                                Buffers: shared hit=8958
+                          ->  Parallel Seq Scan on fact_vuelo_2024_01 fact_vuelo_1  (cost=0.00..10831.10 rows=228010 width=5) (actual time=0.004..87.206 rows=547225 loops=1)
+                                Buffers: shared hit=8551
+                          ->  Parallel Seq Scan on fact_vuelo_2024_02 fact_vuelo_2  (cost=0.00..10256.37 rows=216337 width=5) (actual time=0.005..83.176 rows=519209 loops=1)
+                                Buffers: shared hit=8093
+                          ->  Parallel Seq Scan on fact_vuelo_fuera_de_rango fact_vuelo_13  (cost=0.00..0.00 rows=1 width=34) (actual time=0.001..0.001 rows=0 loops=1)
+Planning:
+  Buffers: shared hit=4
+Planning Time: 0.238 ms
+Execution Time: 892.409 ms

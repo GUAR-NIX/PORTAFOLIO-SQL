@@ -1,0 +1,41 @@
+orden,categoria,control,valor_observado,valor_esperado,estado
+1,Reconciliación,Filas cargadas por BULK INSERT = filas en limpio.viaje (ninguna se pierde),0.0,0.0,OK
+2,Reconciliación,limpio.viaje = válidas + excluidas,0.0,0.0,OK
+3,Reconciliación,dw.fact_viaje tiene exactamente las filas válidas,0.0,0.0,OK
+4,Reconciliación,Las 4 tablas del laboratorio tienen exactamente las filas válidas,0.0,0.0,OK
+5,Reconciliación,"Suma de duración idéntica en limpio, dw, rowstore y columnstore",0.0,0.0,OK
+6,Calidad,Cero viajes con duración <= 0 o > 86.400 s en dw.fact_viaje,0.0,0.0,OK
+7,Calidad,Cero falsos arranques (< 60 s en la misma estación) en dw.fact_viaje,0.0,0.0,OK
+8,Dimensiones,Calendario de enero–marzo 2024 completo en dw.dim_fecha (91 días),91.0,91.0,OK
+9,Dimensiones,Cero claves foráneas huérfanas en dw.fact_viaje,0.0,0.0,OK
+10,Dimensiones,Cero ride_id duplicados entre los viajes válidos,0.0,0.0,OK
+11,Laboratorio,"Serie diaria densa: estaciones × 91 días, sin huecos",0.0,0.0,OK
+12,Almacenamiento,Columnstore comprime al menos 3 veces frente al heap,3.24,3.0,OK
+13,Equivalencia SQL,E1 · Estación más activa en marzo: mismas filas y checksum en sus 3 variantes,1.0,1.0,OK
+14,Equivalencia SQL,E2 · Filtro de una semana (SARGability): mismas filas y checksum en sus 4 variantes,1.0,1.0,OK
+15,Equivalencia SQL,E3 · Agregación del trimestre completo: mismas filas y checksum en sus 3 variantes,1.0,1.0,OK
+16,Equivalencia SQL,E4 · Índice filtrado (ocasionales >= 30 min): mismas filas y checksum en sus 2 variantes,1.0,1.0,OK
+17,Equivalencia SQL,E5 · Parameter sniffing (duración mínima): mismas filas y checksum en sus 3 variantes,1.0,1.0,OK
+18,Equivalencia SQL,E6 · Media móvil de 7 días por estación: mismas filas y checksum en sus 2 variantes,1.0,1.0,OK
+19,Equivalencia SQL,E7 · Últimos 10 viajes de 10 estaciones: mismas filas y checksum en sus 4 variantes,1.0,1.0,OK
+20,Equivalencia SQL,E8 · Suma acumulada por estación y día: mismas filas y checksum en sus 2 variantes,1.0,1.0,OK
+21,Equivalencia SQL,E9 · Regresión y plan forzado (Query Store): mismas filas y checksum en sus 3 variantes,1.0,1.0,OK
+22,Equivalencia SQL,Cada variante devuelve el mismo resultado en todas sus corridas (frío y caliente),0.0,0.0,OK
+23,Equivalencia SQL,E6: subconsulta y AVG() OVER coinciden fila a fila (EXCEPT en ambos sentidos),0.0,0.0,OK
+24,Rendimiento,E1: el índice cubriente lee menos del 5 % de las páginas del heap y no hace Key Lookup,0.08,5.0,OK
+25,Rendimiento,E2: solo índice + rango SARGable baja las lecturas a menos del 10 %,7.5,10.0,OK
+26,Rendimiento,E2: reescritura sola o índice solo no bajan las lecturas (siguen >= 90 % del heap),100.0,90.0,OK
+27,Rendimiento,E3: el columnstore se ejecuta en modo Batch,1.0,1.0,OK
+28,Rendimiento,E3: el columnstore lee menos del 30 % de las páginas del rowstore,2.37,30.0,OK
+29,Rendimiento,E4: el índice filtrado lee menos del 10 % de las páginas,0.82,10.0,OK
+30,Rendimiento,E5: el plan reutilizado (sniffing) usa Key Lookup y RECOMPILE no,1.0,1.0,OK
+31,Rendimiento,E5: RECOMPILE lee menos páginas que el plan reutilizado,2.88,100.0,OK
+32,Rendimiento,E6: la función de ventana lee menos páginas que la subconsulta,0.1,100.0,OK
+33,Rendimiento,E7: índice + CROSS APPLY lee menos del 1 % de las páginas,0.04,1.0,OK
+34,Rendimiento,E8: la operación en conjunto tarda menos que el cursor (mediana en caliente),5.01,100.0,OK
+35,Query Store,E9: la regresión provocada genera un plan con Key Lookup,1.0,1.0,OK
+36,Query Store,E9: tras sp_query_store_force_plan se usa el plan original (forzado y sin Key Lookup),1.0,1.0,OK
+37,Query Store,E9: el plan forzado lee menos páginas que el plan de la regresión,2.88,100.0,OK
+38,Tipping point,Curva completa: 6 ventanas de 1 a 91 días,6.0,6.0,OK
+39,Tipping point,El Key Lookup forzado gana al heap en 1 día y pierde en 91 días,1.0,1.0,OK
+40,Query Store,Query Store registró todas las consultas etiquetadas del laboratorio,22.0,22.0,OK

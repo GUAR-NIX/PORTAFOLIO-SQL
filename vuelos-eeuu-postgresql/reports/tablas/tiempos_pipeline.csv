@@ -1,0 +1,15 @@
+paso,segundos
+docker compose up,8.4
+descarga,8.6
+01_esquemas.sql,0.6
+02_staging_y_carga.sql,0.5
+carga mensual con COPY,119.7
+03_referencias.sql,0.5
+04_modelo_estrella.sql,15.6
+05_calidad_y_carga_dw.sql,294.5
+06_indices_y_vista.sql,22.7
+07_analisis.sql,20.9
+08_cadenas_retraso.sql,78.6
+09_laboratorio_brin.sql,62.0
+10_rendimiento.sql,75.5
+11_verificaciones.sql,24.5

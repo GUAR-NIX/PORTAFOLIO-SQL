@@ -1,0 +1,22 @@
+# Datos crudos de IMDb (~11 GB; se descargan con scripts/descargar_datos.py).
+# La licencia de IMDb no permite redistribuirlos: nunca se versionan.
+data/raw/
+data/errores/
+
+# Entorno, cachés y bitácoras locales (ancladas a la raíz: reports/logs/ sí se versionaría)
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.pytest_tmp*/
+.ipynb_checkpoints/
+.vscode/
+Thumbs.db
+desktop.ini
+/logs/
+
+# Archivos de SSMS / Power BI locales
+*.err
+*.bak
+*.pbix.bak

@@ -1,0 +1,85 @@
+periodo,regla,regla_nombre,viajes,pct_del_archivo
+2024-01,R06,Velocidad imposible,1071,0.036
+2024-01,R01,Fecha fuera del periodo,18,0.001
+2024-01,R04,Importe negativo,37557,1.267
+2024-01,R03,Duración excesiva,1772,0.06
+2024-01,R05,Distancia imposible,31,0.001
+2024-01,R07,Tarifa imposible,114,0.004
+2024-01,R02,Duración no positiva,870,0.029
+2024-02,R06,Velocidad imposible,899,0.03
+2024-02,R01,Fecha fuera del periodo,15,0.0
+2024-02,R04,Importe negativo,40727,1.354
+2024-02,R03,Duración excesiva,1736,0.058
+2024-02,R05,Distancia imposible,43,0.001
+2024-02,R07,Tarifa imposible,140,0.005
+2024-02,R02,Duración no positiva,803,0.027
+2024-03,R06,Velocidad imposible,1130,0.032
+2024-03,R01,Fecha fuera del periodo,23,0.001
+2024-03,R04,Importe negativo,58592,1.635
+2024-03,R03,Duración excesiva,1926,0.054
+2024-03,R05,Distancia imposible,92,0.003
+2024-03,R07,Tarifa imposible,106,0.003
+2024-03,R02,Duración no positiva,1128,0.031
+2024-04,R06,Velocidad imposible,1014,0.029
+2024-04,R01,Fecha fuera del periodo,9,0.0
+2024-04,R04,Importe negativo,57723,1.643
+2024-04,R03,Duración excesiva,1979,0.056
+2024-04,R05,Distancia imposible,117,0.003
+2024-04,R07,Tarifa imposible,113,0.003
+2024-04,R02,Duración no positiva,1089,0.031
+2024-05,R06,Velocidad imposible,1042,0.028
+2024-05,R01,Fecha fuera del periodo,33,0.001
+2024-05,R04,Importe negativo,60123,1.615
+2024-05,R03,Duración excesiva,1978,0.053
+2024-05,R05,Distancia imposible,112,0.003
+2024-05,R07,Tarifa imposible,135,0.004
+2024-05,R02,Duración no positiva,1147,0.031
+2024-06,R06,Velocidad imposible,990,0.028
+2024-06,R01,Fecha fuera del periodo,51,0.001
+2024-06,R04,Importe negativo,61904,1.749
+2024-06,R03,Duración excesiva,1944,0.055
+2024-06,R05,Distancia imposible,122,0.003
+2024-06,R07,Tarifa imposible,129,0.004
+2024-06,R02,Duración no positiva,1140,0.032
+2024-07,R06,Velocidad imposible,1007,0.033
+2024-07,R01,Fecha fuera del periodo,47,0.002
+2024-07,R04,Importe negativo,58829,1.912
+2024-07,R03,Duración excesiva,1772,0.058
+2024-07,R05,Distancia imposible,88,0.003
+2024-07,R07,Tarifa imposible,165,0.005
+2024-07,R02,Duración no positiva,1068,0.035
+2024-08,R06,Velocidad imposible,965,0.032
+2024-08,R01,Fecha fuera del periodo,51,0.002
+2024-08,R04,Importe negativo,58439,1.962
+2024-08,R03,Duración excesiva,1732,0.058
+2024-08,R05,Distancia imposible,81,0.003
+2024-08,R07,Tarifa imposible,220,0.007
+2024-08,R02,Duración no positiva,1018,0.034
+2024-09,R06,Velocidad imposible,1073,0.03
+2024-09,R01,Fecha fuera del periodo,49,0.001
+2024-09,R04,Importe negativo,73407,2.021
+2024-09,R03,Duración excesiva,1646,0.045
+2024-09,R05,Distancia imposible,114,0.003
+2024-09,R07,Tarifa imposible,192,0.005
+2024-09,R02,Duración no positiva,1161,0.032
+2024-10,R06,Velocidad imposible,995,0.026
+2024-10,R01,Fecha fuera del periodo,40,0.001
+2024-10,R04,Importe negativo,75679,1.974
+2024-10,R03,Duración excesiva,1757,0.046
+2024-10,R05,Distancia imposible,89,0.002
+2024-10,R07,Tarifa imposible,165,0.004
+2024-10,R02,Duración no positiva,1002,0.026
+2024-11,R06,Velocidad imposible,904,0.025
+2024-11,R01,Fecha fuera del periodo,50,0.001
+2024-11,R04,Importe negativo,71744,1.968
+2024-11,R03,Duración excesiva,1850,0.051
+2024-11,R05,Distancia imposible,97,0.003
+2024-11,R07,Tarifa imposible,160,0.004
+2024-11,R02,Duración no positiva,1861,0.051
+2024-12,R06,Velocidad imposible,966,0.026
+2024-12,R01,Fecha fuera del periodo,34,0.001
+2024-12,R04,Importe negativo,79008,2.154
+2024-12,R03,Duración excesiva,1902,0.052
+2024-12,R05,Distancia imposible,87,0.002
+2024-12,R07,Tarifa imposible,226,0.006
+2024-12,R02,Duración no positiva,1223,0.033

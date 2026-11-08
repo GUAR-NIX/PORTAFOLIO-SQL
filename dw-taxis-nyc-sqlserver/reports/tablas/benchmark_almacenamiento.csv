@@ -1,0 +1,19 @@
+consulta,descripcion,almacenamiento,ms_frio,ms_caliente,reservado_mb,bytes_por_fila
+C1,Viajes e ingreso por mes (agregación total),COLUMNSTORE,1768,800,1162.2,30.2
+C1,Viajes e ingreso por mes (agregación total),ROWSTORE,13265,14532,3952.3,102.6
+C1,Viajes e ingreso por mes (agregación total),ROWSTORE PAGE,21726,19875,1849.8,48.0
+C2,Propina % por tipo de pago,COLUMNSTORE,2125,452,1162.2,30.2
+C2,Propina % por tipo de pago,ROWSTORE,15540,13289,3952.3,102.6
+C2,Propina % por tipo de pago,ROWSTORE PAGE,27676,20307,1849.8,48.0
+C3,Top 10 rutas origen-destino,COLUMNSTORE,4316,1329,1162.2,30.2
+C3,Top 10 rutas origen-destino,ROWSTORE,11303,10061,3952.3,102.6
+C3,Top 10 rutas origen-destino,ROWSTORE PAGE,24749,16633,1849.8,48.0
+C4,"Horas pico: join con dim_fecha, día × hora",COLUMNSTORE,2134,949,1162.2,30.2
+C4,"Horas pico: join con dim_fecha, día × hora",ROWSTORE,14290,14514,3952.3,102.6
+C4,"Horas pico: join con dim_fecha, día × hora",ROWSTORE PAGE,19430,18733,1849.8,48.0
+C5,Un mes (julio): filtro por la clave de partición,COLUMNSTORE,73,36,1162.2,30.2
+C5,Un mes (julio): filtro por la clave de partición,ROWSTORE,745,631,3952.3,102.6
+C5,Un mes (julio): filtro por la clave de partición,ROWSTORE PAGE,1211,1040,1849.8,48.0
+C6,Dos horas del 4 de julio: filtro por recogida,COLUMNSTORE,1386,67,1162.2,30.2
+C6,Dos horas del 4 de julio: filtro por recogida,ROWSTORE,4591,4040,3952.3,102.6
+C6,Dos horas del 4 de julio: filtro por recogida,ROWSTORE PAGE,4441,3978,1849.8,48.0

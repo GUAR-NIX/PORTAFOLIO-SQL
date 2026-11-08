@@ -1,0 +1,17 @@
+prueba,variante,ms_mediana,ms_min,ms_max,filas,repeticiones
+1. Colaboradores directos,JOIN sobre dw.colaboracion (misma arista),0.0,0,0,497,5
+1. Colaboradores directos,MATCH sobre TrabajoCon (arista precalculada),0.0,0,1,497,5
+1. Colaboradores directos,MATCH bipartito Persona->Pelicula<-Persona,1.0,1,1,451,5
+1. Colaboradores directos,JOIN relacional sobre dw.participacion,2.0,2,2,451,5
+2. Red a 2 saltos,JOIN doble sobre dw.colaboracion,22.0,22,23,27946,5
+2. Red a 2 saltos,MATCH p1->p2->p3,107.0,106,111,27946,5
+2. Red a 2 saltos,CTE recursivo (profundidad 2),437.0,432,443,27946,5
+3. Grados de separación (Bacon -> Shah Rukh Khan),BFS iterativo (WHILE + tabla de visitados),1179.0,1148,1194,3,5
+3. Grados de separación (Bacon -> Shah Rukh Khan),SHORTEST_PATH (hasta 6 saltos),2143.0,2125,2243,3,5
+3. Grados de separación (Bacon -> Shah Rukh Khan),"CTE recursivo (sin memoria de visitados, tope 3)",62424.0,62220,62934,3,5
+"4. Búsqueda ""padrino""",Índice invertido (palabra exacta),3.0,2,3,13,5
+"4. Búsqueda ""padrino""",LIKE '%padrino%',880.0,875,893,17,5
+"5. Búsqueda ""war""",Índice invertido (palabra exacta),10.0,8,11,420,5
+"5. Búsqueda ""war""",LIKE '%war%',863.0,860,869,1573,5
+"6. Búsqueda ""señor anill*""",Índice invertido (AND + prefijo),2.0,2,3,5,5
+"6. Búsqueda ""señor anill*""",LIKE '%señor%anill%',890.0,882,893,5,5

@@ -1,0 +1,22 @@
+# Entorno virtual y caché de Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.pytest_tmp*/
+.ipynb_checkpoints/
+.ruff_cache/
+
+# Datos crudos de BTS (ZIP mensuales de ~30 MB) y bitácoras locales
+data/raw/
+/data/*.log
+*.zip
+*.part
+
+# Sistema operativo e IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

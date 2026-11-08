@@ -1,0 +1,71 @@
+Finalize GroupAggregate  (cost=170787.06..170791.86 rows=15 width=43) (actual time=1011.843..1032.827 rows=15 loops=1)
+  Group Key: fact_vuelo.aerolinea
+  Buffers: shared hit=110913
+  ->  Gather Merge  (cost=170787.06..170791.41 rows=30 width=43) (actual time=1011.830..1032.806 rows=15 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=110913
+        ->  Partial GroupAggregate  (cost=169787.04..169787.92 rows=15 width=43) (actual time=834.166..870.725 rows=5 loops=3)
+              Group Key: fact_vuelo.aerolinea
+              Buffers: shared hit=110913
+              ->  Sort  (cost=169787.04..169787.22 rows=73 width=5) (actual time=832.773..849.372 rows=211430 loops=3)
+                    Sort Key: fact_vuelo.aerolinea
+                    Sort Method: quicksort  Memory: 25kB
+                    Buffers: shared hit=110913
+                    Worker 0:  Sort Method: quicksort  Memory: 25kB
+                    Worker 1:  Sort Method: quicksort  Memory: 39443kB
+                    ->  Parallel Append  (cost=0.00..169784.78 rows=73 width=5) (actual time=535.475..778.035 rows=211430 loops=3)
+                          Buffers: shared hit=110799
+                          ->  Parallel Seq Scan on fact_vuelo_2024_07 fact_vuelo_7  (cost=0.00..15283.75 rows=7 width=5) (actual time=0.023..311.187 rows=634290 loops=1)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Buffers: shared hit=9998
+                          ->  Parallel Seq Scan on fact_vuelo_2024_08 fact_vuelo_8  (cost=0.00..14862.00 rows=6 width=5) (actual time=177.098..177.099 rows=0 loops=1)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Rows Removed by Filter: 618960
+                                Buffers: shared hit=9704
+                          ->  Parallel Seq Scan on fact_vuelo_2024_06 fact_vuelo_6  (cost=0.00..14705.62 rows=6 width=5) (actual time=174.989..174.989 rows=0 loops=1)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Rows Removed by Filter: 610994
+                                Buffers: shared hit=9614
+                          ->  Parallel Seq Scan on fact_vuelo_2024_05 fact_vuelo_5  (cost=0.00..14691.15 rows=6 width=5) (actual time=193.165..193.166 rows=0 loops=1)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Rows Removed by Filter: 609738
+                                Buffers: shared hit=9610
+                          ->  Parallel Seq Scan on fact_vuelo_2024_10 fact_vuelo_10  (cost=0.00..14680.03 rows=6 width=5) (actual time=205.166..205.167 rows=0 loops=1)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Rows Removed by Filter: 615483
+                                Buffers: shared hit=9551
+                          ->  Parallel Seq Scan on fact_vuelo_2024_03 fact_vuelo_3  (cost=0.00..14203.13 rows=6 width=5) (actual time=182.914..182.914 rows=0 loops=1)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Rows Removed by Filter: 591616
+                                Buffers: shared hit=9273
+                          ->  Parallel Seq Scan on fact_vuelo_2024_12 fact_vuelo_12  (cost=0.00..14184.38 rows=6 width=5) (actual time=64.509..64.509 rows=0 loops=3)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Rows Removed by Filter: 196855
+                                Buffers: shared hit=9263
+                          ->  Parallel Seq Scan on fact_vuelo_2024_04 fact_vuelo_4  (cost=0.00..13958.43 rows=6 width=5) (actual time=75.078..75.078 rows=0 loops=2)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Rows Removed by Filter: 291086
+                                Buffers: shared hit=9107
+                          ->  Parallel Seq Scan on fact_vuelo_2024_09 fact_vuelo_9  (cost=0.00..13932.15 rows=6 width=5) (actual time=146.385..146.385 rows=0 loops=1)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Rows Removed by Filter: 582618
+                                Buffers: shared hit=9077
+                          ->  Parallel Seq Scan on fact_vuelo_2024_11 fact_vuelo_11  (cost=0.00..13752.83 rows=6 width=5) (actual time=227.182..227.182 rows=0 loops=1)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Rows Removed by Filter: 575379
+                                Buffers: shared hit=8958
+                          ->  Parallel Seq Scan on fact_vuelo_2024_01 fact_vuelo_1  (cost=0.00..13111.21 rows=6 width=5) (actual time=185.413..185.413 rows=0 loops=1)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Rows Removed by Filter: 547225
+                                Buffers: shared hit=8551
+                          ->  Parallel Seq Scan on fact_vuelo_2024_02 fact_vuelo_2  (cost=0.00..12419.74 rows=5 width=5) (actual time=146.081..146.081 rows=0 loops=1)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+                                Rows Removed by Filter: 519209
+                                Buffers: shared hit=8093
+                          ->  Parallel Seq Scan on fact_vuelo_fuera_de_rango fact_vuelo_13  (cost=0.00..0.00 rows=1 width=34) (actual time=0.002..0.002 rows=0 loops=1)
+                                Filter: ((EXTRACT(year FROM fecha_vuelo) = '2024'::numeric) AND (EXTRACT(month FROM fecha_vuelo) = '7'::numeric))
+Planning:
+  Buffers: shared hit=4
+Planning Time: 0.408 ms
+Execution Time: 1032.886 ms

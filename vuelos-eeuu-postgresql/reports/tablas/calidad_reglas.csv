@@ -1,0 +1,18 @@
+codigo,tipo,descripcion,vuelos,pct
+Q_ZONA_INCONSISTENTE,cuarentena,Salida programada + duración programada no da la llegada programada en la zona del destino,694,0.0098
+Q_RETRASO_INCOHERENTE,cuarentena,El retraso informado no es la diferencia entre la hora real y la programada,115,0.0016
+Q_VELOCIDAD_IMPOSIBLE,cuarentena,Velocidad media en el aire > 800 mph o < 50 mph,5,0.0001
+Q_CAUSAS_NO_SUMAN,cuarentena,Llegada con 15+ min de retraso cuyas cinco causas no suman el retraso,2,0.0000
+Q_CAMPO_CLAVE_VACIO,cuarentena,"Sin número de vuelo, hora de salida programada o duración programada",2,0.0000
+Q_TIEMPO_IMPOSIBLE,cuarentena,"Tiempo en aire <= 0, duración real < tiempo en aire, taxi negativo, distancia <= 0 u origen = destino",1,0.0000
+Q_SIN_DATOS_LLEGADA,cuarentena,Vuelo operado y no desviado sin retraso de llegada o sin tiempo en aire,0,0.0000
+Q_SIN_ZONA,cuarentena,Origen o destino sin zona horaria IANA válida,0,0.0000
+Q_DUPLICADO,cuarentena,"Misma fecha, aerolínea, número de vuelo, origen y hora programada que otro vuelo",0,0.0000
+M_CRUZA_MEDIANOCHE,marca,La llegada programada cae en el día siguiente (hora local del destino),232438,3.2835
+M_CANCELADO,marca,Vuelo cancelado (sin horas reales ni retrasos),96315,1.3606
+M_SALE_DIA_SIGUIENTE,marca,"Por el retraso, la salida real ocurre después de la medianoche",42366,0.5985
+M_DESVIADO,marca,Vuelo desviado a otro aeropuerto (sin retraso de llegada),17499,0.2472
+M_HORA_2400,marca,Hora real escrita como 2400: es las 00:00 del día siguiente,8836,0.1248
+M_RETRASO_EXTREMO,marca,Retraso de salida o de llegada mayor a 12 horas,7815,0.1104
+M_CAMBIO_HORA_EN_VUELO,marca,El cambio de horario de verano ocurre mientras el avión está en el aire,509,0.0072
+M_SIN_MATRICULA,marca,Vuelo operado sin matrícula del avión (no sirve para el análisis en cadena),0,0.0000

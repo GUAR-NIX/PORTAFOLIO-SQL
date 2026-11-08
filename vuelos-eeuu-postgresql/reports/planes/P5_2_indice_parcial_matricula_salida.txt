@@ -1,0 +1,46 @@
+Merge Append  (cost=5.46..3744.22 rows=3297 width=20) (actual time=0.150..3.743 rows=3290 loops=1)
+  Sort Key: fact_vuelo.salida_prog_utc
+  Buffers: shared hit=3340
+  ->  Index Scan using fact_vuelo_2024_01_matricula_salida_prog_utc_idx on fact_vuelo_2024_01 fact_vuelo_1  (cost=0.42..302.18 rows=272 width=20) (actual time=0.013..0.327 rows=307 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=312
+  ->  Index Scan using fact_vuelo_2024_02_matricula_salida_prog_utc_idx on fact_vuelo_2024_02 fact_vuelo_2  (cost=0.42..267.54 rows=241 width=20) (actual time=0.014..0.288 rows=272 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=276
+  ->  Index Scan using fact_vuelo_2024_03_matricula_salida_prog_utc_idx on fact_vuelo_2024_03 fact_vuelo_3  (cost=0.42..346.90 rows=313 width=20) (actual time=0.013..0.320 rows=307 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=311
+  ->  Index Scan using fact_vuelo_2024_04_matricula_salida_prog_utc_idx on fact_vuelo_2024_04 fact_vuelo_4  (cost=0.42..341.31 rows=308 width=20) (actual time=0.015..0.276 rows=273 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=277
+  ->  Index Scan using fact_vuelo_2024_05_matricula_salida_prog_utc_idx on fact_vuelo_2024_05 fact_vuelo_5  (cost=0.42..302.16 rows=271 width=20) (actual time=0.014..0.279 rows=248 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=252
+  ->  Index Scan using fact_vuelo_2024_06_matricula_salida_prog_utc_idx on fact_vuelo_2024_06 fact_vuelo_6  (cost=0.42..246.29 rows=221 width=20) (actual time=0.009..0.240 rows=233 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=237
+  ->  Index Scan using fact_vuelo_2024_07_matricula_salida_prog_utc_idx on fact_vuelo_2024_07 fact_vuelo_7  (cost=0.42..297.70 rows=267 width=20) (actual time=0.012..0.289 rows=293 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=297
+  ->  Index Scan using fact_vuelo_2024_08_matricula_salida_prog_utc_idx on fact_vuelo_2024_08 fact_vuelo_8  (cost=0.42..304.40 rows=273 width=20) (actual time=0.017..0.333 rows=290 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=293
+  ->  Index Scan using fact_vuelo_2024_09_matricula_salida_prog_utc_idx on fact_vuelo_2024_09 fact_vuelo_9  (cost=0.42..394.97 rows=357 width=20) (actual time=0.010..0.355 rows=294 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=298
+  ->  Index Scan using fact_vuelo_2024_10_matricula_salida_prog_utc_idx on fact_vuelo_2024_10 fact_vuelo_10  (cost=0.42..237.35 rows=213 width=20) (actual time=0.010..0.259 rows=258 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=262
+  ->  Index Scan using fact_vuelo_2024_11_matricula_salida_prog_utc_idx on fact_vuelo_2024_11 fact_vuelo_11  (cost=0.42..317.83 rows=286 width=20) (actual time=0.011..0.261 rows=240 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=244
+  ->  Index Scan using fact_vuelo_2024_12_matricula_salida_prog_utc_idx on fact_vuelo_2024_12 fact_vuelo_12  (cost=0.42..305.52 rows=274 width=20) (actual time=0.011..0.284 rows=275 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=279
+  ->  Index Scan using fact_vuelo_fuera_de_rango_matricula_salida_prog_utc_idx on fact_vuelo_fuera_de_rango fact_vuelo_13  (cost=0.12..2.34 rows=1 width=20) (actual time=0.001..0.001 rows=0 loops=1)
+        Index Cond: (matricula = 'N485HA'::text)
+        Buffers: shared hit=2
+Planning:
+  Buffers: shared hit=4
+Planning Time: 0.425 ms
+Execution Time: 3.869 ms

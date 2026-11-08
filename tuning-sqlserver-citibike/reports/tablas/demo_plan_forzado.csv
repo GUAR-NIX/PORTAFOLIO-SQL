@@ -1,0 +1,4 @@
+paso,descripcion,query_id,plan_id,tiene_key_lookup,es_plan_forzado,fallos_forzado
+1,Plan original (compilado con @p = 1.200),44,46,False,False,
+2,Plan de la regresión (compilado con @p = 80.000),44,47,True,False,
+3,Plan usado tras forzar (recompilado otra vez con @p = 80.000),44,46,False,True,0.0

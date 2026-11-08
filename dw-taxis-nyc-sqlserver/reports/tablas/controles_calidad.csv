@@ -1,0 +1,28 @@
+orden,control,valor,esperado,estado
+1,Meses con cifras de control (Parquet procesados),12.0,12,OK
+2,Meses donde filas Parquet ≠ hecho + cuarentena,0.0,0,OK
+3,Meses donde la suma de total_amount no cuadra al centavo,0.0,0,OK
+4,Meses donde la suma de fare_amount no cuadra,0.0,0,OK
+5,Meses donde la suma de tip_amount no cuadra,0.0,0,OK
+6,Meses donde la suma de trip_distance no cuadra,0.0,0,OK
+7,Meses donde pasajeros nulos no cuadran,0.0,0,OK
+8,Meses donde regla R01 (SQL) ≠ filas fuera del mes (Python),0.0,0,OK
+9,Meses cuya última carga terminó en OK,12.0,= meses,OK
+10,Cargas que quedaron EN CURSO (interrumpidas),0.0,0,OK
+11,Particiones cuyo conteo ≠ filas_hecho de su última carga OK,0.0,0,OK
+12,Particiones extremas (izquierda y derecha) con filas,0.0,0,OK
+13,Viajes cuyo fecha_key u hora no corresponden a la recogida,0.0,0,OK
+14,Grupos de filas del columnstore sin comprimir (delta store con filas),0.0,0,OK
+15,Viajes en el hecho con duración ≤ 0 o > 6 h,0.0,0,OK
+16,"Viajes en el hecho con importe negativo, > 200 mi o > 80 mph",0.0,0,OK
+17,Huérfanos de dim_fecha,0.0,0,OK
+18,Huérfanos de dim_zona (origen o destino),0.0,0,OK
+19,"Huérfanos de dim_proveedor, dim_tipo_pago o dim_tarifa",0.0,0,OK
+20,Zonas del catálogo oficial cargadas,265.0,265,OK
+21,mart.kpi_mensual − hecho (viajes),0.0,0,OK
+22,mart.demanda_diaria − hecho (viajes),0.0,0,OK
+23,mart.demanda_dia_hora − hecho (viajes),0.0,0,OK
+24,mart.ruta − hecho (viajes),0.0,0,OK
+25,mart.propina_pago − hecho (viajes),0.0,0,OK
+26,Días de 2024 en mart.demanda_diaria,366.0,366,OK
+27,Staging vacío al terminar las cargas,0.0,0,OK

@@ -1,0 +1,628 @@
+decada,genero,puesto,pelicula_id,titulo,anio,calificacion,votos,calificacion_ponderada
+1910,Drama,1,6864,Intolerance,1916,7.6,18210,7.389
+1910,Drama,2,9968,Broken Blossoms,1919,7.2,11905,6.988
+1910,Drama,3,10307,J'accuse!,1919,7.7,2497,6.861
+1920,Adventure,1,15864,The Gold Rush,1925,8.1,129492,8.053
+1920,Adventure,2,17925,The General,1926,8.1,106554,8.043
+1920,Adventure,3,15175,Die Nibelungen: Siegfried,1924,8.1,7448,7.523
+1920,Comedy,1,12349,The Kid,1921,8.2,147548,8.157
+1920,Comedy,2,15864,The Gold Rush,1925,8.1,129492,8.053
+1920,Comedy,3,17925,The General,1926,8.1,106554,8.043
+1920,Crime,1,13086,"Dr. Mabuse, the Gambler",1922,7.8,10115,7.412
+1920,Crime,2,18737,Pandora's Box,1929,7.7,13114,7.403
+1920,Crime,3,17075,The Lodger: A Story of the London Fog,1927,7.3,15380,7.11
+1920,Drama,1,17136,Metropolis,1927,8.2,203722,8.168
+1920,Drama,2,12349,The Kid,1921,8.2,147548,8.157
+1920,Drama,3,15864,The Gold Rush,1925,8.1,129492,8.053
+1920,Horror,1,10323,The Cabinet of Dr. Caligari,1920,8.0,77286,7.927
+1920,Horror,2,16847,Faust,1926,8.1,18831,7.819
+1920,Horror,3,13442,Nosferatu,1922,7.8,124878,7.759
+1920,Romance,1,15324,Sherlock Jr.,1924,8.1,67355,8.012
+1920,Romance,2,18455,Sunrise,1927,8.1,57256,7.997
+1920,Romance,3,18773,The Circus,1928,8.1,39028,7.953
+1930,Action,1,29843,The Adventures of Robin Hood,1938,7.9,58347,7.81
+1930,Action,2,23427,Scarface,1932,7.7,33935,7.569
+1930,Action,3,26174,Captain Blood,1935,7.7,17704,7.468
+1930,Adventure,1,32138,The Wizard of Oz,1939,8.1,474047,8.087
+1930,Adventure,2,24216,King Kong,1933,7.9,96860,7.845
+1930,Adventure,3,29843,The Adventures of Robin Hood,1938,7.9,58347,7.81
+1930,Biography,1,26752,Mutiny on the Bounty,1935,7.6,27041,7.45
+1930,Biography,2,32155,Young Mr. Lincoln,1939,7.5,10073,7.185
+1930,Biography,3,24481,Queen Christina,1933,7.5,9442,7.17
+1930,Comedy,1,27977,Modern Times,1936,8.5,288643,8.474
+1930,Comedy,2,21749,City Lights,1931,8.5,218852,8.466
+1930,Comedy,3,31679,Mr. Smith Goes to Washington,1939,8.1,130784,8.054
+1930,Crime,1,22100,M,1931,8.3,184941,8.263
+1930,Crime,2,23042,I Am a Fugitive from a Chain Gang,1932,8.2,15924,7.86
+1930,Crime,3,25878,The Thin Man,1934,7.9,35716,7.758
+1930,Drama,1,27977,Modern Times,1936,8.5,288643,8.474
+1930,Drama,2,21749,City Lights,1931,8.5,218852,8.466
+1930,Drama,3,31381,Gone with the Wind,1939,8.2,359726,8.182
+1930,Family,1,32138,The Wizard of Oz,1939,8.1,474047,8.087
+1930,Family,2,29583,Snow White and the Seven Dwarfs,1937,7.6,241093,7.581
+1930,Family,3,28691,Captains Courageous,1937,7.9,12141,7.541
+1930,Fantasy,1,32138,The Wizard of Oz,1939,8.1,474047,8.087
+1930,Fantasy,2,29162,Lost Horizon,1937,7.6,15930,7.364
+1930,Fantasy,3,21814,Dracula,1931,7.3,65984,7.249
+1930,Film-Noir,1,23042,I Am a Fugitive from a Chain Gang,1932,8.2,15924,7.86
+1930,Film-Noir,2,29870,Angels with Dirty Faces,1938,7.8,25170,7.617
+1930,Film-Noir,3,27652,Fury,1936,7.8,14999,7.515
+1930,History,1,26174,Captain Blood,1935,7.7,17704,7.468
+1930,History,2,27075,A Tale of Two Cities,1935,7.8,7031,7.296
+1930,History,3,24481,Queen Christina,1933,7.5,9442,7.17
+1930,Horror,1,24216,King Kong,1933,7.9,96860,7.845
+1930,Horror,2,26138,Bride of Frankenstein,1935,7.8,59940,7.718
+1930,Horror,3,22913,Freaks,1932,7.8,55617,7.711
+1930,Music,1,26778,A Night at the Opera,1935,7.8,36883,7.67
+1930,Music,2,20697,The Blue Angel,1930,7.6,17899,7.386
+1930,Music,3,28216,San Francisco,1936,7.1,6733,6.813
+1930,Musical,1,26778,A Night at the Opera,1935,7.8,36883,7.67
+1930,Musical,2,23969,Duck Soup,1933,7.7,64581,7.628
+1930,Musical,3,27125,Top Hat,1935,7.7,22447,7.51
+1930,Mystery,1,22100,M,1931,8.3,184941,8.263
+1930,Mystery,2,25878,The Thin Man,1934,7.9,35716,7.758
+1930,Mystery,3,30341,The Lady Vanishes,1938,7.7,62283,7.626
+1930,Romance,1,27977,Modern Times,1936,8.5,288643,8.474
+1930,Romance,2,21749,City Lights,1931,8.5,218852,8.466
+1930,Romance,3,31381,Gone with the Wind,1939,8.2,359726,8.182
+1930,Thriller,1,22100,M,1931,8.3,184941,8.263
+1930,Thriller,2,31867,The Roaring Twenties,1939,7.9,17875,7.638
+1930,Thriller,3,23563,The Testament of Dr. Mabuse,1933,7.9,14849,7.595
+1930,War,1,31381,Gone with the Wind,1939,8.2,359726,8.182
+1930,War,2,20629,All Quiet on the Western Front,1930,8.1,72973,8.019
+1930,War,3,28950,Grand Illusion,1937,8.0,41478,7.869
+1930,Western,1,31971,Stagecoach,1939,7.8,59906,7.717
+1930,Western,2,31225,Destry Rides Again,1939,7.6,13694,7.333
+1930,Western,3,29747,Way Out West,1937,7.6,9681,7.25
+1940,Action,1,42041,White Heat,1949,8.1,39088,7.953
+1940,Action,2,40506,Key Largo,1948,7.7,47809,7.604
+1940,Action,3,33717,High Sierra,1941,7.5,21378,7.329
+1940,Adventure,1,40897,The Treasure of the Sierra Madre,1948,8.2,143101,8.155
+1940,Adventure,2,34240,Sullivan's Travels,1941,7.9,31298,7.74
+1940,Adventure,3,37382,To Have and Have Not,1944,7.8,41699,7.684
+1940,Biography,1,34167,Sergeant York,1941,7.7,20243,7.493
+1940,Biography,2,35575,Yankee Doodle Dandy,1942,7.6,18323,7.39
+1940,Biography,3,35211,The Pride of the Yankees,1942,7.6,13075,7.322
+1940,Comedy,1,32553,The Great Dictator,1940,8.4,261020,8.373
+1940,Comedy,2,35446,To Be or Not to Be,1942,8.1,50531,7.985
+1940,Comedy,3,41154,Late Spring,1949,8.2,22065,7.942
+1940,Crime,1,36775,Double Indemnity,1944,8.3,183783,8.263
+1940,Crime,2,42041,White Heat,1949,8.1,39088,7.953
+1940,Crime,3,41546,Kind Hearts and Coronets,1949,8.0,42639,7.872
+1940,Drama,1,38650,It's a Wonderful Life,1946,8.6,561964,8.586
+1940,Drama,2,34583,Casablanca,1942,8.5,663102,8.489
+1940,Drama,3,32553,The Great Dictator,1940,8.4,261020,8.373
+1940,Family,1,38650,It's a Wonderful Life,1946,8.6,561964,8.586
+1940,Family,2,39628,Miracle on 34th Street,1947,7.9,60209,7.813
+1940,Family,3,32455,Fantasia,1940,7.7,112661,7.658
+1940,Fantasy,1,38650,It's a Wonderful Life,1946,8.6,561964,8.586
+1940,Fantasy,2,38733,A Matter of Life and Death,1946,8.0,28418,7.815
+1940,Fantasy,3,38348,Beauty and the Beast,1946,7.9,30147,7.734
+1940,Film-Noir,1,36775,Double Indemnity,1944,8.3,183783,8.263
+1940,Film-Noir,2,41959,The Third Man,1949,8.1,197919,8.069
+1940,Film-Noir,3,33870,The Maltese Falcon,1941,7.9,175971,7.869
+1940,History,1,36506,Day of Wrath,1943,8.0,12271,7.623
+1940,History,2,34167,Sergeant York,1941,7.7,20243,7.493
+1940,History,3,37824,"Ivan the Terrible, Part I",1944,7.6,11968,7.302
+1940,Horror,1,37988,The Picture of Dorian Gray,1945,7.5,16338,7.285
+1940,Horror,2,37635,Dead of Night,1945,7.5,16185,7.284
+1940,Horror,3,34398,The Wolf Man,1941,7.2,35044,7.116
+1940,Music,1,40725,The Red Shoes,1948,8.1,44467,7.97
+1940,Music,2,39502,It Happened on Fifth Avenue,1947,7.6,7697,7.187
+1940,Music,3,34862,Holiday Inn,1942,7.3,19665,7.145
+1940,Musical,1,41716,On the Town,1949,7.3,20136,7.149
+1940,Musical,2,40308,Easter Parade,1948,7.3,12253,7.072
+1940,Musical,3,33704,Hellzapoppin',1941,7.4,4004,6.87
+1940,Mystery,1,33467,Citizen Kane,1941,8.2,497916,8.187
+1940,Mystery,2,41959,The Third Man,1949,8.1,197919,8.069
+1940,Mystery,3,32976,Rebecca,1940,8.0,162595,7.965
+1940,Romance,1,34583,Casablanca,1942,8.5,663102,8.489
+1940,Romance,2,37674,Children of Paradise,1945,8.3,22820,8.037
+1940,Romance,3,36868,The Best Years of Our Lives,1946,8.1,77406,8.023
+1940,Thriller,1,38890,"Rome, Open City",1945,8.0,34598,7.845
+1940,Thriller,2,36613,Arsenic and Old Lace,1944,7.9,78377,7.832
+1940,Thriller,3,39192,Black Narcissus,1947,7.7,32005,7.562
+1940,War,1,34583,Casablanca,1942,8.5,663102,8.489
+1940,War,2,32553,The Great Dictator,1940,8.4,261020,8.373
+1940,War,3,36868,The Best Years of Our Lives,1946,8.1,77406,8.023
+1940,Western,1,40897,The Treasure of the Sierra Madre,1948,8.2,143101,8.155
+1940,Western,2,36244,The Ox-Bow Incident,1943,8.0,27662,7.81
+1940,Western,3,40724,Red River,1948,7.7,38541,7.583
+1950,Action,1,47478,Seven Samurai,1954,8.6,407118,8.581
+1950,Action,2,53125,North by Northwest,1959,8.2,372738,8.183
+1950,Action,3,43137,Winchester '73,1950,7.6,23563,7.431
+1950,Adventure,1,53125,North by Northwest,1959,8.2,372738,8.183
+1950,Adventure,2,52618,Ben-Hur,1959,8.1,274261,8.078
+1950,Adventure,3,50212,The Bridge on the River Kwai,1957,8.1,252209,8.076
+1950,Biography,1,49408,The King and I,1956,7.4,29900,7.283
+1950,Biography,2,52738,The Diary of Anne Frank,1959,7.4,14738,7.185
+1950,Biography,3,49778,Somebody Up There Likes Me,1956,7.5,9816,7.179
+1950,Comedy,1,45152,Singin' in the Rain,1952,8.3,286728,8.276
+1950,Comedy,2,53291,Some Like It Hot,1959,8.2,308187,8.179
+1950,Comedy,3,249795,Mayabazar,1957,9.0,7083,8.115
+1950,Crime,1,50083,12 Angry Men,1957,9.0,1008693,8.991
+1950,Crime,2,51201,Witness for the Prosecution,1957,8.4,165332,8.357
+1950,Crime,3,46912,Dial M for Murder,1954,8.1,207758,8.071
+1950,Drama,1,50083,12 Angry Men,1957,9.0,1008693,8.991
+1950,Drama,2,47478,Seven Samurai,1954,8.6,407118,8.581
+1950,Drama,3,47396,Rear Window,1954,8.4,575776,8.388
+1950,Family,1,44008,A Christmas Carol,1951,8.1,29415,7.91
+1950,Family,2,49833,The Ten Commandments,1956,7.9,85912,7.838
+1950,Family,3,49096,The Court Jester,1955,7.8,15303,7.52
+1950,Fantasy,1,249795,Mayabazar,1957,9.0,7083,8.115
+1950,Fantasy,2,50976,The Seventh Seal,1957,8.1,218545,8.072
+1950,Fantasy,3,44008,A Christmas Carol,1951,8.1,29415,7.91
+1950,Film-Noir,1,43014,Sunset Boulevard,1950,8.4,264597,8.373
+1950,Film-Noir,2,43338,Ace in the Hole,1951,8.0,43312,7.874
+1950,Film-Noir,3,51036,Sweet Smell of Success,1957,8.0,40822,7.867
+1950,History,1,48473,Pather Panchali,1955,8.2,42469,8.057
+1950,History,2,53114,The Human Condition I: No Greater Love,1959,8.5,11824,8.002
+1950,History,3,53115,The Human Condition II: Road to Eternity,1959,8.5,9440,7.909
+1950,Horror,1,46911,Diabolique,1955,8.1,74144,8.02
+1950,Horror,2,49366,Invasion of the Body Snatchers,1956,7.7,60956,7.624
+1950,Horror,3,47034,Godzilla,1954,7.6,46657,7.509
+1950,Music,1,53291,Some Like It Hot,1959,8.2,308187,8.179
+1950,Music,2,50371,A Face in the Crowd,1957,8.1,19664,7.83
+1950,Music,3,44837,Limelight,1952,8.0,24351,7.787
+1950,Musical,1,45152,Singin' in the Rain,1952,8.3,286728,8.276
+1950,Musical,2,50870,Thirsty,1957,8.3,8472,7.717
+1950,Musical,3,47673,White Christmas,1954,7.6,57372,7.525
+1950,Mystery,1,47396,Rear Window,1954,8.4,575776,8.388
+1950,Mystery,2,51201,Witness for the Prosecution,1957,8.4,165332,8.357
+1950,Mystery,3,52357,Vertigo,1958,8.2,464184,8.186
+1950,Romance,1,45152,Singin' in the Rain,1952,8.3,286728,8.276
+1950,Romance,2,52357,Vertigo,1958,8.2,464184,8.186
+1950,Romance,3,53291,Some Like It Hot,1959,8.2,308187,8.179
+1950,Sci-Fi,1,43456,The Day the Earth Stood Still,1951,7.7,89574,7.647
+1950,Sci-Fi,2,49366,Invasion of the Body Snatchers,1956,7.7,60956,7.624
+1950,Sci-Fi,3,47034,Godzilla,1954,7.6,46657,7.509
+1950,Thriller,1,47396,Rear Window,1954,8.4,575776,8.388
+1950,Thriller,2,52357,Vertigo,1958,8.2,464184,8.186
+1950,Thriller,3,47296,On the Waterfront,1954,8.1,181914,8.066
+1950,War,1,50825,Paths of Glory,1957,8.4,243494,8.371
+1950,War,2,50212,The Bridge on the River Kwai,1957,8.1,252209,8.076
+1950,War,3,50634,The Cranes Are Flying,1957,8.3,23208,8.041
+1950,Western,1,44706,High Noon,1952,7.9,117609,7.854
+1950,Western,2,53221,Rio Bravo,1959,7.9,74676,7.829
+1950,Western,3,49730,The Searchers,1956,7.8,104198,7.751
+1960,Action,1,55630,Yojimbo,1961,8.2,145185,8.156
+1960,Action,2,56443,Sanjuro,1962,8.0,43940,7.876
+1960,Action,3,65214,The Wild Bunch,1969,7.9,94977,7.844
+1960,Adventure,1,60196,"The Good, the Bad and the Ugly",1966,8.8,904841,8.791
+1960,Adventure,2,62622,2001: A Space Odyssey,1968,8.3,795558,8.291
+1960,Adventure,3,56172,Lawrence of Arabia,1962,8.3,347469,8.28
+1960,Animation,1,61852,The Jungle Book,1967,7.6,216225,7.579
+1960,Animation,2,63823,Yellow Submarine,1968,7.4,30235,7.284
+1960,Animation,3,55254,One Hundred and One Dalmatians,1961,7.3,199458,7.282
+1960,Biography,1,56172,Lawrence of Arabia,1962,8.3,347469,8.28
+1960,Biography,2,59742,The Sound of Music,1965,8.1,296391,8.079
+1960,Biography,3,64115,Butch Cassidy and the Sundance Kid,1969,8.0,240235,7.976
+1960,Comedy,1,57012,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,8.3,556076,8.288
+1960,Comedy,2,53604,The Apartment,1960,8.3,223838,8.27
+1960,Comedy,3,59550,Operation 'Y' & Shurik's Other Adventures,1965,8.4,16918,8.044
+1960,Crime,1,57565,High and Low,1963,8.4,74132,8.307
+1960,Crime,2,54407,Le Trou,1960,8.5,24375,8.228
+1960,Crime,3,56592,To Kill a Mockingbird,1962,8.2,354039,8.182
+1960,Documentary,1,61589,Bob Dylan: Dont Look Back,1967,7.9,11131,7.516
+1960,Documentary,2,66904,The Sorrow and the Pity,1969,8.1,4559,7.312
+1960,Documentary,3,64689,Monterey Pop,1968,7.9,5553,7.275
+1960,Drama,1,60196,"The Good, the Bad and the Ugly",1966,8.8,904841,8.791
+1960,Drama,2,56058,Harakiri,1962,8.6,95017,8.52
+1960,Drama,3,54215,Psycho,1960,8.5,797661,8.491
+1960,Family,1,59742,The Sound of Music,1965,8.1,296391,8.079
+1960,Family,2,58331,Mary Poppins,1964,7.8,200962,7.774
+1960,Family,3,63023,The Adventures of Goopy and Bagha,1969,8.6,6105,7.765
+1960,Fantasy,1,58331,Mary Poppins,1964,7.8,200962,7.774
+1960,Fantasy,2,56732,The Exterminating Angel,1962,7.9,38671,7.768
+1960,Fantasy,3,58279,Kwaidan,1964,7.9,23542,7.693
+1960,History,1,55031,Judgment at Nuremberg,1961,8.3,98877,8.233
+1960,History,2,55233,The Human Condition III: A Soldier's Prayer,1961,8.8,9211,8.119
+1960,History,3,53946,Inherit the Wind,1960,8.1,36076,7.942
+1960,Horror,1,54215,Psycho,1960,8.5,797661,8.491
+1960,Horror,2,63522,Rosemary's Baby,1968,8.0,262191,7.978
+1960,Horror,3,56687,What Ever Happened to Baby Jane?,1962,8.0,68653,7.918
+1960,Music,1,55852,Cleo from 5 to 7,1962,7.8,32468,7.654
+1960,Music,2,61589,Bob Dylan: Dont Look Back,1967,7.9,11131,7.516
+1960,Music,3,63462,The Producers,1967,7.5,64722,7.438
+1960,Musical,1,58450,The Umbrellas of Cherbourg,1964,7.8,35828,7.667
+1960,Musical,2,58385,My Fair Lady,1964,7.7,108869,7.656
+1960,Musical,3,63404,Padosan,1968,8.1,10433,7.648
+1960,Mystery,1,56058,Harakiri,1962,8.6,95017,8.52
+1960,Mystery,2,54215,Psycho,1960,8.5,797661,8.491
+1960,Mystery,3,57565,High and Low,1963,8.4,74132,8.307
+1960,Romance,1,53604,The Apartment,1960,8.3,223838,8.27
+1960,Romance,2,61722,The Graduate,1967,8.0,304778,7.981
+1960,Romance,3,59246,Guide,1965,8.4,13162,7.963
+1960,Sci-Fi,1,62622,2001: A Space Odyssey,1968,8.3,795558,8.291
+1960,Sci-Fi,2,63442,Planet of the Apes,1968,8.0,211777,7.973
+1960,Sci-Fi,3,61065,The Face of Another,1966,7.8,12411,7.468
+1960,Sport,1,54248,Rocco and His Brothers,1960,8.2,26229,7.978
+1960,Sport,2,54997,The Hustler,1961,7.9,90725,7.841
+1960,Sport,3,56406,Requiem for a Heavyweight,1962,7.8,5337,7.198
+1960,Thriller,1,54407,Le Trou,1960,8.5,24375,8.228
+1960,Thriller,2,57115,The Great Escape,1963,8.2,280957,8.177
+1960,Thriller,3,58625,Woman in the Dunes,1964,8.4,26871,8.161
+1960,War,1,57012,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,8.3,556076,8.288
+1960,War,2,55031,Judgment at Nuremberg,1961,8.3,98877,8.233
+1960,War,3,55233,The Human Condition III: A Soldier's Prayer,1961,8.8,9211,8.119
+1960,Western,1,60196,"The Good, the Bad and the Ugly",1966,8.8,904841,8.791
+1960,Western,2,64116,Once Upon a Time in the West,1968,8.5,388737,8.481
+1960,Western,3,59578,For a Few Dollars More,1965,8.2,304961,8.179
+1970,Action,1,76759,Star Wars: Episode IV - A New Hope,1977,8.6,1594535,8.595
+1970,Action,2,73707,Sholay,1975,8.1,64140,8.008
+1970,Action,3,66078,Michael the Brave,1971,8.4,6791,7.687
+1970,Adventure,1,76759,Star Wars: Episode IV - A New Hope,1977,8.6,1594535,8.595
+1970,Adventure,2,75143,The Message,1976,8.9,12207,8.329
+1970,Adventure,3,73195,Jaws,1975,8.1,752565,8.092
+1970,Animation,1,73000,The Pinchcliffe Grand Prix,1975,8.4,15556,8.018
+1970,Animation,2,72901,The Twelve Tasks of Asterix,1976,7.7,21778,7.505
+1970,Animation,3,70544,Fantastic Planet,1973,7.6,43654,7.503
+1970,Biography,1,75143,The Message,1976,8.9,12207,8.329
+1970,Biography,2,71411,Dersu Uzala,1975,8.2,36998,8.038
+1970,Biography,3,74896,The Message,1976,8.1,54508,7.993
+1970,Comedy,1,252487,The Chaos Class,1975,9.1,46871,8.91
+1970,Comedy,2,253828,Tosun Pasha,1976,8.9,26770,8.605
+1970,Comedy,3,253779,The Foster Brothers,1976,8.8,22902,8.474
+1970,Crime,1,68646,The Godfather,1972,9.2,2266539,9.196
+1970,Crime,2,71562,The Godfather Part II,1974,9.0,1520061,8.994
+1970,Crime,3,75314,Taxi Driver,1976,8.2,1046079,8.194
+1970,Documentary,1,69090,Pink Floyd: Live at Pompeii,1972,8.6,11733,8.077
+1970,Documentary,2,77838,The Last Waltz,1978,8.1,22545,7.86
+1970,Documentary,3,66580,Woodstock,1970,8.1,19676,7.83
+1970,Drama,1,68646,The Godfather,1972,9.2,2266539,9.196
+1970,Drama,2,71562,The Godfather Part II,1974,9.0,1520061,8.994
+1970,Drama,3,73486,One Flew Over the Cuckoo's Nest,1975,8.6,1171379,8.593
+1970,Family,1,73000,The Pinchcliffe Grand Prix,1975,8.4,15556,8.018
+1970,Family,2,67093,Fiddler on the Roof,1971,8.0,52969,7.895
+1970,Family,3,67992,Willy Wonka & the Chocolate Factory,1971,7.8,247806,7.779
+1970,Fantasy,1,76759,Star Wars: Episode IV - A New Hope,1977,8.6,1594535,8.595
+1970,Fantasy,2,71853,Monty Python and the Holy Grail,1975,8.1,609335,8.09
+1970,Fantasy,3,71615,The Holy Mountain,1973,7.7,53486,7.614
+1970,History,1,253828,Tosun Pasha,1976,8.9,26770,8.605
+1970,History,2,253779,The Foster Brothers,1976,8.8,22902,8.474
+1970,History,3,253614,"Saban, Son of Saban",1977,8.7,20312,8.353
+1970,Horror,1,78748,Alien,1979,8.4,1080587,8.393
+1970,Horror,2,73195,Jaws,1975,8.1,752565,8.092
+1970,Horror,3,70047,The Exorcist,1973,8.1,507451,8.088
+1970,Music,1,69090,Pink Floyd: Live at Pompeii,1972,8.6,11733,8.077
+1970,Music,2,77711,Autumn Sonata,1978,8.1,43810,7.968
+1970,Music,3,77838,The Last Waltz,1978,8.1,22545,7.86
+1970,Musical,1,66763,Anand,1971,8.1,38052,7.95
+1970,Musical,2,67093,Fiddler on the Roof,1971,8.0,52969,7.895
+1970,Musical,3,68327,Cabaret,1972,7.8,64589,7.723
+1970,Mystery,1,78788,Apocalypse Now,1979,8.4,780466,8.391
+1970,Mystery,2,71315,Chinatown,1974,8.1,381394,8.084
+1970,Mystery,3,69293,Solaris,1972,7.9,105554,7.849
+1970,Romance,1,79221,Gol Maal,1979,8.5,22373,8.206
+1970,Romance,2,263975,The Girl with the Red Scarf,1977,8.4,18441,8.069
+1970,Romance,3,72783,Chupke Chupke,1975,8.3,14159,7.906
+1970,Sci-Fi,1,78748,Alien,1979,8.4,1080587,8.393
+1970,Sci-Fi,2,66921,A Clockwork Orange,1971,8.2,947825,8.193
+1970,Sci-Fi,3,79944,Stalker,1979,8.0,158662,7.964
+1970,Sport,1,75148,Rocky,1976,8.1,704796,8.091
+1970,Sport,2,78902,Breaking Away,1979,7.7,27932,7.544
+1970,Sport,3,79606,National Class Category Up to 785 Ccm,1979,8.4,4654,7.496
+1970,Thriller,1,71315,Chinatown,1974,8.1,381394,8.084
+1970,Thriller,2,74119,All the President's Men,1976,7.9,139847,7.861
+1970,Thriller,3,69281,Sleuth,1972,7.9,53437,7.802
+1970,War,1,78788,Apocalypse Now,1979,8.4,780466,8.391
+1970,War,2,77416,The Deer Hunter,1978,8.1,390752,8.084
+1970,War,3,72684,Barry Lyndon,1975,8.1,209450,8.071
+1970,Western,1,75029,The Outlaw Josey Wales,1976,7.8,88248,7.743
+1970,Western,2,71230,Blazing Saddles,1974,7.7,167076,7.671
+1970,Western,3,68762,Jeremiah Johnson,1972,7.6,40364,7.496
+1980,Action,1,90605,Aliens,1986,8.4,850840,8.392
+1980,Action,2,86190,Star Wars: Episode VI - Return of the Jedi,1983,8.3,1227340,8.294
+1980,Action,3,237376,Kireedam,1989,8.9,9996,8.234
+1980,Adventure,1,80684,Star Wars: Episode V - The Empire Strikes Back,1980,8.7,1529752,8.695
+1980,Adventure,2,88763,Back to the Future,1985,8.5,1483075,8.495
+1980,Adventure,3,82971,Raiders of the Lost Ark,1981,8.4,1123878,8.394
+1980,Animation,1,95327,Grave of the Fireflies,1988,8.5,399339,8.481
+1980,Animation,2,96283,My Neighbor Totoro,1988,8.1,441874,8.086
+1980,Animation,3,94625,Akira,1988,8.0,233292,7.975
+1980,Biography,1,86879,Amadeus,1984,8.4,474848,8.385
+1980,Biography,2,80678,The Elephant Man,1980,8.2,285476,8.177
+1980,Biography,3,81398,Raging Bull,1980,8.1,415466,8.085
+1980,Comedy,1,88763,Back to the Future,1985,8.5,1483075,8.495
+1980,Comedy,2,84302,The Marathon Family,1982,8.8,18368,8.406
+1980,Comedy,3,76276,Who's Singin' Over There?,1980,8.7,18150,8.318
+1980,Crime,1,93603,Nayakan,1987,8.6,28336,8.351
+1980,Crime,2,86250,Scarface,1983,8.3,1039161,8.293
+1980,Crime,3,87843,Once Upon a Time in America,1984,8.3,413387,8.283
+1980,Documentary,1,88178,Stop Making Sense,1984,8.7,24652,8.407
+1980,Documentary,2,90015,Shoah,1985,8.7,11798,8.157
+1980,Documentary,3,85809,Koyaanisqatsi,1982,8.2,45306,8.065
+1980,Drama,1,95327,Grave of the Fireflies,1988,8.5,399339,8.481
+1980,Drama,2,95765,Cinema Paradiso,1988,8.5,322054,8.477
+1980,Drama,3,84302,The Marathon Family,1982,8.8,18368,8.406
+1980,Family,1,93779,The Princess Bride,1987,8.0,492468,7.988
+1980,Family,2,92067,Castle in the Sky,1986,8.0,201349,7.971
+1980,Family,3,83866,E.T. the Extra-Terrestrial,1982,7.9,478287,7.888
+1980,Fantasy,1,80684,Star Wars: Episode V - The Empire Strikes Back,1980,8.7,1529752,8.695
+1980,Fantasy,2,86190,Star Wars: Episode VI - Return of the Jedi,1983,8.3,1227340,8.294
+1980,Fantasy,3,84503,Pink Floyd: The Wall,1982,8.0,90838,7.938
+1980,History,1,90015,Shoah,1985,8.7,11798,8.157
+1980,History,2,83987,Gandhi,1982,8.0,247431,7.977
+1980,History,3,81059,Lion of the Desert,1980,8.2,19173,7.909
+1980,Horror,1,81505,The Shining,1980,8.4,1249166,8.394
+1980,Horror,2,84787,The Thing,1982,8.2,539410,8.188
+1980,Horror,3,93773,Predator,1987,7.8,508082,7.79
+1980,Music,1,88178,Stop Making Sense,1984,8.7,24652,8.407
+1980,Music,2,86879,Amadeus,1984,8.4,474848,8.385
+1980,Music,3,85809,Koyaanisqatsi,1982,8.2,45306,8.065
+1980,Musical,1,214585,Chithram,1988,8.7,6971,7.903
+1980,Musical,2,86231,Sagara Sangamam,1983,8.7,6632,7.875
+1980,Musical,3,91559,Mouna Ragam,1986,8.4,4918,7.525
+1980,Mystery,1,84787,The Thing,1982,8.2,539410,8.188
+1980,Mystery,2,95647,Mississippi Burning,1988,7.8,129328,7.761
+1980,Mystery,3,90756,Blue Velvet,1986,7.7,250373,7.681
+1980,Romance,1,95765,Cinema Paradiso,1988,8.5,322054,8.477
+1980,Romance,2,95467,A Short Film About Love,1988,8.1,28788,7.906
+1980,Romance,3,93191,Wings of Desire,1987,7.9,85150,7.837
+1980,Sci-Fi,1,80684,Star Wars: Episode V - The Empire Strikes Back,1980,8.7,1529752,8.695
+1980,Sci-Fi,2,88763,Back to the Future,1985,8.5,1483075,8.495
+1980,Sci-Fi,3,90605,Aliens,1986,8.4,850840,8.392
+1980,Sport,1,81398,Raging Bull,1980,8.1,415466,8.085
+1980,Sport,2,95250,The Big Blue,1988,7.5,59521,7.433
+1980,Sport,3,87781,The Natural,1984,7.4,58524,7.337
+1980,Thriller,1,91251,Come and See,1985,8.3,127441,8.247
+1980,Thriller,2,95016,Die Hard,1988,8.2,1042753,8.194
+1980,Thriller,3,94226,The Untouchables,1987,7.8,358051,7.786
+1980,War,1,95327,Grave of the Fireflies,1988,8.5,399339,8.481
+1980,War,2,82096,Das Boot,1981,8.3,291250,8.277
+1980,War,3,91251,Come and See,1985,8.3,127441,8.247
+1980,Western,1,89767,Pale Rider,1985,7.3,71952,7.253
+1980,Western,2,90022,Silverado,1985,7.2,54971,7.145
+1980,Western,3,96487,Young Guns,1988,6.8,75110,6.776
+1990,Action,1,133093,The Matrix,1999,8.7,2288035,8.696
+1990,Action,2,259534,Ramayana: The Legend of Prince Rama,1993,9.1,18185,8.656
+1990,Action,3,103064,Terminator 2: Judgment Day,1991,8.6,1307243,8.594
+1990,Adventure,1,259534,Ramayana: The Legend of Prince Rama,1993,9.1,18185,8.656
+1990,Adventure,2,103064,Terminator 2: Judgment Day,1991,8.6,1307243,8.594
+1990,Adventure,3,110357,The Lion King,1994,8.5,1282566,8.494
+1990,Animation,1,259534,Ramayana: The Legend of Prince Rama,1993,9.1,18185,8.656
+1990,Animation,2,110357,The Lion King,1994,8.5,1282566,8.494
+1990,Animation,3,114709,Toy Story,1995,8.3,1203928,8.294
+1990,Biography,1,108052,Schindler's List,1993,9.0,1609816,8.994
+1990,Biography,2,99685,GoodFellas,1990,8.7,1419824,8.694
+1990,Biography,3,107207,In the Name of the Father,1993,8.1,205337,8.07
+1990,Comedy,1,118799,Life Is Beautiful,1997,8.6,826061,8.591
+1990,Comedy,2,114709,Toy Story,1995,8.3,1203928,8.294
+1990,Comedy,3,214915,Manichitrathazhu,1993,8.7,14749,8.246
+1990,Crime,1,137523,Fight Club,1999,8.8,2674946,8.797
+1990,Crime,2,110912,Pulp Fiction,1994,8.8,2477481,8.797
+1990,Crime,3,99685,GoodFellas,1990,8.7,1419824,8.694
+1990,Documentary,1,103767,Baraka,1992,8.5,43608,8.339
+1990,Documentary,2,110057,Hoop Dreams,1994,8.3,29906,8.093
+1990,Documentary,3,100332,Paris Is Burning,1990,8.2,21769,7.939
+1990,Drama,1,111161,The Shawshank Redemption,1994,9.3,3255291,9.297
+1990,Drama,2,108052,Schindler's List,1993,9.0,1609816,8.994
+1990,Drama,3,137523,Fight Club,1999,8.8,2674946,8.797
+1990,Family,1,118849,Children of Heaven,1997,8.2,91691,8.131
+1990,Family,2,101414,Beauty and the Beast,1991,8.0,510745,7.989
+1990,Family,3,107688,The Nightmare Before Christmas,1993,7.9,417873,7.887
+1990,Fantasy,1,120689,The Green Mile,1999,8.6,1592900,8.595
+1990,Fantasy,2,119698,Princess Mononoke,1997,8.3,493076,8.286
+1990,Fantasy,3,107048,Groundhog Day,1993,8.0,742423,7.992
+1990,History,1,108052,Schindler's List,1993,9.0,1609816,8.994
+1990,History,2,116860,"Pretty Village, Pretty Flame",1996,8.6,19247,8.251
+1990,History,3,102138,JFK,1991,8.0,183989,7.969
+1990,Horror,1,102926,The Silence of the Lambs,1991,8.6,1760065,8.596
+1990,Horror,2,214915,Manichitrathazhu,1993,8.7,14749,8.246
+1990,Horror,3,117571,Scream,1996,7.5,456329,7.491
+1990,Music,1,106332,Farewell My Concubine,1993,8.1,37900,7.949
+1990,Music,2,120731,The Legend of 1900,1998,8.0,74487,7.924
+1990,Music,3,108394,Three Colors: Blue,1993,7.8,119780,7.758
+1990,Musical,1,2325915,Poove Unakkaga,1996,8.5,7728,7.817
+1990,Musical,2,116630,Indian,1996,8.1,16313,7.784
+1990,Musical,3,112553,Bombay,1995,8.1,15374,7.768
+1990,Mystery,1,114369,Seven,1995,8.6,2070385,8.596
+1990,Mystery,2,114814,The Usual Suspects,1995,8.5,1259387,8.494
+1990,Mystery,3,214915,Manichitrathazhu,1993,8.7,14749,8.246
+1990,Romance,1,109830,Forrest Gump,1994,8.8,2546563,8.797
+1990,Romance,2,118799,Life Is Beautiful,1997,8.6,826061,8.591
+1990,Romance,3,119217,Good Will Hunting,1997,8.4,1249159,8.394
+1990,Sci-Fi,1,133093,The Matrix,1999,8.7,2288035,8.696
+1990,Sci-Fi,2,103064,Terminator 2: Judgment Day,1991,8.6,1307243,8.594
+1990,Sci-Fi,3,107290,Jurassic Park,1993,8.2,1203587,8.195
+1990,Sport,1,118849,Children of Heaven,1997,8.2,91691,8.131
+1990,Sport,2,110057,Hoop Dreams,1994,8.3,29906,8.093
+1990,Sport,3,118147,When We Were Kings,1996,7.9,19304,7.655
+1990,Thriller,1,137523,Fight Club,1999,8.8,2674946,8.797
+1990,Thriller,2,105236,Reservoir Dogs,1992,8.2,1185082,8.194
+1990,Thriller,3,167404,The Sixth Sense,1999,8.2,1171483,8.194
+1990,War,1,120815,Saving Private Ryan,1998,8.6,1668911,8.595
+1990,War,2,112573,Braveheart,1995,8.3,1175119,8.294
+1990,War,3,116860,"Pretty Village, Pretty Flame",1996,8.6,19247,8.251
+1990,Western,1,105695,Unforgiven,1992,8.2,474120,8.186
+1990,Western,2,99348,Dances with Wolves,1990,8.0,313986,7.981
+1990,Western,3,112817,Dead Man,1995,7.5,110114,7.463
+2000,Action,1,6019206,Kill Bill: The Whole Bloody Affair,2004,8.7,65481,8.581
+2000,Action,2,172495,Gladiator,2000,8.5,1889956,8.496
+2000,Action,3,364569,Oldboy,2003,8.3,736090,8.291
+2000,Adventure,1,167260,The Lord of the Rings: The Return of the King,2003,9.0,2202376,8.996
+2000,Adventure,2,120737,The Lord of the Rings: The Fellowship of the Ring,2001,8.9,2246360,8.896
+2000,Adventure,3,167261,The Lord of the Rings: The Two Towers,2002,8.8,1991998,8.796
+2000,Animation,1,245429,Spirited Away,2001,8.6,990197,8.592
+2000,Animation,2,910970,WALL·E,2008,8.4,1346646,8.395
+2000,Animation,3,1049413,Up,2009,8.3,1260507,8.295
+2000,Biography,1,253474,The Pianist,2002,8.5,1029237,8.493
+2000,Biography,2,1152758,Dear Zachary: A Letter to a Son About His Father,2008,8.5,47014,8.35
+2000,Biography,3,1313104,The Cove,2009,8.4,52944,8.272
+2000,Comedy,1,1187043,3 Idiots,2009,8.4,491460,8.385
+2000,Comedy,2,367495,Anbe Sivam,2003,8.6,28732,8.354
+2000,Comedy,3,1049413,Up,2009,8.3,1260507,8.295
+2000,Crime,1,468569,The Dark Knight,2008,9.1,3241595,9.097
+2000,Crime,2,317248,City of God,2002,8.6,885348,8.591
+2000,Crime,3,6019206,Kill Bill: The Whole Bloody Affair,2004,8.7,65481,8.581
+2000,Documentary,1,1152758,Dear Zachary: A Letter to a Son About His Father,2008,8.5,47014,8.35
+2000,Documentary,2,1313104,The Cove,2009,8.4,52944,8.272
+2000,Documentary,3,358456,Earthlings,2005,8.6,20683,8.272
+2000,Drama,1,167260,The Lord of the Rings: The Return of the King,2003,9.0,2202376,8.996
+2000,Drama,2,120737,The Lord of the Rings: The Fellowship of the Ring,2001,8.9,2246360,8.896
+2000,Drama,3,167261,The Lord of the Rings: The Two Towers,2002,8.8,1991998,8.796
+2000,Family,1,245429,Spirited Away,2001,8.6,990197,8.592
+2000,Family,2,910970,WALL·E,2008,8.4,1346646,8.395
+2000,Family,3,986264,Like Stars on Earth,2007,8.3,237151,8.271
+2000,Fantasy,1,167260,The Lord of the Rings: The Return of the King,2003,9.0,2202376,8.996
+2000,Fantasy,2,120737,The Lord of the Rings: The Fellowship of the Ring,2001,8.9,2246360,8.896
+2000,Fantasy,3,167261,The Lord of the Rings: The Two Towers,2002,8.8,1991998,8.796
+2000,History,1,363163,Downfall,2004,8.2,405003,8.184
+2000,History,2,395169,Hotel Rwanda,2004,8.1,395638,8.084
+2000,History,3,319736,The Legend of Bhagat Singh,2002,8.2,18593,7.901
+2000,Horror,1,365748,Shaun of the Dead,2004,7.8,646692,7.792
+2000,Horror,2,1139797,Let the Right One In,2008,7.8,242290,7.779
+2000,Horror,3,144084,American Psycho,2000,7.6,861600,7.595
+2000,Music,1,253474,The Pianist,2002,8.5,1029237,8.493
+2000,Music,2,372824,The Chorus,2004,7.9,73139,7.827
+2000,Music,3,1094594,Sigur Rós: Heima,2007,8.4,8403,7.785
+2000,Musical,1,367110,Swades,2004,8.2,107616,8.141
+2000,Musical,2,1621830,Monpura,2009,8.7,10082,8.088
+2000,Musical,3,169102,Lagaan: Once Upon a Time in India,2001,8.1,130849,8.054
+2000,Mystery,1,482571,The Prestige,2006,8.5,1635395,8.495
+2000,Mystery,2,209144,Memento,2000,8.4,1463930,8.395
+2000,Mystery,3,405094,The Lives of Others,2006,8.4,448287,8.384
+2000,Romance,1,338013,Eternal Sunshine of the Spotless Mind,2004,8.3,1200128,8.294
+2000,Romance,2,211915,Amélie,2001,8.2,849063,8.192
+2000,Romance,3,346336,The Best of Youth,2003,8.4,28956,8.177
+2000,Sci-Fi,1,482571,The Prestige,2006,8.5,1635395,8.495
+2000,Sci-Fi,2,338013,Eternal Sunshine of the Spotless Mind,2004,8.3,1200128,8.294
+2000,Sci-Fi,3,434409,V for Vendetta,2005,8.1,1259131,8.095
+2000,Sport,1,405159,Million Dollar Baby,2004,8.1,775680,8.092
+2000,Sport,2,169102,Lagaan: Once Upon a Time in India,2001,8.1,130849,8.054
+2000,Sport,3,871510,Chak De! India,2007,8.1,92994,8.035
+2000,Thriller,1,468569,The Dark Knight,2008,9.1,3241595,9.097
+2000,Thriller,2,6019206,Kill Bill: The Whole Bloody Affair,2004,8.7,65481,8.581
+2000,Thriller,3,407887,The Departed,2006,8.5,1585884,8.495
+2000,War,1,361748,Inglourious Basterds,2009,8.4,1825252,8.396
+2000,War,2,457430,Pan's Labyrinth,2006,8.2,755522,8.191
+2000,War,3,386064,Tae Guk Gi: The Brotherhood of War,2004,8.0,42614,7.872
+2010,Action,1,4154796,Avengers: Endgame,2019,8.4,1501605,8.395
+2010,Action,2,4154756,Avengers: Infinity War,2018,8.4,1418991,8.395
+2010,Action,3,4633694,Spider-Man: Into the Spider-Verse,2018,8.4,821509,8.391
+2010,Adventure,1,1375666,Inception,2010,8.8,2881605,8.797
+2010,Adventure,2,816692,Interstellar,2014,8.7,2623396,8.697
+2010,Adventure,3,4154796,Avengers: Endgame,2019,8.4,1501605,8.395
+2010,Animation,1,4633694,Spider-Man: Into the Spider-Verse,2018,8.4,821509,8.391
+2010,Animation,2,2380307,Coco,2017,8.4,731498,8.39
+2010,Animation,3,5311514,Your Name.,2016,8.4,408215,8.382
+2010,Biography,1,5275892,O.J.: Made in America,2016,8.9,24243,8.578
+2010,Biography,2,1424432,Senna,2010,8.4,84528,8.318
+2010,Biography,3,5074352,Dangal,2016,8.3,249351,8.273
+2010,Comedy,1,1675434,The Intouchables,2011,8.5,1046223,8.493
+2010,Comedy,2,435761,Toy Story 3,2010,8.3,994300,8.293
+2010,Comedy,3,9052870,Chhichhore,2019,8.3,74888,8.212
+2010,Crime,1,5275892,O.J.: Made in America,2016,8.9,24243,8.578
+2010,Crime,2,5354160,Mirror Game,2016,8.8,31193,8.552
+2010,Crime,3,1345836,The Dark Knight Rises,2012,8.4,2034108,8.396
+2010,Documentary,1,5275892,O.J.: Made in America,2016,8.9,24243,8.578
+2010,Documentary,2,1424432,Senna,2010,8.4,84528,8.318
+2010,Documentary,3,770802,Samsara,2011,8.4,40353,8.235
+2010,Drama,1,1853728,Django Unchained,2012,8.5,1921637,8.496
+2010,Drama,2,6751668,Parasite,2019,8.5,1204073,8.494
+2010,Drama,3,2582802,Whiplash,2014,8.5,1188481,8.494
+2010,Family,1,7738784,Resurrection,2018,8.6,18978,8.247
+2010,Family,2,1201607,Harry Potter and the Deathly Hallows: Part 2,2011,8.1,1066792,8.094
+2010,Family,3,5311546,Natsamrat,2016,8.8,8344,8.068
+2010,Fantasy,1,5311514,Your Name.,2016,8.4,408215,8.382
+2010,Fantasy,2,8239946,Tumbbad,2018,8.2,78060,8.12
+2010,Fantasy,3,1201607,Harry Potter and the Deathly Hallows: Part 2,2011,8.1,1066792,8.094
+2010,History,1,3674140,The Salt of the Earth,2014,8.4,25596,8.151
+2010,History,2,8291224,Uri: The Surgical Strike,2019,8.2,85862,8.127
+2010,History,3,2024544,12 Years a Slave,2013,8.1,796840,8.092
+2010,Horror,1,8239946,Tumbbad,2018,8.2,78060,8.12
+2010,Horror,2,3461252,The Blue Elephant,2014,8.0,31411,7.831
+2010,Horror,3,5052448,Get Out,2017,7.8,842674,7.794
+2010,Music,1,2582802,Whiplash,2014,8.5,1188481,8.494
+2010,Music,2,770802,Samsara,2011,8.4,40353,8.235
+2010,Music,3,2125608,Searching for Sugar Man,2012,8.2,77055,8.119
+2010,Musical,1,2077886,The Phantom of the Opera at the Royal Albert Hall,2011,8.8,11042,8.205
+2010,Musical,2,4679210,Premam,2015,8.3,29220,8.089
+2010,Musical,3,3668162,Bangalore Days,2014,8.3,28959,8.087
+2010,Mystery,1,5354160,Mirror Game,2016,8.8,31193,8.552
+2010,Mystery,2,1255953,Incendies,2010,8.3,261656,8.274
+2010,Mystery,3,3417422,Drishyam,2013,8.4,50070,8.265
+2010,News,1,5929776,Before the Flood,2016,8.1,29816,7.912
+2010,News,2,1618448,Racing Extinction,2015,8.1,8470,7.573
+2010,News,3,3270538,Requiem for the American Dream,2015,8.0,10307,7.568
+2010,Romance,1,7019842,96,2018,8.4,46854,8.256
+2010,Romance,2,9052870,Chhichhore,2019,8.3,74888,8.212
+2010,Romance,3,8413338,Kumbalangi Nights,2019,8.5,22410,8.207
+2010,Sci-Fi,1,1375666,Inception,2010,8.8,2881605,8.797
+2010,Sci-Fi,2,816692,Interstellar,2014,8.7,2623396,8.697
+2010,Sci-Fi,3,4154796,Avengers: Endgame,2019,8.4,1501605,8.395
+2010,Sport,1,1424432,Senna,2010,8.4,84528,8.318
+2010,Sport,2,8948790,Jersey,2019,8.5,30763,8.279
+2010,Sport,3,2356180,Bhaag Milkha Bhaag,2013,8.2,80282,8.122
+2010,Thriller,1,1375666,Inception,2010,8.8,2881605,8.797
+2010,Thriller,2,5354160,Mirror Game,2016,8.8,31193,8.552
+2010,Thriller,3,6751668,Parasite,2019,8.5,1204073,8.494
+2010,War,1,1255953,Incendies,2010,8.3,261656,8.274
+2010,War,2,8579674,1917,2019,8.2,789750,8.192
+2010,War,3,9617456,For Sama,2019,8.5,13925,8.063
+2010,Western,1,1853728,Django Unchained,2012,8.5,1921637,8.496
+2010,Western,2,1663202,The Revenant,2015,8.0,965808,7.994
+2010,Western,3,1403865,True Grit,2010,7.6,380105,7.588
+2020,Action,1,33175825,Attack on Titan: The Last Attack,2024,8.9,39243,8.691
+2020,Action,2,9362722,Spider-Man: Across the Spider-Verse,2023,8.5,559106,8.487
+2020,Action,3,20850406,Sita Ramam,2022,8.5,86269,8.416
+2020,Adventure,1,33175825,Attack on Titan: The Last Attack,2024,8.9,39243,8.691
+2020,Adventure,2,9362722,Spider-Man: Across the Spider-Verse,2023,8.5,559106,8.487
+2020,Adventure,3,7466810,777 Charlie,2022,8.6,48970,8.449
+2020,Animation,1,33175825,Attack on Titan: The Last Attack,2024,8.9,39243,8.691
+2020,Animation,2,43383343,BLEACH: Thousand-Year Blood War - The Calamity,2026,9.0,17666,8.561
+2020,Animation,3,9362722,Spider-Man: Across the Spider-Verse,2023,8.5,559106,8.487
+2020,Biography,1,28089784,Punjab '95,2026,8.8,106924,8.723
+2020,Biography,2,11989890,David Attenborough: A Life on Our Planet,2020,8.9,36493,8.677
+2020,Biography,3,23849204,12th Fail,2023,8.7,178863,8.655
+2020,Comedy,1,45368240,You Can See Everything,2026,9.4,8184,8.484
+2020,Comedy,2,7466810,777 Charlie,2022,8.6,48970,8.449
+2020,Comedy,3,36853476,Om Ka Hari,2026,9.9,5024,8.439
+2020,Crime,1,28089784,Punjab '95,2026,8.8,106924,8.723
+2020,Crime,2,15097216,Jai Bhim,2021,8.6,237012,8.567
+2020,Crime,3,45368240,You Can See Everything,2026,9.4,8184,8.484
+2020,Documentary,1,11989890,David Attenborough: A Life on Our Planet,2020,8.9,36493,8.677
+2020,Documentary,2,24082438,20 Days in Mariupol,2023,8.6,65942,8.486
+2020,Documentary,3,16747572,The Silence of Swastika,2021,8.8,10711,8.191
+2020,Drama,1,28089784,Punjab '95,2026,8.8,106924,8.723
+2020,Drama,2,23849204,12th Fail,2023,8.7,178863,8.655
+2020,Drama,3,15097216,Jai Bhim,2021,8.6,237012,8.567
+2020,Family,1,10534500,#Home,2021,8.7,20294,8.352
+2020,Family,2,26758372,Meiyazhagan,2024,8.5,24645,8.23
+2020,Family,3,44090278,Baththa,2026,9.1,6024,8.08
+2020,Fantasy,1,43383343,BLEACH: Thousand-Year Blood War - The Calamity,2026,9.0,17666,8.561
+2020,Fantasy,2,33764258,The Odyssey,2026,8.4,533326,8.387
+2020,Fantasy,3,14888874,Demon Slayer: Kimetsu no Yaiba - Mt. Natagumo Arc,2020,8.7,19056,8.333
+2020,History,1,8503618,Hamilton,2020,8.3,143612,8.253
+2020,History,2,15398776,Oppenheimer,2023,8.2,1106902,8.194
+2020,History,3,16747572,The Silence of Swastika,2021,8.8,10711,8.191
+2020,Horror,1,37287335,Obsession,2025,7.8,406334,7.787
+2020,Horror,2,37895011,Rao Bahadur,2026,8.3,7366,7.656
+2020,Horror,3,35538033,Resident Evil,2026,7.6,110501,7.56
+2020,Music,1,8737152,Toma,2021,8.6,13459,8.131
+2020,Music,2,45643304,Ee Paata Korinavaaru Nemalipaalem Nundi,2026,9.2,5017,8.016
+2020,Music,3,10366460,CODA,2021,8.0,233909,7.975
+2020,Musical,1,20850406,Sita Ramam,2022,8.5,86269,8.416
+2020,Musical,2,28814949,Taylor Swift: The Eras Tour,2023,8.0,26314,7.802
+2020,Musical,3,11375428,Hridayam,2022,8.0,21753,7.765
+2020,Mystery,1,12361178,Drishyam 2,2021,8.4,46280,8.255
+2020,Mystery,2,9179430,Vikram,2022,8.3,91538,8.227
+2020,Mystery,3,10272386,The Father,2020,8.2,251141,8.174
+2020,Romance,1,8110330,Dil Bechara,2020,8.3,138927,8.252
+2020,Romance,2,25433734,Hi Nanna,2023,8.3,27739,8.079
+2020,Romance,3,13238346,Past Lives,2023,7.8,179276,7.771
+2020,Sci-Fi,1,12042730,Project Hail Mary,2026,8.2,582005,8.189
+2020,Sci-Fi,2,12361974,Zack Snyder's Justice League,2021,7.9,481887,7.889
+2020,Sci-Fi,3,35522483,Nirvanna the Band the Show the Movie,2025,7.7,14293,7.423
+2020,Sport,1,11580854,Sarpatta Parambarai,2021,8.4,29178,8.178
+2020,Sport,2,18568902,Kaun Pravin Tambe?,2022,8.3,11890,7.848
+2020,Sport,3,31853193,Gundi: Legend of Love,2024,8.7,6274,7.845
+2020,Thriller,1,15176374,Unpaarvayil,2025,9.0,10052,8.312
+2020,Thriller,2,33014583,Dhurandhar,2025,8.2,152319,8.158
+2020,Thriller,3,39139925,Dhurandhar: The Revenge,2026,8.2,73886,8.115
+2020,War,1,24082438,20 Days in Mariupol,2023,8.6,65942,8.486
+2020,War,2,36943034,The Voice of Hind Rajab,2025,8.2,22172,7.943
+2020,War,3,10554232,Dara of Jasenovac,2020,8.0,82495,7.931
+2020,Western,1,12731980,Old Henry,2021,7.3,49558,7.233
+2020,Western,2,10293406,The Power of the Dog,2021,6.8,245518,6.792
+2020,Western,3,11365186,Redeeming Love,2022,6.8,21374,6.723

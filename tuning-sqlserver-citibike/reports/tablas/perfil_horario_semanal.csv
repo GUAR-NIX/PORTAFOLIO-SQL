@@ -1,0 +1,49 @@
+es_fin_de_semana,tipo_dia,hora,total_viajes,viajes_miembro,viajes_ocasional,viajes_electrica,duracion_media_min,velocidad_media_kmh
+False,Día laboral (Lun-Vie),0,42918,34695,8223,31878,10.97,12.26
+False,Día laboral (Lun-Vie),1,23571,18472,5099,17783,11.17,12.19
+False,Día laboral (Lun-Vie),2,15064,11726,3338,11301,11.53,12.23
+False,Día laboral (Lun-Vie),3,10318,8254,2064,7567,10.6,12.54
+False,Día laboral (Lun-Vie),4,13769,11574,2195,9791,9.82,13.22
+False,Día laboral (Lun-Vie),5,45857,41961,3896,32361,8.64,13.69
+False,Día laboral (Lun-Vie),6,126996,117417,9579,87300,9.02,13.13
+False,Día laboral (Lun-Vie),7,273427,254364,19063,183130,9.82,12.43
+False,Día laboral (Lun-Vie),8,422915,395328,27587,265048,10.4,11.75
+False,Día laboral (Lun-Vie),9,301477,276784,24693,183836,10.38,11.39
+False,Día laboral (Lun-Vie),10,207921,184793,23128,125943,10.93,10.96
+False,Día laboral (Lun-Vie),11,205953,179638,26315,124617,11.31,10.6
+False,Día laboral (Lun-Vie),12,234129,203451,30678,141355,11.39,10.41
+False,Día laboral (Lun-Vie),13,250689,216186,34503,155024,11.61,10.44
+False,Día laboral (Lun-Vie),14,290722,248843,41879,187274,11.86,10.52
+False,Día laboral (Lun-Vie),15,334200,286556,47644,220353,11.94,10.61
+False,Día laboral (Lun-Vie),16,381883,333675,48208,246579,11.82,10.74
+False,Día laboral (Lun-Vie),17,492268,439942,52326,314072,11.66,10.86
+False,Día laboral (Lun-Vie),18,445618,397772,47846,288048,11.23,10.89
+False,Día laboral (Lun-Vie),19,311575,277782,33793,205243,10.67,11.02
+False,Día laboral (Lun-Vie),20,215672,191246,24426,143936,10.42,11.15
+False,Día laboral (Lun-Vie),21,162968,142794,20174,110103,10.65,11.31
+False,Día laboral (Lun-Vie),22,126776,109029,17747,87856,10.75,11.63
+False,Día laboral (Lun-Vie),23,86069,71959,14110,62504,10.99,11.99
+True,Fin de semana (Sáb-Dom),0,33442,26721,6721,24956,11.7,11.88
+True,Fin de semana (Sáb-Dom),1,22759,17938,4821,17028,11.96,11.97
+True,Fin de semana (Sáb-Dom),2,14485,11301,3184,10714,11.45,12.07
+True,Fin de semana (Sáb-Dom),3,10125,7799,2326,7479,11.83,12.27
+True,Fin de semana (Sáb-Dom),4,7116,5432,1684,5323,11.18,12.51
+True,Fin de semana (Sáb-Dom),5,6278,5187,1091,4625,10.5,13.11
+True,Fin de semana (Sáb-Dom),6,13166,11330,1836,9264,10.04,13.23
+True,Fin de semana (Sáb-Dom),7,25294,21896,3398,16463,9.93,12.68
+True,Fin de semana (Sáb-Dom),8,45202,39088,6114,28606,10.37,12.2
+True,Fin de semana (Sáb-Dom),9,71200,60644,10556,43845,11.08,11.64
+True,Fin de semana (Sáb-Dom),10,96737,80257,16480,59030,11.78,11.12
+True,Fin de semana (Sáb-Dom),11,117640,95735,21905,71572,12.59,10.68
+True,Fin de semana (Sáb-Dom),12,128418,103111,25307,78000,13.3,10.36
+True,Fin de semana (Sáb-Dom),13,134864,107094,27770,82574,13.99,10.12
+True,Fin de semana (Sáb-Dom),14,138372,108678,29694,84878,14.45,9.98
+True,Fin de semana (Sáb-Dom),15,137452,107138,30314,84950,14.77,9.88
+True,Fin de semana (Sáb-Dom),16,130899,103132,27767,81638,14.24,9.92
+True,Fin de semana (Sáb-Dom),17,120590,97042,23548,76615,13.51,10.08
+True,Fin de semana (Sáb-Dom),18,106264,87305,18959,69975,12.49,10.38
+True,Fin de semana (Sáb-Dom),19,82926,68919,14007,56125,11.75,10.58
+True,Fin de semana (Sáb-Dom),20,60616,50821,9795,42038,11.44,10.81
+True,Fin de semana (Sáb-Dom),21,48132,40017,8115,33899,11.3,11.01
+True,Fin de semana (Sáb-Dom),22,41957,34610,7347,30046,11.72,11.43
+True,Fin de semana (Sáb-Dom),23,37298,29918,7380,27569,11.95,11.74

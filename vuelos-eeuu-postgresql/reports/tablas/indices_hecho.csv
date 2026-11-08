@@ -1,0 +1,9 @@
+indice,tipo,bytes
+fact_vuelo (datos),Tabla particionada (datos),907665408
+fact_vuelo_pkey,B-tree (clave primaria),297099264
+fact_vuelo_avion,B-tree parcial (operados con matrícula),220495872
+mv_puntualidad_diaria,Vista materializada (datos),83361792
+fact_vuelo_aerolinea_fecha_completo,B-tree completo,51683328
+fact_vuelo_retraso_grave,B-tree parcial (retraso >= 60),5005312
+fact_vuelo_cancelados,B-tree parcial (WHERE cancelado),991232
+fact_vuelo_brin_salida,"BRIN (salida_prog_utc, 32 páginas)",360448
