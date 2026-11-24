@@ -104,7 +104,9 @@ def render() -> str:
     q_total = int(calidad.loc[calidad["tipo"] == "cuarentena", "vuelos"].sum())
 
     s = []
-    s.append(f"""# Puntualidad de los vuelos comerciales de EE. UU. en PostgreSQL (2024)
+    s.append(f"""🇪🇸 **Español** · 🇬🇧 [English (summary)](README.en.md)
+
+# Puntualidad de los vuelos comerciales de EE. UU. en PostgreSQL (2024)
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17.11_(Docker)-336791?logo=postgresql&logoColor=white)](docker-compose.yml)
 [![Vuelos](https://img.shields.io/badge/Vuelos_2024-{num(d['filas_copiadas']).replace('.', '%2E')}-0f4c81)](data/cifras_control.json)

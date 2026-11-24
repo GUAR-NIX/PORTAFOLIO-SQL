@@ -1,3 +1,5 @@
+🇪🇸 **Español** · 🇬🇧 [English (summary)](README.en.md)
+
 # Puntualidad de los vuelos comerciales de EE. UU. en PostgreSQL (2024)
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17.11_(Docker)-336791?logo=postgresql&logoColor=white)](docker-compose.yml)

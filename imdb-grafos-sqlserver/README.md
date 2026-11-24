@@ -1,3 +1,5 @@
+🇪🇸 **Español** · 🇬🇧 [English (summary)](README.en.md)
+
 # 🎬 La red del cine en SQL Server: grafos, búsqueda de texto y ventanas sobre IMDb
 
 Análisis del catálogo de **IMDb** (6 archivos TSV, **205 M de filas**, 102 M solo en `title.principals`) escrito íntegramente en **T-SQL sobre SQL Server 2025 Express**. Los TSV se cargan y filtran al vuelo con `BULK INSERT` / `OPENROWSET(BULK)` y auditoría fila a fila. Sobre esa carga se arma un modelo relacional limpio y un **grafo con SQL Graph** (`NODE`/`EDGE`, `MATCH`, `SHORTEST_PATH`) de **203.547 personas y 4,8 M de aristas**. Se agregan una búsqueda de títulos en cualquier idioma y análisis con funciones de ventana, y se compara el rendimiento del grafo con JOINs, CTE recursivo y BFS.

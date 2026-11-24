@@ -1,3 +1,5 @@
+🇪🇸 **Español** · 🇬🇧 [English (summary)](README.en.md)
+
 # 🚕 Data warehouse de los taxis amarillos de Nueva York 2024 en SQL Server
 
 Data warehouse en **T-SQL sobre SQL Server 2025 Express** con los **41.169.720 viajes** de taxi amarillo de Nueva York de 2024 (12 archivos Parquet oficiales de la TLC). Incluye carga **incremental mes a mes e idempotente** con auditoría, modelo estrella, hecho **particionado por mes con índice columnstore agrupado ordenado**, **ventana deslizante** que mueve millones de filas en milisegundos, reglas de calidad con **cuarentena**, **cuadre al centavo contra los Parquet** y análisis de negocio con **funciones de ventana**, más vistas listas para Power BI.

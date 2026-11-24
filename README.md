@@ -1,3 +1,5 @@
+🇪🇸 **Español** · 🇬🇧 [English](README.en.md)
+
 # Portafolio de SQL
 
 Data warehouses, modelado dimensional, SCD tipo 2, grafos, optimización de consultas y PostgreSQL, sobre datos públicos reales con millones de filas.

@@ -1,4 +1,6 @@
 <!-- PLANTILLA: no editar README.md a mano -->
+🇪🇸 **Español** · 🇬🇧 [English (summary)](README.en.md)
+
 # Laboratorio de rendimiento en SQL Server con Citi Bike Nueva York (enero–marzo 2024)
 
 [![SQL Server](https://img.shields.io/badge/SQL_Server-2025_Express-CC2927?logo=microsoftsqlserver&logoColor=white)](sql/00_EJECUTAR_TODO.sql)

@@ -1,3 +1,5 @@
+🇪🇸 **Español** · 🇬🇧 [English (summary)](README.en.md)
+
 # 🛒 Clientes de un retail online: RFM, cohortes y retención en T-SQL
 
 Análisis de clientes de una tienda online del Reino Unido (regalos y artículos para el hogar, muchos clientes mayoristas) con **1.067.371 líneas de factura de dic-2009 a dic-2011**. Todo el pipeline está escrito en **T-SQL sobre SQL Server**: carga con `BULK INSERT`, limpieza documentada línea por línea, modelo estrella, segmentación **RFM con `NTILE`**, **cohortes mensuales** con matriz de retención, devoluciones, **análisis de canasta** y vistas listas para Power BI. Cada etapa se reconcilia contra las cifras de control del archivo original.

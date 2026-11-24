@@ -1,3 +1,5 @@
+🇪🇸 **Español** · 🇬🇧 [English (summary)](README.en.md)
+
 # WideWorldImporters: DW incremental y SCD tipo 2 en SQL Server
 
 Data warehouse reproducible construido desde el OLTP oficial **WideWorldImporters**. Modela ventas, compras e inventario diario; conserva la historia de clientes y productos con SCD2; carga incrementos mediante marcas de agua y expone vistas en `rpt` listas para Power BI.
