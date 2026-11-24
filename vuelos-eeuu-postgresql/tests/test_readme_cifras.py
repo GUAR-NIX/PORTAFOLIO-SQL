@@ -1,7 +1,6 @@
 """El README es el que genera scripts/generar_readme.py y sus cifras clave cuadran con reports/."""
 from __future__ import annotations
 
-import json
 
 import pandas as pd
 import pytest
@@ -93,7 +92,7 @@ def test_poda_lee_una_particion(resultados):
 def test_figuras_existen():
     figuras = sorted(p.name for p in (RAIZ / "reports" / "figures").glob("*.png"))
     assert len(figuras) == 9
-    readme = (RAIZ / "README.md").read_text(encoding="utf-8")
+    readme = (RAIZ / "README.es.md").read_text(encoding="utf-8")
     for f in figuras:
         assert f"reports/figures/{f}" in readme
 

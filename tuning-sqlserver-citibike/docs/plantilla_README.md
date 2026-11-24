@@ -1,5 +1,5 @@
-<!-- PLANTILLA: no editar README.md a mano -->
-🇪🇸 **Español** · 🇬🇧 [English (summary)](README.en.md)
+<!-- PLANTILLA: no editar README.es.md a mano -->
+🇪🇸 **Español** · 🇺🇸 [English (summary)](README.md)
 
 # Laboratorio de rendimiento en SQL Server con Citi Bike Nueva York (enero–marzo 2024)
 

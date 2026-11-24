@@ -1,6 +1,6 @@
 # Guía paso a paso: cómo leer el laboratorio de rendimiento
 
-Esta guía explica **qué hace cada experimento y por qué**. No repite cifras: todas las mediciones están en el [README](../README.md) (generado desde `reports/` por `scripts/generar_readme.py`) y en `reports/tablas/experimentos_tuning.csv`. Así no hay dos versiones de un mismo número.
+Esta guía explica **qué hace cada experimento y por qué**. No repite cifras: todas las mediciones están en el [README](../README.es.md) (generado desde `reports/` por `scripts/generar_readme.py`) y en `reports/tablas/experimentos_tuning.csv`. Así no hay dos versiones de un mismo número.
 
 ## 1. Conceptos básicos
 

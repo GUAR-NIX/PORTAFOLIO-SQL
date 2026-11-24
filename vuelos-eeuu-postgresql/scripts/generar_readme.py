@@ -1,4 +1,4 @@
-"""Escribe README.md a partir de reports/ y data/cifras_control.json.
+"""Escribe README.es.md a partir de reports/ y data/cifras_control.json.
 
 Todas las cifras del README salen de estos archivos; tests/test_readme_cifras.py
 comprueba que el README es exactamente el que produce este script.
@@ -104,7 +104,7 @@ def render() -> str:
     q_total = int(calidad.loc[calidad["tipo"] == "cuarentena", "vuelos"].sum())
 
     s = []
-    s.append(f"""🇪🇸 **Español** · 🇬🇧 [English (summary)](README.en.md)
+    s.append(f"""🇪🇸 **Español** · 🇺🇸 [English (summary)](README.md)
 
 # Puntualidad de los vuelos comerciales de EE. UU. en PostgreSQL (2024)
 
@@ -477,8 +477,8 @@ docker compose down                                         # conserva el volume
 
 
 def main() -> int:
-    (RAIZ / "README.md").write_text(render(), encoding="utf-8")
-    print("README.md generado")
+    (RAIZ / "README.es.md").write_text(render(), encoding="utf-8")
+    print("README.es.md generado")
     return 0
 
 

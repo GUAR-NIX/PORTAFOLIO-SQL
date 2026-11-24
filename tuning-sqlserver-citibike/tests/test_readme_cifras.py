@@ -16,7 +16,7 @@ TEXTO = README.read_text(encoding="utf-8")
 
 
 def test_readme_es_exactamente_el_generado_desde_reports() -> None:
-    assert TEXTO == renderizar(), "README.md desactualizado: ejecuta python scripts/generar_readme.py"
+    assert TEXTO == renderizar(), "README.es.md desactualizado: ejecuta python scripts/generar_readme.py"
 
 
 def test_cifras_de_datos_recalculadas_aparecen_en_el_readme() -> None:

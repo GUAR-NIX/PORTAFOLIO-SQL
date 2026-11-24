@@ -44,4 +44,4 @@ def tabla():
 
 @pytest.fixture(scope="session")
 def readme() -> str:
-    return (RAIZ / "README.md").read_text(encoding="utf-8")
+    return (RAIZ / "README.es.md").read_text(encoding="utf-8")

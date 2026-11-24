@@ -1,37 +1,50 @@
-🇪🇸 **Español** · 🇬🇧 [English](README.en.md)
+🇺🇸 **English** · 🇪🇸 [Español](README.es.md)
 
-# Portafolio de SQL
+# SQL Server and PostgreSQL: warehouses, tuning and reconciliation
 
-Data warehouses, modelado dimensional, SCD tipo 2, grafos, optimización de consultas y PostgreSQL, sobre datos públicos reales con millones de filas.
+Six projects on public data with up to 205 million rows: incremental loads, SCD type 2, partitioning, columnstore, graphs and query tuning,
+reconciled against the source.
 
-**Herramientas principales:** SQL Server · PostgreSQL · T-SQL · Python (pruebas)
+| Project | Measured result | Code | Tests |
+|---|---|---|---|
+| [NYC taxi data warehouse](dw-taxis-nyc-sqlserver/README.md) | **41.2 million** trips; source = fact + quarantine with difference **0** in the 12 months | [code](dw-taxis-nyc-sqlserver/sql) | [tests](dw-taxis-nyc-sqlserver/tests) |
+| [SQL Server performance lab](tuning-sqlserver-citibike/README.md) | **92.50–99.96%** fewer pages read in nine experiments, with identical results | [code](tuning-sqlserver-citibike/sql) | [tests](tuning-sqlserver-citibike/tests) |
+| [U.S. flight delays in PostgreSQL](vuelos-eeuu-postgresql/README.md) | **7.08 million** flights; BRIN index 0.039 MB vs. 47.0 MB for the B-tree | [code](vuelos-eeuu-postgresql/sql) | [tests](vuelos-eeuu-postgresql/tests) |
+| [Incremental warehouse with SCD2](dw-scd2-wide-world-importers/README.md) | Full load 2,979 ms; incremental without changes **26.8 ms** (medians of 5) | [code](dw-scd2-wide-world-importers/sql) | [tests](dw-scd2-wide-world-importers/tests) |
+| [Film network as a graph](imdb-grafos-sqlserver/README.md) | **205.5 million** rows read, 0 rejected; `SHORTEST_PATH` 2.1 s vs. 62 s for a recursive CTE | [code](imdb-grafos-sqlserver/sql) | [tests](imdb-grafos-sqlserver/tests) |
+| [RFM, cohorts and retention](retail-rfm-cohortes-sql/README.md) | **1.07 million** lines reconciled with difference **0** in rows, units and amount | [code](retail-rfm-cohortes-sql/sql) | [tests](retail-rfm-cohortes-sql/tests) |
 
-Cada carpeta es un proyecto independiente, con su propio README (resultados primero), guía paso a paso, pruebas automáticas y cómo reproducirlo. Los datos crudos no se versionan: cada proyecto trae un script que los descarga desde la fuente oficial.
+## Start here
 
-## Proyectos
-
-| Proyecto | De qué trata |
+| If you are looking for… | Go to |
 |---|---|
-| [**WideWorldImporters: DW incremental y SCD tipo 2 en SQL Server**](dw-scd2-wide-world-importers/) | Data warehouse reproducible construido desde el OLTP oficial WideWorldImporters. Modela ventas, compras e inventario diario; conserva la historia de clientes y productos con SCD2; carga incrementos mediante marcas de agua y… |
-| [**🚕 Data warehouse de los taxis amarillos de Nueva York 2024 en SQL Server**](dw-taxis-nyc-sqlserver/) | Data warehouse en T-SQL sobre SQL Server 2025 Express con los 41.169.720 viajes de taxi amarillo de Nueva York de 2024 (12 archivos Parquet oficiales de la TLC). Incluye carga incremental mes a mes e idempotente con auditoría,… |
-| [**🎬 La red del cine en SQL Server: grafos, búsqueda de texto y ventanas sobre IMDb**](imdb-grafos-sqlserver/) | Análisis del catálogo de IMDb (6 archivos TSV, 205 M de filas, 102 M solo en title.principals) escrito íntegramente en T-SQL sobre SQL Server 2025 Express. Los TSV se cargan y filtran al vuelo con BULK INSERT / OPENROWSET(BULK) y… |
-| [**🛒 Clientes de un retail online: RFM, cohortes y retención en T-SQL**](retail-rfm-cohortes-sql/) | Análisis de clientes de una tienda online del Reino Unido (regalos y artículos para el hogar, muchos clientes mayoristas) con 1.067.371 líneas de factura de dic-2009 a dic-2011. Todo el pipeline está escrito en T-SQL sobre SQL… |
-| [**Laboratorio de rendimiento en SQL Server con Citi Bike Nueva York (enero–marzo 2024)**](tuning-sqlserver-citibike/) | Pregunta: ¿cuánto cambian el tiempo de respuesta y las páginas leídas cuando se elige bien el diseño físico (heap, índices cubrientes, índices filtrados, columnstore) y cuando se reescribe la consulta (predicados SARGables,… |
-| [**Puntualidad de los vuelos comerciales de EE. UU. en PostgreSQL (2024)**](vuelos-eeuu-postgresql/) | Pregunta: ¿qué aerolíneas, aeropuertos, horas y rutas concentran los retrasos de los vuelos de EE. UU., por qué se retrasan y cuánto se propaga un retraso a los vuelos siguientes del mismo avión? Y, del lado técnico: ¿cuánto… |
+| **Query tuning** | [Performance lab](tuning-sqlserver-citibike/README.md): 260 measured runs, warm and cold |
+| **Pipeline reliability** | [NYC taxi warehouse](dw-taxis-nyc-sqlserver/README.md): idempotent monthly load that survived a restart |
+| **How it is checked** | [CI workflow](.github/workflows/ci.yml): Ruff, Markdown links, T-SQL syntax with Microsoft's parser, database-free tests, and the PostgreSQL pipeline on a synthetic fixture |
+| **Design and decisions** | The full README of each project (Spanish) has the architecture, limits and reproduction commands |
 
-## Cómo usar este repositorio
+## How results were measured
+
+- Timings are medians of repeated runs on one local machine.
+- Control figures are computed in Python from the source files and compared with the database.
+- The SQL Server integration tests need the full datasets and run locally; CI checks the syntax of every T-SQL script.
+- The PostgreSQL job runs the real scripts on seven synthetic flights; it does not reproduce the published figures.
+
+## How to use this repository
 
 ```bash
-git clone https://github.com/GUAR-NIX/portafolio-sql.git
-cd portafolio-sql/<proyecto>
+git clone https://github.com/GUAR-NIX/PORTAFOLIO-SQL.git
+cd PORTAFOLIO-SQL/<project>
 ```
 
-Dentro de cada proyecto, sigue la sección «Cómo reproducir» de su README y `docs/GUIA_PASO_A_PASO.md`.
+Each project has its own README, tests and `docs/GUIA_PASO_A_PASO.md` (Spanish). Raw data are not versioned: a script gets them from
+the official source. The English page of each project is a summary; the full documentation is in Spanish.
+See [CONTRIBUTING.md](CONTRIBUTING.md) to run the checks.
 
-## Autor
+## Author
 
-**Erick Guarnizo** · [LinkedIn](https://www.linkedin.com/in/erick-g-571a7b3b4)
+**Erick Guarnizo** · [LinkedIn](https://www.linkedin.com/in/erick-g-571a7b3b4) · [GitHub profile](https://github.com/GUAR-NIX)
 
-## Licencia
+## License
 
-El código está bajo licencia [MIT](LICENSE). Los datos de cada proyecto conservan la licencia de su fuente, indicada en su README.
+Code is under the [MIT](LICENSE) license. Each project's data keep the license of their source, stated in its README.

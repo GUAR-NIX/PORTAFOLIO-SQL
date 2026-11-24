@@ -1,8 +1,8 @@
-"""Genera README.md a partir de docs/plantilla_README.md y de los datos de reports/ y data/.
+"""Genera README.es.md a partir de docs/plantilla_README.md y de los datos de reports/ y data/.
 
 Todas las cifras del README salen de aquí: si se vuelve a correr el pipeline, basta con
 ejecutar este script para que el README quede al día. `tests/test_readme_cifras.py`
-comprueba que README.md es exactamente lo que produce `renderizar()`.
+comprueba que README.es.md es exactamente lo que produce `renderizar()`.
 
 Uso:
   python scripts/generar_readme.py
@@ -20,7 +20,7 @@ import pandas as pd
 RAIZ = Path(__file__).resolve().parents[1]
 TABLAS = RAIZ / "reports" / "tablas"
 PLANTILLA = RAIZ / "docs" / "plantilla_README.md"
-README = RAIZ / "README.md"
+README = RAIZ / "README.es.md"
 
 
 def miles(x: float) -> str:
@@ -343,12 +343,12 @@ def renderizar() -> str:
     if faltantes:
         raise KeyError(f"La plantilla usa claves sin valor: {faltantes}")
     texto = re.sub(r"\{\{(\w+)\}\}", lambda m: valores[m.group(1)], plantilla)
-    return texto.replace("<!-- PLANTILLA: no editar README.md a mano -->\n", "")
+    return texto.replace("<!-- PLANTILLA: no editar README.es.md a mano -->\n", "")
 
 
 def main() -> None:
     README.write_text(renderizar(), encoding="utf-8", newline="\n")
-    print(f"[ok] README.md generado desde {PLANTILLA.relative_to(RAIZ)} y reports/")
+    print(f"[ok] README.es.md generado desde {PLANTILLA.relative_to(RAIZ)} y reports/")
 
 
 if __name__ == "__main__":

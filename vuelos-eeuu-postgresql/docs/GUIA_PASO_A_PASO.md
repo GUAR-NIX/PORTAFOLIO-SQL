@@ -1,6 +1,6 @@
 # Guía paso a paso
 
-Esta guía explica **qué hace cada script y por qué**. Las cifras están en el [README](../README.md), que se genera desde `reports/` con `scripts/generar_readme.py`; aquí casi no se repiten números para que no haya dos versiones de un mismo dato.
+Esta guía explica **qué hace cada script y por qué**. Las cifras están en el [README](../README.es.md), que se genera desde `reports/` con `scripts/generar_readme.py`; aquí casi no se repiten números para que no haya dos versiones de un mismo dato.
 
 ## 1. Cómo correrlo
 
