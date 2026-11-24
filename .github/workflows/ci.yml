@@ -1,0 +1,117 @@
+name: CI
+
+# Lint, documentation links, T-SQL syntax, database-free tests and a PostgreSQL pipeline on a synthetic fixture.
+# No dataset is downloaded: tests use the small samples and fixtures versioned in the repository.
+on:
+  push:
+    branches: [main, "feat/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Lint and Markdown links
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
+        with:
+          python-version: "3.14"
+      - run: pip install --disable-pip-version-check ruff==0.17.6
+      - name: Ruff
+        run: ruff check --output-format=github .
+      - name: Markdown links and language selectors
+        run: python .github/scripts/check_markdown_links.py
+
+  tests:
+    name: ${{ matrix.project }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - dw-taxis-nyc-sqlserver
+          - imdb-grafos-sqlserver
+          - retail-rfm-cohortes-sql
+          - tuning-sqlserver-citibike
+          - vuelos-eeuu-postgresql
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: ${{ matrix.project }}/requirements.txt
+      # Tests that need a loaded database are left out here; the PostgreSQL ones run in the job below.
+      - name: Install dependencies
+        run: |
+          grep -vE '^(jupyter|nbconvert|nbclient|ipykernel)' requirements.txt > "$RUNNER_TEMP/requirements-ci.txt"
+          pip install --disable-pip-version-check -r "$RUNNER_TEMP/requirements-ci.txt" pytest
+      - name: Tests
+        run: >-
+          python -m pytest -rs -o addopts= --ignore=tests/test_pipeline_sql.py
+          --ignore=tests/test_cadena_retraso.py --ignore=tests/test_cifras_control.py
+
+  tsql-syntax:
+    name: T-SQL syntax (Microsoft ScriptDom)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Parse every T-SQL script
+        shell: pwsh
+        run: ./.github/scripts/check_tsql.ps1
+
+  postgres:
+    name: PostgreSQL pipeline on a 7-flight fixture
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: vuelos-eeuu-postgresql
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
+        with:
+          python-version: "3.14"
+      - name: Synthetic fixture (not BTS data)
+        run: python tests/ci/crear_fixture.py
+      - name: Start PostgreSQL with the project's docker-compose.yml
+        run: docker compose up -d --build --wait
+      - name: Load, quality rules, star schema and delay chains
+        run: |
+          psql() { docker compose exec -T db psql -X -q -U analista -d vuelos -v ON_ERROR_STOP=1 "$@"; }
+          psql -f /sql/01_esquemas.sql -f /sql/02_staging_y_carga.sql
+          psql -c "CALL control.cargar_rango(2024, 1, 1)"
+          psql -f /sql/03_referencias.sql -f /sql/04_modelo_estrella.sql -f /sql/05_calidad_y_carga_dw.sql \
+               -f /sql/06_indices_y_vista.sql -f /sql/08_cadenas_retraso.sql
+          psql < tests/ci/humo.sql
+      - name: Recursive query tests
+        run: |
+          pip install --disable-pip-version-check "psycopg[binary]==3.3.6" pandas==3.1.0 pytest==9.1.1
+          python -m pytest -rs -o addopts= tests/test_cadena_retraso.py -k "not resumen"
+      - name: Logs on failure
+        if: failure()
+        run: docker compose logs --tail 100
+      - if: always()
+        run: docker compose down -v

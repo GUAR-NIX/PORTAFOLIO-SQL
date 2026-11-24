@@ -1,0 +1,5 @@
+# Lint run in CI: syntax errors, undefined or unused names and imports, invalid comparisons.
+extend-exclude = ["*.ipynb"]
+
+[lint]
+select = ["E4", "E9", "F"]
