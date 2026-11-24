@@ -2,6 +2,8 @@
 
 # SQL Server and PostgreSQL: warehouses, tuning and reconciliation
 
+[![CI](https://github.com/GUAR-NIX/PORTAFOLIO-SQL/actions/workflows/ci.yml/badge.svg)](https://github.com/GUAR-NIX/PORTAFOLIO-SQL/actions/workflows/ci.yml)
+
 Six projects on public data with up to 205 million rows: incremental loads, SCD type 2, partitioning, columnstore, graphs and query tuning,
 reconciled against the source.
 
